@@ -6,6 +6,15 @@
 	gap: 2rem;
 	margin-bottom: 3rem;
 
+	h3{
+		color: var(--text-color);
+		font-weight: 500;
+		font-size: 2em;
+		letter-spacing: 1.5px;
+		margin-top: 5rem;
+		text-align: center;
+	}
+
 	table {
 		border-collapse: separate;
 		border-spacing: 0 1rem;

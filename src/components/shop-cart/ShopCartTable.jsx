@@ -1,7 +1,10 @@
-// import components
-import ShopCartTableItem from "./ShopCartTableItem";
+import React from 'react';
+import { useStates } from '../../context/useStates';
+import ShopCartTableItem from './ShopCartTableItem';
 
 const ShopCartTable = () => {
+	const { cartItems } = useStates();
+
 	return (
 		<table>
 			<thead>
@@ -13,13 +16,10 @@ const ShopCartTable = () => {
 					<th>Price</th>
 				</tr>
 			</thead>
-
 			<tbody>
-				<ShopCartTableItem />
-				<ShopCartTableItem />
-				<ShopCartTableItem />
-				<ShopCartTableItem />
-				<ShopCartTableItem />
+				{cartItems.map((item, index) => (
+					<ShopCartTableItem key={index} item={item} />
+				))}
 			</tbody>
 		</table>
 	);

@@ -75,6 +75,32 @@ export const StateProvider = ({ children }) => {
 	//! State to control the scroll position
 	const [scrollPosition, setScrollPosition] = useState(0);
 
+	//! State to control the cart system
+	const [cartItems, setCartItems] = useState([]);
+
+	const addToCart = item => {
+		setCartItems(prevCartItems => {
+			const existingItem = prevCartItems.find(cartItem => cartItem.productId === item.productId);
+			if (existingItem) {
+				return prevCartItems.map(cartItem => (cartItem.productId === item.productId ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem));
+			} else {
+				return [...prevCartItems, { ...item, quantity: 1 }];
+			}
+		});
+	};
+
+	const updateCartQuantity = (itemId, quantity) => {
+		setCartItems(prevCartItems => prevCartItems.map(cartItem => (cartItem.productId === itemId ? { ...cartItem, quantity } : cartItem)));
+	};
+
+	const removeFromCart = item => {
+		setCartItems(prevCartItems => prevCartItems.filter(cartItem => cartItem.productId !== item.productId));
+	};
+
+	const getSubtotal = () => {
+		return cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
+	};
+
 	const value = {
 		toggler,
 		isOpen,
@@ -90,6 +116,7 @@ export const StateProvider = ({ children }) => {
 		formData,
 		showToast,
 		scrollPosition,
+		cartItems,
 		openLightbox,
 		toggleMenu,
 		toggleSidebar,
@@ -101,6 +128,10 @@ export const StateProvider = ({ children }) => {
 		setFormData,
 		setShowToast,
 		setScrollPosition,
+		addToCart,
+		updateCartQuantity,
+		removeFromCart,
+		getSubtotal,
 	};
 
 	return <StateContext.Provider value={value}>{children}</StateContext.Provider>;

@@ -1,6 +1,7 @@
 @use '../abstracts/' as *;
 
 .productCard {
+	position: relative;
 	display: flex;
 	flex-direction: column;
 	width: 250px;
@@ -106,6 +107,7 @@
 		width: 100%;
 		height: 30px;
 		transition: 0.3s;
+		z-index: 90;
 
 		@include breakpointDesktop(768px) {
 			bottom: 0;

@@ -1,4 +1,13 @@
+import React from 'react';
+import { useStates } from '../../context/useStates';
+
 const ShopCartBottom = () => {
+	const { getSubtotal } = useStates();
+	const shippingCost = 4.99; // Assuming a fixed shipping cost
+
+	const subtotal = parseFloat(getSubtotal());
+	const total = (subtotal + shippingCost).toFixed(2);
+
 	return (
 		<div className='shoppingCart__bottom'>
 			<h3>Cart Info</h3>
@@ -6,17 +15,17 @@ const ShopCartBottom = () => {
 			<div className='shoppingCart__bottom-info'>
 				<div>
 					<h4>Subtotal</h4>
-					<span>€1.235,01</span>
+					<span>{subtotal}€</span>
 				</div>
 
 				<div>
 					<h4>Shipping</h4>
-					<span>€4.99</span>
+					<span>€{shippingCost}€</span>
 				</div>
 
 				<div>
 					<h4>Total</h4>
-					<strong>€1.235,01</strong>
+					<strong>{total}€</strong>
 				</div>
 			</div>
 
