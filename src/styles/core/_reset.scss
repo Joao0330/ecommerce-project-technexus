@@ -1,0 +1,63 @@
+@use '../abstracts/' as *;
+
+:root {
+	--color-main: #ffffff;
+	--bg-color1: #212121;
+	--bg-color2: #101010;
+	--bg-color3: #1a1a1a;
+	--green: #6aee6a;
+	--green-dark: #3a853a;
+	--gray: #3f3f3f;
+	--gray-light: #838383;
+	--text-color: #ffffff99;
+	--text-color2: #ffffff;
+
+	/* --bg-color1: #fcfcfc;
+	--bg-color2: #edf8eb;
+	--gray: #e9e9e9;
+	 */
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+	/* border: 1px solid green; */
+}
+
+html {
+	-moz-text-size-adjust: none;
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+	scroll-behavior: smooth;
+
+	@include breakpointDesktop(768px) {
+		font-size: 14px;
+	}
+
+	@include breakpointDesktop(480px) {
+		font-size: 12px;
+	}
+}
+
+body {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased;
+	font-family: 'Lato', sans-serif;
+}
+
+a {
+	text-decoration: none;
+}
+
+ul {
+	list-style-type: none;
+}
+
+img {
+	display: block;
+}
+
+main {
+	display: block !important;
+}

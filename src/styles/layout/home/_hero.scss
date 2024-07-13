@@ -1,0 +1,69 @@
+@use '../../abstracts/' as *;
+
+.hero {
+	font-size: 1rem;
+	background: var(--bg-color2);
+	height: 100vh;
+	padding-top: 8rem;
+
+	&> div{
+		height: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__wrapper {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+
+		@include breakpointDesktop(991px) {
+			flex-direction: column;
+		}
+	}
+
+	&__content-left {
+		width: 50%;
+		display: flex;
+		flex-wrap: wrap;
+		gap: 2.5rem;
+
+		@include breakpointDesktop(991px) {
+			width: 100%;
+			justify-content: center;
+			text-align: center;
+		}
+
+		h2 {
+			font-size: 3em;
+			font-weight: 400;
+			color: var(--text-color);
+		}
+
+		h3 {
+			font-size: 2.5em;
+			font-weight: 500;
+			line-height: 1.5;
+			color: var(--text-color2);
+		}
+	}
+
+	&__content-right {
+		width: 50%;
+
+		@include breakpointDesktop(991px) {
+			margin-top: 5rem;
+			width: 70%;
+		}
+
+		@include breakpointDesktop(768px) {
+			width: 100%;
+		}
+
+		img {
+			border-radius: 15px;
+			box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);
+		}
+	}
+}

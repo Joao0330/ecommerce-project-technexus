@@ -1,0 +1,36 @@
+@use '../../abstracts/' as *;
+
+.shoppingCart {
+	font-size: 1rem;
+	background: var(--bg-color2);
+	padding: 10rem 0 5rem;
+	min-height: 100vh;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 2rem;
+	}
+
+	&__top {
+		width: 100%;
+		padding: 2rem 0;
+		border-bottom: 1px solid var(--gray-light);
+
+		h2 {
+			color: var(--text-color2);
+			font-weight: 600;
+			font-size: 2em;
+			letter-spacing: 1.5px;
+			margin-bottom: 1.3rem;
+		}
+
+		p {
+			color: var(--text-color);
+		}
+	}
+
+	
+
+	
+}

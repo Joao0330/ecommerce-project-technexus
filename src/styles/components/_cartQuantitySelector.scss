@@ -1,0 +1,41 @@
+@use "../abstracts/" as *;
+
+.cart-quantitySelector {
+	display: flex;
+	width: 80px;
+	height: 45px;
+
+	button {
+		width: 35%;
+		border: 2px solid var(--gray);
+		color: var(--text-color2);
+		background: none;
+		cursor: pointer;
+		transition: 0.3s;
+
+		&:hover {
+			background: var(--green-dark);
+			border: 2px solid var(--green-dark);
+
+			@include breakpointDesktop(991px) {
+				background: none;
+				border: 2px solid var(--gray);
+			}
+		}
+	}
+	input {
+		width: 45%;
+		border: none;
+		border-top: 2px solid var(--gray);
+		border-bottom: 2px solid var(--gray);
+		text-align: center;
+		color: var(--text-color);
+		background: none;
+		outline: none;
+
+		&::-webkit-outer-spin-button,
+		&::-webkit-inner-spin-button {
+			-webkit-appearance: none;
+		}
+	}
+}

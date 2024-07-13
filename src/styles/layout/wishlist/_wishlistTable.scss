@@ -1,0 +1,95 @@
+@use '../../abstracts/' as *;
+
+.wishlist__content {
+	display: flex;
+	flex-direction: column;
+
+	table {
+		border-collapse: separate;
+		border-spacing: 0 1rem;
+		text-align: center;
+
+		thead {
+			th {
+				color: var(--text-color2);
+				text-transform: uppercase;
+				font-size: 0.95em;
+				letter-spacing: 1.3px;
+				padding: 2rem;
+
+				@include breakpointDesktop(768px) {
+					padding: 0;
+				}
+			}
+
+			th:nth-child(1) {
+				padding: 0;
+				width: 40px;
+				font-size: 0;
+			}
+
+			th:nth-child(2) {
+				padding: 0;
+				width: 10px;
+				font-size: 0;
+			}
+		}
+
+		tbody {
+			tr {
+				background: var(--bg-color3);
+				transition: 0.3s;
+
+				&:hover {
+					background: var(--bg-color1);
+
+					@include breakpointDesktop(991px) {
+						background: var(--bg-color3);
+					}
+				}
+			}
+			td {
+				padding: 0.638rem 0.75rem;
+				color: var(--text-color);
+
+				img {
+					min-width: 80px;
+
+					@include breakpointDesktop(480px) {
+						min-width: 40px;
+					}
+				}
+			}
+
+			td:nth-child(1) {
+				padding: 0 1.5rem;
+				border-radius: 15px 0 0 15px;
+
+				@include breakpointDesktop(600px) {
+					padding: 0;
+				}
+
+				button {
+					border: none;
+					border-radius: 50%;
+					padding: 0.5rem 0.7rem;
+					background: transparent;
+					color: var(--text-color2);
+					cursor: pointer;
+					transition: 0.25s;
+
+					&:hover {
+						background: var(--gray);
+
+						@include breakpointDesktop(991px) {
+							background: transparent;
+						}
+					}
+				}
+			}
+			td:nth-child(4) {
+				border-radius: 0 15px 15px 0;
+			}
+		}
+	}
+}

@@ -1,0 +1,168 @@
+@use '../../abstracts/' as *;
+
+.categories {
+	font-size: 1rem;
+	padding-top: 5rem;
+	background: var(--bg-color2);
+
+	@include breakpointDesktop(480px) {
+		padding-top: 8rem;
+	}
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+	}
+
+	&__title {
+		padding: 1rem 0;
+		border-bottom: 1px solid #b6b6b6;
+
+		h2 {
+			color: var(--text-color2);
+			font-weight: 600;
+			font-size: 2.5em;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			color: var(--text-color);
+			font-size: 1.1em;
+		}
+	}
+
+	&__content {
+		margin-top: 4rem;
+		display: flex;
+		gap: 1.5rem;
+
+		@include breakpointDesktop(991px) {
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 2.83rem;
+		}
+
+		@include breakpointDesktop(768px) {
+			gap: 6rem;
+		}
+	}
+
+	&__content-card {
+		position: relative;
+		height: 250px;
+		width: 20%;
+		background: var(--bg-color3);
+		box-shadow: 0 5px 10px rgba(0, 0, 0, 0.5);
+		transition: 0.25s;
+
+		@include breakpointDesktop(991px) {
+			width: 30%;
+		}
+
+		@include breakpointDesktop(768px) {
+			width: 60%;
+		}
+
+		@include breakpointDesktop(480px) {
+			width: 70%;
+		}
+
+		&::after {
+			content: '';
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.699);
+			opacity: 0;
+			transition: 0.4s;
+		}
+
+		&:hover {
+			button {
+				bottom: 0;
+			}
+
+			&::after {
+				opacity: 1;
+				@include breakpointDesktop(768px) {
+					opacity: 0;
+				}
+			}
+
+			img {
+				transform: scale(1.1);
+
+				@include breakpointDesktop(768px) {
+					transform: scale(1);
+				}
+			}
+		}
+
+		div {
+			height: 100%;
+			width: 100%;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			position: relative;
+			cursor: pointer;
+			overflow: hidden;
+
+			img {
+				transition: 0.3s;
+			}
+
+			button {
+				position: absolute;
+				bottom: -100%;
+				width: 100%;
+				padding: 0.8rem 0;
+				font-size: 0.9em;
+				font-weight: 500;
+				text-align: center;
+				letter-spacing: 1.5px;
+				text-transform: uppercase;
+				border: none;
+				background: transparent;
+				color: var(--green);
+				border-top: 1px solid var(--green-dark);
+				cursor: pointer;
+				transition: 0.25s;
+				z-index: 2;
+
+				@include breakpointDesktop(768px) {
+					bottom: 0;
+					background: var(--green-dark);
+					color: white;
+				}
+			}
+
+			&:hover {
+				button {
+					background: var(--green-dark);
+					color: white;
+				}
+			}
+		}
+
+		strong {
+			font-weight: 400;
+			color: var(--text-color2);
+			margin-top: 1rem;
+			display: block;
+			letter-spacing: 1.4px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		&:nth-child(1),
+		&:nth-child(2),
+		&:nth-child(4) {
+			img {
+				width: 90%;
+			}
+		}
+	}
+}

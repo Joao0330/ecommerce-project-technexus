@@ -1,0 +1,77 @@
+@use '../abstracts/' as *;
+
+.btn-type1 {
+	border: none;
+	padding: 1rem 0.8rem;
+	min-width: 180px;
+	background: var(--green-dark);
+	color: #ffffff;
+	border-radius: 5px;
+	text-transform: uppercase;
+	text-align: center;
+	font-size: 0.875em;
+	font-weight: 500;
+	cursor: pointer;
+	transition: 0.35s;
+
+	&:hover {
+		background: #4d7c4b;
+
+		@include breakpointDesktop(991px) {
+			background: var(--green-dark);
+		}
+	}
+
+	&:focus {
+		transform: scale(0.98);
+	}
+}
+
+.btn-type2 {
+	background: transparent;
+	padding: 0.7rem 1.4rem;
+	font-size: 0.9em;
+	color: var(--text-color2);
+	text-transform: uppercase;
+	border: 1px solid var(--text-color2);
+	cursor: pointer;
+	transition: 0.3s;
+
+	&:hover {
+		border: 1px solid var(--green-dark);
+		background: var(--green-dark);
+
+		@include breakpointDesktop(991px) {
+			border: 1px solid var(--text-color2);
+			background: transparent;
+		}
+	}
+
+	&:focus {
+		transform: scale(0.98);
+	}
+}
+
+.btn-type3 {
+	background: transparent;
+	padding: 0.7rem 1.5rem;
+	font-size: 1em;
+	letter-spacing: 1px;
+	color: var(--text-color2);
+	background: var(--green-dark);
+	border: none;
+	transition: 0.3s;
+	cursor: pointer;
+
+	&:hover {
+		opacity: 0.7;
+
+		@include breakpointDesktop(991px) {
+			opacity: 1;
+		}
+	}
+
+	&:focus {
+		transform: scale(0.98);
+	}
+}

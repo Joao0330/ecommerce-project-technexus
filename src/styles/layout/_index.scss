@@ -1,0 +1,20 @@
+@forward 'home/hero';
+@forward 'home/categories';
+@forward 'home/featured';
+@forward 'home/gallery';
+@forward 'home/news';
+
+@forward 'product-list/productList';
+@forward 'product-list/sidebar';
+
+@forward 'product-details/productDetails';
+@forward 'product-details/productSpecs';
+
+@forward 'contact/contact';
+
+@forward 'shop-cart/shopCart';
+@forward 'shop-cart/shopCartTable';
+@forward 'shop-cart/shopCartBottom';
+
+@forward 'wishlist/wishlist';
+@forward 'wishlist/wishlistTable';
