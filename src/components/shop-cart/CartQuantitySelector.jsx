@@ -1,23 +1,27 @@
-import React from 'react';
-import { useStates } from '../../context/useStates';
+import React, { useState } from 'react';
 
-const CartQuantitySelector = ({ productId, quantity }) => {
-	const { updateCartQuantity } = useStates();
+const CartQuantitySelector = ({ initialQuantity = 1, onQuantityChange }) => {
+	const [quantity, setQuantity] = useState(initialQuantity);
 
 	const handleIncrease = () => {
-		updateCartQuantity(productId, quantity + 1);
+		const newQuantity = quantity + 1;
+		setQuantity(newQuantity);
+		onQuantityChange(newQuantity);
 	};
 
 	const handleDecrease = () => {
 		if (quantity > 1) {
-			updateCartQuantity(productId, quantity - 1);
+			const newQuantity = quantity - 1;
+			setQuantity(newQuantity);
+			onQuantityChange(newQuantity);
 		}
 	};
 
 	const handleChange = e => {
 		const newQuantity = parseInt(e.target.value, 10);
 		if (!isNaN(newQuantity) && newQuantity > 0) {
-			updateCartQuantity(productId, newQuantity);
+			setQuantity(newQuantity);
+			onQuantityChange(newQuantity);
 		}
 	};
 

@@ -1,22 +1,21 @@
-// import context
-import { useStates } from '../../context/useStates';
-
-// import hooks
+import React, { useState } from 'react';
 import { useParams } from 'react-router-dom';
-
-// import icons
 import { TiHeartOutline } from 'react-icons/ti';
-
-// import components
+import { useStates } from '../../context/useStates';
 import ProductSpecs from '../../components/product-details/ProductSpecs';
 import CartQuantitySelector from '../../components/shop-cart/CartQuantitySelector';
 
 const ProductDetail = () => {
-	const { allProducts } = useStates();
-
+	const { allProducts, addToCart } = useStates();
 	const { id } = useParams();
-	// Find the product with the given id
 	const product = allProducts.find(product => product.id === Number(id));
+
+	// For the cart quantity
+	const [quantity, setQuantity] = useState(1);
+
+	const handleAddToCart = () => {
+		addToCart({ ...product, quantity });
+	};
 
 	return (
 		<>
@@ -36,9 +35,9 @@ const ProductDetail = () => {
 								</div>
 
 								<div className='productDetails__info-quantity'>
-									<CartQuantitySelector />
-									<button type='button' className='btn-type2'>
-										add to cart
+									<CartQuantitySelector initialQuantity={quantity} onQuantityChange={setQuantity} />
+									<button type='button' className='btn-type2' onClick={handleAddToCart}>
+										Add to cart
 									</button>
 								</div>
 
@@ -51,9 +50,7 @@ const ProductDetail = () => {
 
 								<div className='productDetails__info-category'>
 									<h3>Category:</h3>
-									<span>
-										<span>{product.category.charAt(0).toUpperCase() + product.category.slice(1)}</span>
-									</span>
+									<span>{product.category.charAt(0).toUpperCase() + product.category.slice(1)}</span>
 								</div>
 							</div>
 						</div>

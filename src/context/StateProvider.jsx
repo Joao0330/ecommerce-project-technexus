@@ -6,6 +6,7 @@ import { fetchNews } from '../api/api';
 
 // import product data json
 import Products from '../data/products.json';
+import { SiTruenas } from 'react-icons/si';
 
 export const StateProvider = ({ children }) => {
 	//! State to control the homepage lightbox gallery
@@ -69,8 +70,8 @@ export const StateProvider = ({ children }) => {
 	//! State to control the form data
 	const [formData, setFormData] = useState(null);
 
-	//! State to control the toast visibility
-	const [showToast, setShowToast] = useState(true);
+	//! State to control the form toast visibility
+	const [showFormToast, setShowFormToast] = useState(true);
 
 	//! State to control the scroll position
 	const [scrollPosition, setScrollPosition] = useState(0);
@@ -78,27 +79,17 @@ export const StateProvider = ({ children }) => {
 	//! State to control the cart system
 	const [cartItems, setCartItems] = useState([]);
 
+	// function that adds an item to the cart
 	const addToCart = item => {
 		setCartItems(prevCartItems => {
-			const existingItem = prevCartItems.find(cartItem => cartItem.productId === item.productId);
+			const existingItem = prevCartItems.find(cartItem => cartItem.id === item.id);
+			// if item exists, update the quantity in the cart
 			if (existingItem) {
-				return prevCartItems.map(cartItem => (cartItem.productId === item.productId ? { ...cartItem, quantity: cartItem.quantity + 1 } : cartItem));
+				return prevCartItems.map(cartItem => (cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + item.quantity } : cartItem));
 			} else {
-				return [...prevCartItems, { ...item, quantity: 1 }];
+				return [...prevCartItems, { ...item }];
 			}
 		});
-	};
-
-	const updateCartQuantity = (itemId, quantity) => {
-		setCartItems(prevCartItems => prevCartItems.map(cartItem => (cartItem.productId === itemId ? { ...cartItem, quantity } : cartItem)));
-	};
-
-	const removeFromCart = item => {
-		setCartItems(prevCartItems => prevCartItems.filter(cartItem => cartItem.productId !== item.productId));
-	};
-
-	const getSubtotal = () => {
-		return cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
 	};
 
 	const value = {
@@ -114,7 +105,7 @@ export const StateProvider = ({ children }) => {
 		noProductsFound,
 		sortOrder,
 		formData,
-		showToast,
+		showFormToast,
 		scrollPosition,
 		cartItems,
 		openLightbox,
@@ -126,12 +117,10 @@ export const StateProvider = ({ children }) => {
 		setNoProductsFound,
 		setSortOrder,
 		setFormData,
-		setShowToast,
+		setShowFormToast,
 		setScrollPosition,
+		setCartItems,
 		addToCart,
-		updateCartQuantity,
-		removeFromCart,
-		getSubtotal,
 	};
 
 	return <StateContext.Provider value={value}>{children}</StateContext.Provider>;

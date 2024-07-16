@@ -16,7 +16,7 @@ import { FaCheck, FaPhoneAlt, FaRegEnvelope, FaRegClock } from 'react-icons/fa';
 import { FaLocationDot } from 'react-icons/fa6';
 
 const Contact = () => {
-	const { formData, setFormData, showToast, setShowToast } = useStates();
+	const { formData, setFormData, showFormToast, setShowFormToast } = useStates();
 
 	// Form validation
 	const {
@@ -30,13 +30,13 @@ const Contact = () => {
 
 	const submitForm = data => {
 		setFormData(data);
-		setShowToast(true);
+		setShowFormToast(true);
 		reset();
 	};
 
 	// Control the toast visibility
 	const handleCloseToast = () => {
-		setShowToast(false);
+		setShowFormToast(false);
 	};
 
 	return (
@@ -112,7 +112,7 @@ const Contact = () => {
 						</form>
 
 						{formData && (
-							<div className={`form__submittedData ${showToast ? 'show' : 'hide'}`}>
+							<div className={`form__submittedData ${showFormToast ? 'show' : 'hide'}`}>
 								<div>
 									<span>
 										<FaCheck className='form__submittedData-icon' />

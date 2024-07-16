@@ -14,8 +14,20 @@ import { LuArrowLeftFromLine } from 'react-icons/lu';
 import { RiSortAlphabetAsc } from 'react-icons/ri';
 
 const Content = ({ currentCards, handleSortOrderChange }) => {
-	const { sidebarActive, noProductsFound, toggleSidebar, sortedProducts, setSortedProducts, cardsPerPage, setCurrentPage, currentPage, filters, allProducts, sortOrder, setNoProductsFound } =
-		useStates();
+	const {
+		sidebarActive,
+		noProductsFound,
+		toggleSidebar,
+		sortedProducts,
+		setSortedProducts,
+		cardsPerPage,
+		setCurrentPage,
+		currentPage,
+		filters,
+		allProducts,
+		sortOrder,
+		setNoProductsFound,
+	} = useStates();
 
 	// Filtering
 	useEffect(() => {
@@ -34,7 +46,7 @@ const Content = ({ currentCards, handleSortOrderChange }) => {
 				return price >= filters.price.min && (filters.price.max === null || price <= filters.price.max);
 			});
 		}
-		
+
 		// Sorts the products by lowest price, highest price or alphabetically (for the filter buttons on the right side)
 		const sorted = filteredProducts.sort((a, b) => {
 			if (sortOrder === 'asc') {

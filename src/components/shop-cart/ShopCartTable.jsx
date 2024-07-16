@@ -9,16 +9,16 @@ const ShopCartTable = () => {
 		<table>
 			<thead>
 				<tr>
-					<th>remove product</th>
-					<th>product image</th>
+					<th>Remove product</th>
+					<th>Product image</th>
 					<th>Product</th>
 					<th>Quantity</th>
 					<th>Price</th>
 				</tr>
 			</thead>
 			<tbody>
-				{cartItems.map((item, index) => (
-					<ShopCartTableItem key={index} item={item} />
+				{cartItems.map(item => (
+					<ShopCartTableItem key={item.id} item={item} />
 				))}
 			</tbody>
 		</table>

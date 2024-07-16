@@ -3,9 +3,23 @@ import { useStates } from '../../context/useStates';
 import CartQuantitySelector from '../shop-cart/CartQuantitySelector';
 
 const ShopCartTableItem = ({ item }) => {
-	const { removeFromCart } = useStates();
-	const { productId, image, title, price, quantity } = item;
-	const totalPrice = (price * quantity).toFixed(2); // Calculate total price
+	const { setCartItems } = useStates();
+	const { id, image, name, price, quantity } = item;
+	const totalPrice = (price * quantity).toFixed(2);
+
+	// function that updates the quantity in the cart
+	const updateCartQuantity = (productId, quantity) => {
+		setCartItems(prevCartItems => prevCartItems.map(cartItem => (cartItem.id === productId ? { ...cartItem, quantity } : cartItem)));
+	};
+
+	// function that removes an item from the cart
+	const removeFromCart = item => {
+		setCartItems(prevCartItems => prevCartItems.filter(cartItem => cartItem.id !== item.id));
+	};
+
+	const handleQuantityChange = newQuantity => {
+		updateCartQuantity(id, newQuantity);
+	};
 
 	return (
 		<tr>
@@ -15,13 +29,13 @@ const ShopCartTableItem = ({ item }) => {
 				</button>
 			</td>
 			<td>
-				<img src={image} alt={title} className='img-fluid' />
+				<img src={image} alt={name} className='img-fluid' />
 			</td>
-			<td>{title}</td>
+			<td>{name}</td>
 			<td>
-				<CartQuantitySelector productId={productId} quantity={quantity} />
+				<CartQuantitySelector initialQuantity={quantity} onQuantityChange={handleQuantityChange} />
 			</td>
-			<td>{totalPrice}€</td> {/* Display total price */}
+			<td>€{totalPrice}</td>
 		</tr>
 	);
 };

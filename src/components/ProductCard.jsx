@@ -19,27 +19,25 @@ const ProductCard = ({ image, title, category, price, productId }) => {
 	};
 
 	const handleAddToCart = () => {
-		addToCart({ image, title, category, price, productId });
+		addToCart({
+			id: productId,
+			image: image,
+			name: title,
+			category: category,
+			price: parseFloat(price), // Ensure the price is a number
+			quantity: 1,
+		});
 	};
 
 	return (
 		<article className='productCard'>
-			<Link
-				to={`/product-details/${productId}/${encodeURIComponent(title)}`}
-				onClick={e => {
-					if (e.target.tagName.toLowerCase() !== 'button') {
-						e.preventDefault();
-						window.scrollTo(0, 0);
-					}
-				}}
-			>
-				<img src={image} alt={title} className='img-fluid' />
+			<Link to={`/product-details/${productId}/${encodeURIComponent(title)}`}>
+				<img src={image} alt={title} className='img-fluid' onClick={() => window.scrollTo(0, 0)} />
 				<div className='productCard-wishlist'>
 					<button
 						type='button'
 						onClick={e => {
 							e.preventDefault();
-							handleAddToCart();
 						}}
 					>
 						<TiHeartOutline />
