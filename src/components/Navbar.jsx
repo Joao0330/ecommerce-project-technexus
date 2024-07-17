@@ -1,8 +1,6 @@
 // import context
 import { useStates } from '../context/useStates';
 
-import { useState, useEffect } from 'react';
-
 // import hooks
 import { Link } from 'react-router-dom';
 
@@ -13,7 +11,7 @@ import { FaRegMoon } from 'react-icons/fa';
 import { LuHeart } from 'react-icons/lu';
 
 const Navbar = () => {
-	const { isOpen, toggleMenu, setFilters, scrollPosition, setScrollPosition } = useStates();
+	const { isOpen, toggleMenu, setFilters, scrollPosition, setScrollPosition, cartItems } = useStates();
 
 	// Redirects to the category 'all' in the product list page
 	const handleCategoryClick = () => {
@@ -91,12 +89,13 @@ const Navbar = () => {
 								<FaRegMoon />
 							</button>
 
-							<Link to='wishlist' className='navbar__whishlist'>
+							<Link to='wishlist' className='navbar__rightArea-wishlist'>
 								<LuHeart />
 							</Link>
 
-							<Link to='shop-cart' className='navbar__cart'>
+							<Link to='shop-cart' className='navbar__rightArea-cart' onClick={() => window.scrollTo(0, 0)}>
 								<PiShoppingCartSimpleBold />
+								<span>{cartItems.reduce((total, item) => total + item.quantity, 0)}</span>
 							</Link>
 						</div>
 					</nav>

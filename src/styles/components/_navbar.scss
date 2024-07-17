@@ -11,7 +11,7 @@
 	z-index: 999;
 	transition: 0.3s;
 
-	&.active{
+	&.active {
 		background: var(--bg-color1);
 		padding: 1.5rem 0;
 	}
@@ -92,6 +92,7 @@
 	}
 
 	&__rightArea {
+		position: relative;
 		display: flex;
 		gap: 0.5rem;
 
@@ -99,7 +100,8 @@
 			display: none;
 		}
 
-		button, a {
+		button,
+		a {
 			display: flex;
 			align-items: center;
 			justify-content: center;
@@ -109,6 +111,22 @@
 			background: transparent;
 			color: var(--color-main);
 			cursor: pointer;
+		}
+
+		&-cart {
+			span {
+				position: absolute;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 0.6em;
+				top: -1px;
+				right: -3px;
+				width: 15px;
+				height: 15px;
+				background: var(--green-dark);
+				border-radius: 50%;
+			}
 		}
 	}
 
