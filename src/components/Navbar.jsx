@@ -11,17 +11,7 @@ import { FaRegMoon } from 'react-icons/fa';
 import { LuHeart } from 'react-icons/lu';
 
 const Navbar = () => {
-	const { isOpen, toggleMenu, setFilters, scrollPosition, setScrollPosition, cartItems } = useStates();
-
-	// Redirects to the category 'all' in the product list page
-	const handleCategoryClick = () => {
-		window.scrollTo(0, 0);
-		setFilters(prevFilters => ({
-			...prevFilters,
-			price: { min: null, max: null },
-			category: 'all',
-		}));
-	};
+	const { isOpen, toggleMenu, setFilters, scrollPosition, setScrollPosition, cartItems, handleCategoryClick } = useStates();
 
 	// Adds active class to the navbar when scrolled down
 	const handleScroll = () => {
@@ -89,7 +79,7 @@ const Navbar = () => {
 								<FaRegMoon />
 							</button>
 
-							<Link to='wishlist' className='navbar__rightArea-wishlist'>
+							<Link to='wishlist' className='navbar__rightArea-wishlist' onClick={() => window.scrollTo(0, 0)}>
 								<LuHeart />
 							</Link>
 

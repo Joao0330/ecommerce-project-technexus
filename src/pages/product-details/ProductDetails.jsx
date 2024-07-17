@@ -6,15 +6,23 @@ import ProductSpecs from '../../components/product-details/ProductSpecs';
 import CartQuantitySelector from '../../components/shop-cart/CartQuantitySelector';
 
 const ProductDetail = () => {
-	const { allProducts, addToCart } = useStates();
+	const { allProducts, addToCart, addToWishlist } = useStates();
 	const { id } = useParams();
 	const product = allProducts.find(product => product.id === Number(id));
 
 	// For the cart quantity
 	const [quantity, setQuantity] = useState(1);
 
+	// Handler function to add product to the cart
 	const handleAddToCart = () => {
 		addToCart({ ...product, quantity });
+	};
+
+	// Function to handle the add to wishlist functionality
+	const handleAddToWishlist = () => {
+		addToWishlist({
+			...product,
+		});
 	};
 
 	return (
@@ -42,7 +50,7 @@ const ProductDetail = () => {
 								</div>
 
 								<div className='productDetails__info-wishlist'>
-									<button type='button'>
+									<button type='button' onClick={handleAddToWishlist}>
 										<TiHeartOutline />
 										<span>Add to wishlist</span>
 									</button>

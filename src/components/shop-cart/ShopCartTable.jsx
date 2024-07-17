@@ -1,5 +1,7 @@
-import React from 'react';
+// import context
 import { useStates } from '../../context/useStates';
+
+// import components
 import ShopCartTableItem from './ShopCartTableItem';
 
 const ShopCartTable = () => {

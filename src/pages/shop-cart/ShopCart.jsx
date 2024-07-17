@@ -2,6 +2,7 @@
 import { useStates } from '../../context/useStates';
 
 // import components
+import ShopCartEmpty from '../../components/shop-cart/ShopCartEmpty';
 import ShopCartTable from '../../components/shop-cart/ShopCartTable';
 import ShopCartBottom from '../../components/shop-cart/ShopCartBottom';
 
@@ -19,7 +20,7 @@ const ShopCart = () => {
 
 					<div className='shoppingCart__content'>
 						{cartItems.length === 0 ? (
-							<h3>Your shopping cart is empty</h3>
+							<ShopCartEmpty />
 						) : (
 							<>
 								<ShopCartTable />

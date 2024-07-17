@@ -1,5 +1,7 @@
-import React from 'react';
+// import context
 import { useStates } from '../../context/useStates';
+
+// import components
 import CartQuantitySelector from '../shop-cart/CartQuantitySelector';
 
 const ShopCartTableItem = ({ item }) => {
@@ -17,6 +19,7 @@ const ShopCartTableItem = ({ item }) => {
 		setCartItems(prevCartItems => prevCartItems.filter(cartItem => cartItem.id !== item.id));
 	};
 
+	// Handler function to update the quantity
 	const handleQuantityChange = newQuantity => {
 		updateCartQuantity(id, newQuantity);
 	};
@@ -35,7 +38,7 @@ const ShopCartTableItem = ({ item }) => {
 			<td>
 				<CartQuantitySelector initialQuantity={quantity} onQuantityChange={handleQuantityChange} />
 			</td>
-			<td>€{totalPrice}</td>
+			<td>{totalPrice}€</td>
 		</tr>
 	);
 };

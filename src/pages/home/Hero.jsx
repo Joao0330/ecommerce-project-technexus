@@ -8,17 +8,7 @@ import { Link } from 'react-router-dom';
 import heroimg from '../../assets/hero.jpg';
 
 const Hero = () => {
-	const { setFilters } = useStates();
-
-	// Redirects to the category 'all' in the product list page
-	const handleCategoryClick = () => {
-		window.scrollTo(0, 0);
-		setFilters(prevFilters => ({
-			...prevFilters,
-			price: { min: null, max: null },
-			category: 'all',
-		}));
-	};
+	const { handleCategoryClick } = useStates();
 
 	return (
 		<section className='hero'>

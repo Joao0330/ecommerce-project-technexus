@@ -6,24 +6,17 @@ import { fetchNews } from '../api/api';
 
 // import product data json
 import Products from '../data/products.json';
-import { SiTruenas } from 'react-icons/si';
 
 export const StateProvider = ({ children }) => {
+	//? ------------------STATE VARIABLES--------------------
 	//! State to control the homepage lightbox gallery
 	const [toggler, setToggler] = useState(false);
-	const openLightbox = index => {
-		setToggler(index);
-	};
 
 	//! State to control the Mobile menu
 	const [isOpen, setIsOpen] = useState(false);
-	const toggleMenu = () => {
-		setIsOpen(open => !open);
-	};
 
 	//! State to control the news api
 	/* const [news, setNews] = useState([]);
-
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
@@ -43,9 +36,6 @@ export const StateProvider = ({ children }) => {
 
 	//! State to control the sidebar on the product list page
 	const [sidebarActive, setSidebarActive] = useState(false);
-	const toggleSidebar = () => {
-		setSidebarActive(sidebarActive => !sidebarActive);
-	};
 
 	//! State to control the pagination
 	const [currentPage, setCurrentPage] = useState(1);
@@ -53,7 +43,6 @@ export const StateProvider = ({ children }) => {
 
 	//! State to control the filters
 	const [filters, setFilters] = useState({
-		/* category: path, */
 		category: 'all',
 		price: { min: null, max: null },
 	});
@@ -79,7 +68,26 @@ export const StateProvider = ({ children }) => {
 	//! State to control the cart system
 	const [cartItems, setCartItems] = useState([]);
 
-	// function that adds an item to the cart
+	//! State to control the wishlist system
+	const [wishlistItems, setWishlistItems] = useState([]);
+
+	//? -------------------FUNCTIONS---------------------
+	//* Function to control the mobile menu
+	const toggleMenu = () => {
+		setIsOpen(open => !open);
+	};
+
+	//* Function to control the lightbox gallery
+	const openLightbox = index => {
+		setToggler(index);
+	};
+
+	//* Function to control the sidebar on the products page
+	const toggleSidebar = () => {
+		setSidebarActive(sidebarActive => !sidebarActive);
+	};
+
+	//* Function that adds an item to the cart
 	const addToCart = item => {
 		setCartItems(prevCartItems => {
 			const existingItem = prevCartItems.find(cartItem => cartItem.id === item.id);
@@ -90,6 +98,28 @@ export const StateProvider = ({ children }) => {
 				return [...prevCartItems, { ...item }];
 			}
 		});
+	};
+
+	//* Function that adds an item to the wishlist
+	const addToWishlist = item => {
+		setWishlistItems(prevWishlistItems => {
+			const isItemInWishlist = prevWishlistItems.some(wishlistItem => wishlistItem.id === item.id);
+			if (!isItemInWishlist) {
+				return [...prevWishlistItems, { ...item }];
+			} else {
+				return prevWishlistItems;
+			}
+		});
+	};
+
+	//* Function that redirects to the category 'all' in the product list page
+	const handleCategoryClick = () => {
+		window.scrollTo(0, 0);
+		setFilters(prevFilters => ({
+			...prevFilters,
+			price: { min: null, max: null },
+			category: 'all',
+		}));
 	};
 
 	const value = {
@@ -108,6 +138,7 @@ export const StateProvider = ({ children }) => {
 		showFormToast,
 		scrollPosition,
 		cartItems,
+		wishlistItems,
 		openLightbox,
 		toggleMenu,
 		toggleSidebar,
@@ -121,6 +152,9 @@ export const StateProvider = ({ children }) => {
 		setScrollPosition,
 		setCartItems,
 		addToCart,
+		setWishlistItems,
+		addToWishlist,
+		handleCategoryClick,
 	};
 
 	return <StateContext.Provider value={value}>{children}</StateContext.Provider>;

@@ -5,7 +5,7 @@ import { TiHeartOutline } from 'react-icons/ti';
 import { TbShoppingCartPlus } from 'react-icons/tb';
 
 const ProductCard = ({ image, title, category, price, productId }) => {
-	const { setFilters, addToCart } = useStates();
+	const { setFilters, addToCart, addToWishlist } = useStates();
 	const navigate = useNavigate();
 
 	const handleCategoryClick = () => {
@@ -18,14 +18,25 @@ const ProductCard = ({ image, title, category, price, productId }) => {
 		}));
 	};
 
+	// Function to handle the add to cart functionality
 	const handleAddToCart = () => {
 		addToCart({
 			id: productId,
 			image: image,
 			name: title,
 			category: category,
-			price: parseFloat(price), // Ensure the price is a number
+			price: parseFloat(price),
 			quantity: 1,
+		});
+	};
+
+	// Function to handle the add to wishlist functionality
+	const handleAddToWishlist = () => {
+		addToWishlist({
+			id: productId,
+			image: image,
+			name: title,
+			price: parseFloat(price),
 		});
 	};
 
@@ -38,6 +49,7 @@ const ProductCard = ({ image, title, category, price, productId }) => {
 						type='button'
 						onClick={e => {
 							e.preventDefault();
+							handleAddToWishlist();
 						}}
 					>
 						<TiHeartOutline />

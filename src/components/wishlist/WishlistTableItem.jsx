@@ -1,18 +1,27 @@
-// import images
-import Iphone15ProMax from '../../assets/products/smartphones/iphone15-pro-max.jpg';
+// import context
+import { useStates } from '../../context/useStates';
 
+const WishlistTableItem = ({ item }) => {
+	const { setWishlistItems } = useStates();
+	const { id, image, name, price } = item;
 
-const WishlistTableItem = () => {
+	// function that removes an item from the wishlist
+	const removeFromWishlist = item => {
+		setWishlistItems(prevWishlistItems => prevWishlistItems.filter(wishlistItem => wishlistItem.id !== item.id));
+	};
+
 	return (
 		<tr>
 			<td>
-				<button type='button'>X</button>
+				<button type='button' onClick={() => removeFromWishlist(item)}>
+					X
+				</button>
 			</td>
 			<td>
-				<img src={Iphone15ProMax} alt='Image of an Iphone 15 Pro Max' className='img-fluid' />
+				<img src={image} alt={name} className='img-fluid' />
 			</td>
-			<td>Apple iPhone 15 Pro Max 6.7&quot; 256GB Natural Titanium</td>
-			<td>€1.235,01</td>
+			<td>{name}</td>
+			<td>{price.toFixed(2)}€</td>
 		</tr>
 	);
 };

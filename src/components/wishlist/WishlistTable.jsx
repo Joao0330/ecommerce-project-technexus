@@ -1,7 +1,12 @@
+// import context
+import { useStates } from '../../context/useStates';
+
 // import components
 import WishlistTableItem from '../wishlist/WishlistTableItem';
 
 const WishlistTable = () => {
+	const { wishlistItems } = useStates();
+
 	return (
 		<table>
 			<thead>
@@ -14,11 +19,9 @@ const WishlistTable = () => {
 			</thead>
 
 			<tbody>
-				<WishlistTableItem />
-				<WishlistTableItem />
-				<WishlistTableItem />
-				<WishlistTableItem />
-				<WishlistTableItem />
+				{wishlistItems.map(item => (
+					<WishlistTableItem key={item.id} item={item} />
+				))}
 			</tbody>
 		</table>
 	);

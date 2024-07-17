@@ -6,13 +6,31 @@
 	gap: 2rem;
 	margin-bottom: 3rem;
 
-	h3{
-		color: var(--text-color);
-		font-weight: 500;
-		font-size: 2em;
-		letter-spacing: 1.5px;
-		margin-top: 5rem;
-		text-align: center;
+	&-empty {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		gap: 3rem;
+
+		h3 {
+			color: var(--text-color2);
+			font-weight: 500;
+			font-size: 2em;
+			letter-spacing: 1.5px;
+			text-align: center;
+		}
+
+		svg {
+			color: var(--gray);
+			font-size: 10em;
+		}
+
+		p{
+			color: var(--text-color);
+			font-size: 1.15em;
+			letter-spacing: 1.1px;
+			text-align: center;
+		}
 	}
 
 	table {
