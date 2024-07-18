@@ -11,7 +11,7 @@ import { FaRegMoon } from 'react-icons/fa';
 import { LuHeart } from 'react-icons/lu';
 
 const Navbar = () => {
-	const { isOpen, toggleMenu, setFilters, scrollPosition, setScrollPosition, cartItems, handleCategoryClick } = useStates();
+	const { isOpen, toggleMenu, scrollPosition, setScrollPosition, cartItems, handleCategoryClick } = useStates();
 
 	// Adds active class to the navbar when scrolled down
 	const handleScroll = () => {
@@ -75,18 +75,34 @@ const Navbar = () => {
 						</form>
 
 						<div className='navbar__rightArea'>
-							<button className='navbar__theme'>
-								<FaRegMoon />
-							</button>
-
-							<Link to='wishlist' className='navbar__rightArea-wishlist' onClick={() => window.scrollTo(0, 0)}>
+							<Link
+								to='wishlist'
+								className='navbar__rightArea-wishlist'
+								onClick={() => {
+									window.scrollTo(0, 0);
+									toggleMenu();
+								}}
+							>
 								<LuHeart />
 							</Link>
+							<div className='navbar__wishlist-effect'>
+								<span>My Wishlist</span>
+							</div>
 
-							<Link to='shop-cart' className='navbar__rightArea-cart' onClick={() => window.scrollTo(0, 0)}>
+							<Link
+								to='shop-cart'
+								className='navbar__rightArea-cart'
+								onClick={() => {
+									window.scrollTo(0, 0);
+									toggleMenu();
+								}}
+							>
 								<PiShoppingCartSimpleBold />
 								<span>{cartItems.reduce((total, item) => total + item.quantity, 0)}</span>
 							</Link>
+							<div className='navbar__cart-effect'>
+								<span>Shopping Cart</span>
+							</div>
 						</div>
 					</nav>
 

@@ -90,6 +90,10 @@
 		clip-path: polygon(0% 0%, 91% 0, 100% 50%, 91% 100%, 0% 100%);
 		transition: 0.3s;
 
+		@include breakpointDesktop(991px) {
+			display: none;
+		}
+
 		span {
 			display: block;
 			padding: 0.5rem 0.8rem;
