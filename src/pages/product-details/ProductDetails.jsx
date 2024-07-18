@@ -1,7 +1,14 @@
-import React, { useState } from 'react';
-import { useParams } from 'react-router-dom';
-import { TiHeartOutline } from 'react-icons/ti';
+// import context
 import { useStates } from '../../context/useStates';
+
+// import hooks
+import { useState } from 'react';
+import { useParams } from 'react-router-dom';
+
+// import icons
+import { TiHeartOutline } from 'react-icons/ti';
+
+// import components
 import ProductSpecs from '../../components/product-details/ProductSpecs';
 import CartQuantitySelector from '../../components/shop-cart/CartQuantitySelector';
 
@@ -10,7 +17,7 @@ const ProductDetail = () => {
 	const { id } = useParams();
 	const product = allProducts.find(product => product.id === Number(id));
 
-	// For the cart quantity
+	// State for the cart quantity
 	const [quantity, setQuantity] = useState(1);
 
 	// Handler function to add product to the cart
