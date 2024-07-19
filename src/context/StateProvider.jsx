@@ -71,6 +71,9 @@ export const StateProvider = ({ children }) => {
 	//! State to control the wishlist system
 	const [wishlistItems, setWishlistItems] = useState([]);
 
+	//! State to control the searchbar
+	const [searchValue, setSearchValue] = useState("");
+
 	//? -------------------FUNCTIONS---------------------
 	//* Function to control the mobile menu
 	const toggleMenu = () => {
@@ -139,6 +142,7 @@ export const StateProvider = ({ children }) => {
 		scrollPosition,
 		cartItems,
 		wishlistItems,
+		searchValue,
 		openLightbox,
 		toggleMenu,
 		toggleSidebar,
@@ -155,6 +159,7 @@ export const StateProvider = ({ children }) => {
 		setWishlistItems,
 		addToWishlist,
 		handleCategoryClick,
+		setSearchValue,
 	};
 
 	return <StateContext.Provider value={value}>{children}</StateContext.Provider>;

@@ -1,5 +1,5 @@
 // import hooks
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 
 // Import styles
 import './styles/main.scss';
@@ -15,6 +15,7 @@ import ProductDetails from './pages/product-details/ProductDetails.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import ShopCart from './pages/shop-cart/ShopCart.jsx';
 import Wishlist from './pages/wishlist/Wishlist.jsx';
+import NoProductFound from './components/search/NoProductFound.jsx';
 
 const App = () => {
 	return (
@@ -36,6 +37,7 @@ const App = () => {
 						<Route path='/contact' element={<Contact />} />
 						<Route path='/shop-cart' element={<ShopCart />} />
 						<Route path='/wishlist' element={<Wishlist />} />
+						<Route path='/product-not-found' element={<NoProductFound />} />
 					</Routes>
 				</main>
 

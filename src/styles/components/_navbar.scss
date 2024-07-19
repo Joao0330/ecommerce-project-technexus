@@ -51,6 +51,7 @@
 	}
 
 	&__search {
+		position: relative;
 		min-width: 350px;
 		display: flex;
 
@@ -86,6 +87,53 @@
 				@include breakpointDesktop(991px) {
 					background: transparent;
 					color: var(--green-dark);
+				}
+			}
+		}
+
+		&-dropdown {
+			position: absolute;
+			top: 50px;
+			display: flex;
+			flex-direction: column;
+			gap: 0.5rem;
+			padding: 0.5rem;
+			max-height: 300px;
+			overflow-y: scroll;
+			background: var(--bg-color3);
+			border-radius: 8px;
+			border: 2px solid var(--gray);
+
+			&::-webkit-scrollbar {
+				width: 6px;
+			}
+
+			&::-webkit-scrollbar-track {
+				background: transparent;
+			}
+
+			&::-webkit-scrollbar-thumb {
+				background: var(--gray-light);
+				border-radius: 10px;
+			}
+
+			&-row {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+				color: var(--text-color2);
+				background: var(--bg-color2);
+				border-radius: 5px;
+				padding: 0.5rem;
+				cursor: pointer;
+				transition: 0.4s;
+
+				&:hover {
+					background: var(--gray);
+				}
+
+				img {
+					width: 50px;
 				}
 			}
 		}
