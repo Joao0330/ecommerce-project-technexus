@@ -5,13 +5,47 @@ const ShopCartBottom = () => {
 	const { cartItems } = useStates();
 	const shippingCost = 4.99;
 
-	// Function to calculate the subtotal
 	const getSubtotal = () => {
 		return cartItems.reduce((sum, item) => sum + item.price * item.quantity, 0).toFixed(2);
 	};
 
 	const subtotal = parseFloat(getSubtotal());
 	const total = (subtotal + shippingCost).toFixed(2);
+
+	const handleConfirmPurchase = () => {
+		const cartContent = cartItems
+			.map(
+				item =>
+					`<tr key=${item.id}>
+                <td style="border: 1px solid; padding: 1rem">${item.name}</td>
+                <td style="border: 1px solid;">${item.quantity}</td>
+                <td style="border: 1px solid;">${item.price}€</td>
+            </tr>`,
+			)
+			.join('');
+
+		const content = `
+			<div style="height: 100vh; display: flex; flex-direction: column; align-items: center; background-color: #1a1a1a; font-family: sans-serif; color: #fff;">
+				<h2 style="margin-bottom: 5rem;">Thank you for your purchase!</h2>
+
+				<table style="color: #fff;border: 1px solid; text-align: center">
+					<thead>
+						<tr style="padding: 1rem">
+							<th style="border: 1px solid; padding: 1rem">Product</th>
+							<th style="border: 1px solid;">Quantity</th>
+							<th style="border: 1px solid;">Price</th>
+						</tr>
+					</thead>
+					<tbody>
+						${cartContent}
+					</tbody>
+				</table>
+			</div>
+        `;
+
+		const newWindow = window.open('', '_blank', 'width=700,height=500');
+		newWindow.document.write(content);
+	};
 
 	return (
 		<div className='shoppingCart__bottom'>
@@ -34,7 +68,15 @@ const ShopCartBottom = () => {
 				</div>
 			</div>
 
-			<button type='button' className='btn-type3'>
+			<button
+				type='button'
+				className='btn-type3'
+				onClick={() => {
+					handleConfirmPurchase();
+					window.location.reload();
+					window.scrollTo(0, 0);
+				}}
+			>
 				Confirm Purchase
 			</button>
 		</div>
