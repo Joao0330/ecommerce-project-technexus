@@ -113,6 +113,31 @@
 			cursor: pointer;
 		}
 
+		&-wishlist {
+			span {
+				position: absolute;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-size: 0.6em;
+				top: -1px;
+				right: 33px;
+				width: 15px;
+				height: 15px;
+				background: var(--green-dark);
+				border-radius: 50%;
+
+				@include breakpointDesktop(768px) {
+					right: 28px;
+				}
+
+				@include breakpointDesktop(480px) {
+					top: -6px;
+					right: 25px;
+				}
+			}
+		}
+
 		&-cart {
 			span {
 				position: absolute;

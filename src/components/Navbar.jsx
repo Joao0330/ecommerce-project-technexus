@@ -11,7 +11,7 @@ import { FaRegMoon } from 'react-icons/fa';
 import { LuHeart } from 'react-icons/lu';
 
 const Navbar = () => {
-	const { isOpen, toggleMenu, scrollPosition, setScrollPosition, cartItems, handleCategoryClick } = useStates();
+	const { isOpen, toggleMenu, scrollPosition, setScrollPosition, cartItems, wishlistItems, handleCategoryClick } = useStates();
 
 	// Adds active class to the navbar when scrolled down
 	const handleScroll = () => {
@@ -84,6 +84,7 @@ const Navbar = () => {
 								}}
 							>
 								<LuHeart />
+								<span>{wishlistItems.length}</span>
 							</Link>
 							<div className='navbar__wishlist-effect'>
 								<span>My Wishlist</span>
