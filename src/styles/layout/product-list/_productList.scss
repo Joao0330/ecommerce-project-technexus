@@ -215,21 +215,5 @@
 				}
 			}
 		}
-
-		&-pagination {
-			margin-top: 4rem;
-			display: flex;
-			justify-content: center;
-			gap: 1rem;
-
-			button {
-				border-radius: 10px;
-
-				&.active {
-					background: var(--green-dark);
-					border: 1px solid var(--green-dark);
-				}
-			}
-		}
 	}
 }

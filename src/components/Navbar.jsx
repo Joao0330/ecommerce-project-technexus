@@ -8,6 +8,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { IoSearchOutline } from 'react-icons/io5';
 import { PiShoppingCartSimpleBold } from 'react-icons/pi';
 import { LuHeart } from 'react-icons/lu';
+import { AiOutlineProduct } from 'react-icons/ai';
 
 const Navbar = () => {
 	const { isOpen, toggleMenu, scrollPosition, setScrollPosition, cartItems, wishlistItems, handleCategoryClick, searchValue, setSearchValue, allProducts } = useStates();
@@ -100,6 +101,7 @@ const Navbar = () => {
 								type='submit'
 								onClick={e => {
 									e.preventDefault();
+									toggleMenu();
 									searchProduct(searchValue);
 								}}
 							>
@@ -135,6 +137,20 @@ const Navbar = () => {
 						</form>
 
 						<div className='navbar__rightArea'>
+							<Link
+								to='product-editor'
+								className='navbar__rightArea-editProducts'
+								onClick={() => {
+									window.scrollTo(0, 0);
+									toggleMenu();
+								}}
+							>
+								<AiOutlineProduct />
+							</Link>
+							<div className='navbar__editProducts-effect'>
+								<span>Product Editor</span>
+							</div>
+
 							<Link
 								to='wishlist'
 								className='navbar__rightArea-wishlist'

@@ -1,8 +1,15 @@
-import React from 'react';
+// import context
 import { useStates } from '../context/useStates';
+
+// import hooks
 import { Link, useNavigate } from 'react-router-dom';
+
+// import icons
 import { TiHeartOutline } from 'react-icons/ti';
 import { TbShoppingCartPlus } from 'react-icons/tb';
+
+// import images
+import placeholderImage from '../assets/placeholder.jpg';
 
 const ProductCard = ({ image, title, category, price, productId }) => {
 	const { setFilters, addToCart, addToWishlist } = useStates();
@@ -43,7 +50,15 @@ const ProductCard = ({ image, title, category, price, productId }) => {
 	return (
 		<article className='productCard'>
 			<Link to={`/product-details/${productId}/${encodeURIComponent(title)}`}>
-				<img src={image} alt={title} className='img-fluid' onClick={() => window.scrollTo(0, 0)} />
+				<img
+					src={image}
+					onError={e => {
+						e.target.src = placeholderImage;
+					}}
+					alt={title}
+					className='img-fluid'
+					onClick={() => window.scrollTo(0, 0)}
+				/>
 				<div className='productCard-wishlist'>
 					<button
 						type='button'

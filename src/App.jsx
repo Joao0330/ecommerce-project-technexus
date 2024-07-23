@@ -15,6 +15,8 @@ import ProductDetails from './pages/product-details/ProductDetails.jsx';
 import Contact from './pages/contact/Contact.jsx';
 import ShopCart from './pages/shop-cart/ShopCart.jsx';
 import Wishlist from './pages/wishlist/Wishlist.jsx';
+import ProductEditor from './pages/product-editor/ProductEditor.jsx';
+import CreateProduct from './components/product-editor/CreateProduct.jsx';
 import NoProductFound from './components/search/NoProductFound.jsx';
 
 const App = () => {
@@ -32,11 +34,13 @@ const App = () => {
 							<Route path='/product-list/:category' element={<ProductList />} />
 						</Route>
 						<Route path='/product-details' element={<ProductDetails />}>
-							<Route path='/product-details/:id/:name' element={<ProductDetails />} />
+							<Route path=':id/:name' element={<ProductDetails />} />
 						</Route>
 						<Route path='/contact' element={<Contact />} />
 						<Route path='/shop-cart' element={<ShopCart />} />
 						<Route path='/wishlist' element={<Wishlist />} />
+						<Route path='/product-editor' element={<ProductEditor />} />
+						<Route path='/product-editor/create-product' element={<CreateProduct />} />
 						<Route path='/product-not-found' element={<NoProductFound />} />
 					</Routes>
 				</main>

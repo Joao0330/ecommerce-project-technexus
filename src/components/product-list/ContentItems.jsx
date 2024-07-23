@@ -14,20 +14,8 @@ import { LuArrowLeftFromLine } from 'react-icons/lu';
 import { RiSortAlphabetAsc } from 'react-icons/ri';
 
 const Content = ({ currentCards, handleSortOrderChange }) => {
-	const {
-		sidebarActive,
-		noProductsFound,
-		toggleSidebar,
-		sortedProducts,
-		setSortedProducts,
-		cardsPerPage,
-		setCurrentPage,
-		currentPage,
-		filters,
-		allProducts,
-		sortOrder,
-		setNoProductsFound,
-	} = useStates();
+	const { sidebarActive, noProductsFound, toggleSidebar, sortedProducts, setSortedProducts, cardsPerPage, setCurrentPage, currentPage, filters, allProducts, sortOrder, setNoProductsFound } =
+		useStates();
 
 	// Filtering
 	useEffect(() => {

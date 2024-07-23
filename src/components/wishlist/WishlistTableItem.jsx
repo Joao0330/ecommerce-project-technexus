@@ -1,6 +1,9 @@
 // import context
 import { useStates } from '../../context/useStates';
 
+// import images
+import placeholderImage from '../../assets/placeholder.jpg';
+
 const WishlistTableItem = ({ item }) => {
 	const { setWishlistItems } = useStates();
 	const { id, image, name, price } = item;
@@ -18,7 +21,14 @@ const WishlistTableItem = ({ item }) => {
 				</button>
 			</td>
 			<td>
-				<img src={image} alt={name} className='img-fluid' />
+				<img
+					src={image}
+					onError={e => {
+						e.target.src = placeholderImage;
+					}}
+					alt={name}
+					className='img-fluid'
+				/>
 			</td>
 			<td>{name}</td>
 			<td>{price.toFixed(2)}€</td>

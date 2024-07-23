@@ -7,7 +7,7 @@ const Pagination = ({ totalCards, cardsPerPage, setCurrentPage, currentPage }) =
 	}
 
 	return (
-		<div className='productList__content-pagination'>
+		<div className='pagination'>
 			{pages.map((page, index) => (
 				<button
 					className={`btn-type2 ${page === currentPage ? 'active' : ''}`}

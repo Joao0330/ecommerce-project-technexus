@@ -75,3 +75,23 @@
 		transform: scale(0.98);
 	}
 }
+
+.btn-type4 {
+	background: transparent;
+	padding: 0.7rem 1.4rem;
+	color: var(--text-color2);
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	border: none;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: 0.3s;
+
+	@include breakpointDesktop(991px) {
+		background: var(--bg-color2);
+	}
+
+	&:hover {
+		background: var(--bg-color2);
+	}
+}

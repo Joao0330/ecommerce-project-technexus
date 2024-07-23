@@ -32,7 +32,7 @@ export const StateProvider = ({ children }) => {
 
 	//! State to control the products data json
 	const [productsData, setProductsData] = useState(Products);
-	const allProducts = [...productsData.computers, ...productsData.laptops, ...productsData.smartphones, ...productsData.accessories, ...productsData.components];
+	const [allProducts, setAllProducts] = useState([...productsData.computers, ...productsData.laptops, ...productsData.smartphones, ...productsData.accessories, ...productsData.components]);
 
 	//! State to control the sidebar on the product list page
 	const [sidebarActive, setSidebarActive] = useState(false);
@@ -72,7 +72,7 @@ export const StateProvider = ({ children }) => {
 	const [wishlistItems, setWishlistItems] = useState([]);
 
 	//! State to control the searchbar
-	const [searchValue, setSearchValue] = useState("");
+	const [searchValue, setSearchValue] = useState('');
 
 	//? -------------------FUNCTIONS---------------------
 	//* Function to control the mobile menu
@@ -147,6 +147,7 @@ export const StateProvider = ({ children }) => {
 		toggleMenu,
 		toggleSidebar,
 		setCurrentPage,
+		setAllProducts,
 		setFilters,
 		setSortedProducts,
 		setNoProductsFound,

@@ -12,6 +12,9 @@ import { TiHeartOutline } from 'react-icons/ti';
 import ProductSpecs from '../../components/product-details/ProductSpecs';
 import CartQuantitySelector from '../../components/shop-cart/CartQuantitySelector';
 
+// import images
+import placeholderImage from '../../assets/placeholder.jpg';
+
 const ProductDetail = () => {
 	const { allProducts, addToCart, addToWishlist } = useStates();
 	const { id } = useParams();
@@ -39,7 +42,13 @@ const ProductDetail = () => {
 					<div className='productDetails__wrapper'>
 						<div className='productDetails__top'>
 							<div className='productDetails__image'>
-								<img src={product.image} alt={product.name} />
+								<img
+									src={product.image}
+									onError={e => {
+										e.target.src = placeholderImage;
+									}}
+									alt={product.name}
+								/>
 							</div>
 
 							<div className='productDetails__info'>

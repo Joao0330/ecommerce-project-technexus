@@ -4,6 +4,9 @@ import { useStates } from '../../context/useStates';
 // import components
 import CartQuantitySelector from '../shop-cart/CartQuantitySelector';
 
+// import images
+import placeholderImage from '../../assets/placeholder.jpg';
+
 const ShopCartTableItem = ({ item }) => {
 	const { setCartItems } = useStates();
 	const { id, image, name, price, quantity } = item;
@@ -32,7 +35,14 @@ const ShopCartTableItem = ({ item }) => {
 				</button>
 			</td>
 			<td>
-				<img src={image} alt={name} className='img-fluid' />
+				<img
+					src={image}
+					onError={e => {
+						e.target.src = placeholderImage;
+					}}
+					alt={name}
+					className='img-fluid'
+				/>
 			</td>
 			<td>{name}</td>
 			<td>

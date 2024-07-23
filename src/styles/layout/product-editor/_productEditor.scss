@@ -1,0 +1,173 @@
+@use '../../abstracts/' as *;
+
+.productEditor {
+	font-size: 1rem;
+	background: var(--bg-color2);
+	padding: 7rem 0 5rem;
+	min-height: 100vh;
+
+	&__wrapper {
+		display: flex;
+		flex-direction: column;
+		gap: 5rem;
+	}
+
+	&__top {
+		padding: 2rem 0;
+		width: 100%;
+		border-bottom: 1px solid var(--gray-light);
+
+		h2 {
+			color: var(--text-color2);
+			font-weight: 600;
+			font-size: 2em;
+			letter-spacing: 1.5px;
+			margin-bottom: 1rem;
+		}
+
+		p {
+			color: var(--text-color);
+		}
+	}
+
+	&__products {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		&-title {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			width: 100%;
+			margin-bottom: 1rem;
+
+			h3 {
+				color: var(--text-color2);
+				font-weight: 600;
+				font-size: 1.5em;
+				letter-spacing: 1.5px;
+			}
+
+			a {
+				display: flex;
+				align-items: center;
+				gap: 0.5rem;
+
+				svg {
+					font-size: 1.3em;
+				}
+			}
+		}
+
+		h4 {
+			color: #d37474;
+			font-weight: 600;
+			font-size: 1.5em;
+			letter-spacing: 1.5px;
+			margin-bottom: 1rem;
+		}
+	}
+
+	&__table {
+		display: grid;
+		background-color: var(--bg-color3);
+		border-collapse: collapse;
+		border-radius: 10px;
+		width: 100%;
+		margin: 2rem 0;
+		overflow: hidden;
+
+		thead {
+			background-color: var(--bg-color1);
+
+			@include breakpointDesktop(991px) {
+				display: none;
+			}
+		}
+
+		tr {
+			display: grid;
+			border-bottom: 1px solid var(--gray);
+			padding: 0 1.5rem;
+			grid-template-columns: 1fr 1fr 1fr 2fr 1fr 1fr;
+			grid-template-rows: auto;
+
+			@include breakpointDesktop(991px) {
+				grid-template-columns: 1fr;
+				grid-template-rows: auto auto;
+			}
+
+			th {
+				padding: 1rem;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				font-weight: 500;
+				color: var(--text-color2);
+				text-transform: capitalize;
+			}
+
+			td {
+				padding: 1rem;
+			}
+		}
+
+		tbody {
+			color: var(--text-color);
+			tr {
+				transition: 0.1s linear;
+				transition-property: color, background;
+
+				&:last-child {
+					border-bottom: none;
+				}
+
+				&:hover {
+					color: #ffffff;
+					background-color: var(--gray);
+
+					@include breakpointDesktop(991px) {
+						color: var(--text-color);
+						background-color: var(--bg-color3);
+					}
+				}
+
+				td {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					word-break: break-word;
+					white-space: normal;
+					gap: 1rem;
+					line-height: 1.5;
+					text-align: center;
+
+					@include breakpointDesktop(991px) {
+						&::before {
+							content: attr(data-title) ' :';
+							color: var(--text-color2);
+						}
+					}
+
+					img {
+						width: 100%;
+						max-width: 3rem;
+						height: auto;
+					}
+
+					a {
+						color: var(--text-color2);
+						font-size: 1.5em;
+						display: flex;
+					}
+				}
+
+				td:last-child {
+					flex-direction: row;
+				}
+			}
+		}
+	}
+}
