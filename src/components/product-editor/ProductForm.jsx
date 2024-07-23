@@ -50,7 +50,14 @@ const ProductForm = ({ action, name, onSubmit, onNameChange, handleImageChange, 
 									<button className='btn-type3' type='button' onClick={onSubmit}>
 										Delete
 									</button>
-									<button className='btn-type4' type='button' onClick={() => navigate('/product-editor')}>
+									<button
+										className='btn-type4'
+										type='button'
+										onClick={() => {
+											navigate('/product-editor');
+											window.scrollTo(0, 0);
+										}}
+									>
 										Cancel
 									</button>
 								</>
@@ -59,7 +66,14 @@ const ProductForm = ({ action, name, onSubmit, onNameChange, handleImageChange, 
 									<button className='btn-type3' type='submit'>
 										{action === 'update' ? 'Update' : 'Submit'}
 									</button>
-									<button className='btn-type4' type='button' onClick={() => navigate('/product-editor')}>
+									<button
+										className='btn-type4'
+										type='button'
+										onClick={() => {
+											navigate('/product-editor');
+											window.scrollTo(0, 0);
+										}}
+									>
 										Cancel
 									</button>
 								</>

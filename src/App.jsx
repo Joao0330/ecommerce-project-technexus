@@ -17,6 +17,7 @@ import ShopCart from './pages/shop-cart/ShopCart.jsx';
 import Wishlist from './pages/wishlist/Wishlist.jsx';
 import ProductEditor from './pages/product-editor/ProductEditor.jsx';
 import CreateProduct from './components/product-editor/CreateProduct.jsx';
+import DeleteProduct from './components/product-editor/DeleteProduct.jsx';
 import NoProductFound from './components/search/NoProductFound.jsx';
 
 const App = () => {
@@ -41,6 +42,7 @@ const App = () => {
 						<Route path='/wishlist' element={<Wishlist />} />
 						<Route path='/product-editor' element={<ProductEditor />} />
 						<Route path='/product-editor/create-product' element={<CreateProduct />} />
+						<Route path='/product-editor/delete-product/:id' element={<DeleteProduct />} />
 						<Route path='/product-not-found' element={<NoProductFound />} />
 					</Routes>
 				</main>

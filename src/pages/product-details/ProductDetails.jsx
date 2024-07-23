@@ -18,7 +18,7 @@ import placeholderImage from '../../assets/placeholder.jpg';
 const ProductDetail = () => {
 	const { allProducts, addToCart, addToWishlist } = useStates();
 	const { id } = useParams();
-	const product = allProducts.find(product => product.id === Number(id));
+	const product = allProducts.find(product => product.id === id);
 
 	// State for the cart quantity
 	const [quantity, setQuantity] = useState(1);

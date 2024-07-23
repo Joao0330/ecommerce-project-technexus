@@ -29,25 +29,26 @@ const CreateProduct = () => {
 		setImage(imageUrl);
 
 		/* return () => {
-			URL.revokeObjectURL(imageUrl);
-		}; */
+            URL.revokeObjectURL(imageUrl);
+        }; */
 	};
 
 	// Function to handle the product creation
 	const handleSubmit = async e => {
 		e.preventDefault();
 
-		// Find the maximum ID within all products
+		// Find the maximum ID within all products and convert to number for comparison
 		let maxId = 0;
 		allProducts.forEach(product => {
-			if (product.id > maxId) {
-				maxId = product.id;
+			const productId = parseInt(product.id, 10); // Convert string ID to number
+			if (productId > maxId) {
+				maxId = productId;
 			}
 		});
 
 		// Add the new product with a unique ID
 		const newProduct = {
-			id: maxId + 1,
+			id: (maxId + 1).toString(), // Convert the new ID back to string
 			name,
 			image,
 			price: parseFloat(price),

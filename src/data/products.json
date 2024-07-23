@@ -1,846 +1,813 @@
 {
-	"computers": [
-		{
-			"id": 1,
-			"name": "Acer Veriton X2710G Intel I7-13700",
-			"price": 879.99,
-			"description": "Acer Veriton desktop computers offer high reliability. Enjoy a desktop with enterprise-grade performance, security and manageability",
-			"category": "computers",
-			"image": "/src/assets/products/computers/acer-veriton-x2710g.jpg",
-
-			"specs": {
-				"cpu": "Intel Core i7-13700",
-				"cpu-speed": "5.2 GHz",
-				"gpu": "Intel UHD Graphics 770",
-				"ram": "16 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Pro 64 bits"
-			}
-		},
-		{
-			"id": 2,
-			"name": "HP Desktop M01-F3006NP I5-13400",
-			"price": 529.9,
-			"description": "A stylish desktop PC that combines design and technology from a brand you can trust.",
-			"category": "computers",
-			"image": "/src/assets/products/computers/hp-desktop-m01-f3006np-i5-13400.jpg",
-
-			"specs": {
-				"cpu": "Intel Core i5-13400",
-				"cpu-speed": "2.5 GHz - 4.6 GHz",
-				"gpu": "Intel UHD Graphics 730",
-				"ram": "8 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		},
-		{
-			"id": 3,
-			"name": "Lenovo Legion T5 26IAB7-430 Intel I5-12400F",
-			"price": 1247.9,
-			"description": "Enjoy streaming, creating and competing at the highest level: 12th generation Intel® Core™ processors bring huge improvements to your gaming. Enjoy maximum performance with the latest NVIDIA ® GeForce RTX™ 30 Series GPUs for Gamers and Creators.",
-			"category": "computers",
-			"image": "/src/assets/products/computers/lenovo-legion-t5-26iab7-430-intel-i5-12400f.jpg",
-
-			"specs": {
-				"cpu": "Intel Core i5-12400F Hexa-Core",
-				"cpu-speed": "2.5 GHz - 4.4 GHz",
-				"gpu": "NVIDIA GeForce RTX 3060 12GB GDDR6",
-				"ram": "8 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		},
-		{
-			"id": 4,
-			"name": "Lenovo Ideacentre 3 07ADA5-457",
-			"price": 314.9,
-			"description": "The IdeaCentre 3 desktop is a compact computer, designed with an elegant Mineral Gray chassis that fits perfectly into any space in your home.",
-			"category": "computers",
-			"image": "/src/assets/products/computers/lenovo-ideacentre-3-07ada5-457.jpg",
-
-			"specs": {
-				"cpu": "AMD Athlon Silver 3050U",
-				"cpu-speed": "2.3 GHz - 3.2 GHz",
-				"gpu": "AMD Radeon Graphics",
-				"ram": "4 GB",
-				"storage": "128 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		},
-		{
-			"id": 5,
-			"name": "Asus ExpertCenter Advanced D700SD_CZ-52EHDPP1 i5-12400",
-			"price": 839.9,
-			"description": "The Asus ExpertCenter D7 SFF delivers high performance, enterprise-grade security and manageability in an ultra-compact, sleek package so business users can have a flexible, organized workspace.",
-			"category": "computers",
-			"image": "/src/assets/products/computers/asus-expertcenter-advanced-d700sdcz-52ehdpp1-i5-12400.jpg",
-
-			"specs": {
-				"cpu": "intel Core I5-12400 6 Cores",
-				"cpu-speed": "2.5 GHz - 4.4 GHz",
-				"gpu": "Intel UHD Graphics 730",
-				"ram": "16 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Pro 64 bits"
-			}
-		},
-		{
-			"id": 6,
-			"name": "Dell Optiplex 7010 SFF Core i5 12500",
-			"price": 604.9,
-			"description": "The Dell Optiplex 7010 SFF Core i5 12500 is a powerful desktop computer designed for productivity and efficiency. It features a sleek and compact design, making it perfect for small spaces.",
-			"category": "computers",
-			"image": "/src/assets/products/computers/dell-optiplex-7010.jpg",
-
-			"specs": {
-				"cpu": "intel Core I5 12500 6 Cores",
-				"cpu-speed": "4.6 GHz",
-				"gpu": "Intel UHD Graphics 770",
-				"ram": "8 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Pro 64 bits"
-			}
-		},
-		{
-			"id": 7,
-			"name": "HP Desktop M01-F3000np Ryzen 5 5600G",
-			"price": 555.9,
-			"description": "A stylish desktop PC that combines design and technology from a brand you can trust.",
-			"category": "computers",
-			"image": "/src/assets/products/computers/hp-desktop-m01-f3000np-ryzen-5-5600g.jpg",
-
-			"specs": {
-				"cpu": "AMD Ryzen 5 5600G",
-				"cpu-speed": "4.4 GHz",
-				"gpu": "AMD Radeon Graphics",
-				"ram": "8 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		},
-		{
-			"id": 8,
-			"name": "Blackview Mini MP200 Intel Core i9-11900H",
-			"price": 439.9,
-			"description": "The Blackview MP200 Mini PC delivers compact power for everyday tasks and entertainment, with reliable performance and energy efficiency.",
-			"category": "computers",
-			"image": "/src/assets/products/computers/blackview-mini-mp200-intel-core-i9-11900h.jpg",
-
-			"specs": {
-				"cpu": "intel Core I9 11900H 8 Cores",
-				"cpu-speed": "4.9 GHz",
-				"gpu": "Intel UHD Graphics",
-				"ram": "16 GB",
-				"storage": "1 TB SSD",
-				"os": "Windows 11 Pro 64 bits"
-			}
-		},
-		{
-			"id": 9,
-			"name": "ASUS ROG G22CH Intel Core i7-14700F",
-			"price": 1720.99,
-			"description": "The ASUS ROG G22CH is a powerful gaming desktop PC that is designed for gamers who demand high performance. It features an Intel i7-14700F processor, 32GB of RAM, and a 1TB SSD for ultra-fast load times and system response.",
-			"category": "computers",
-			"image": "/src/assets/products/computers/asus-rog-g22ch-intel-core-i7-14700f.jpg",
-
-			"specs": {
-				"cpu": "intel Core I7 14700F",
-				"cpu-speed": "3.5 GHz",
-				"gpu": "NVIDIA GeForce RTX 4060",
-				"ram": "32 GB",
-				"storage": "1 TB SSD",
-				"os": "Windows 11 Pro 64 bits"
-			}
-		},
-		{
-			"id": 10,
-			"name": "Asus Essential S501ME Intel i5-13400",
-			"price": 661.9,
-			"description": "The Asus S501ME is a powerful, stylish and versatile home desktop PC ideal for a wide range of uses, from everyday content creation and working from home to online learning and casual gaming.",
-			"category": "computers",
-			"image": "/src/assets/products/computers/asus-essential-s501me-intel-i5-13400.jpg",
-
-			"specs": {
-				"cpu": "Intel® Core i5-13400",
-				"cpu-speed": "2.5 GHz - 4.6 GHz",
-				"gpu": "Intel UHD Graphics 730",
-				"ram": "8 GB",
-				"storage": "250 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		}
-	],
-
-	"laptops": [
-		{
-			"id": 11,
-			"name": "HP Pavilion x360 14-ek1012np Intel i5-1335U",
-			"price": 873.9,
-			"description": "Exceptional performance to get even more out of your PC. Much more than performance. 13th Gen Intel Core processors enhance computing that allows you to multitask extremely efficiently.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/hp-pavilion-x360.jpg",
-
-			"specs": {
-				"cpu": "Intel Core i5-1335U",
-				"cpu-speed": "3.4 GHz",
-				"gpu": "Intel Iris Xe Graphics",
-				"ram": "16 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		},
-		{
-			"id": 12,
-			"name": "Acer Aspire 3 15 A315-44P Ryzen 7 5700U",
-			"price": 572.9,
-			"description": "Choose the action-ready Aspire 3 with the latest AMD Ryzen processors, designed for multitasking and productivity.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/acer-aspire-3-15-a315-44p-ryzen-7-5700u.jpg",
-
-			"specs": {
-				"cpu": "AMD Ryzen 7 5700U",
-				"cpu-speed": "1.8 GHz - 4.3 GHz",
-				"gpu": "AMD Radeon Graphics",
-				"ram": "8 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		},
-		{
-			"id": 13,
-			"name": "Lenovo IdeaPad 3 14ITL6-512 Intel i5-1155G7",
-			"price": 698.9,
-			"description": "The IdeaPad 3 combines the performance of 11th generation Intel® Core™ processors with smart features that reduce eye strain and distractions.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/lenovo-ideapad-3-14itl6-512-intel-i5-1155g7.jpg",
-
-			"specs": {
-				"cpu": "Intel Core i5-1155G7 Quad-Core",
-				"cpu-speed": "2.5 GHz - 4.5 GHz",
-				"gpu": "Intel iris Xe Graphicss",
-				"ram": "8 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		},
-		{
-			"id": 14,
-			"name": "Acer TravelMate P6 TMP614-53 Intel I7-1355U",
-			"price": 1798.9,
-			"description": "This high-quality business laptop lets you work easily from anywhere. Elevate your work experience with the brilliant graphics offered by the OLED laptop.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/acer-travelmate-p6-tmp614-53-intel-i7-1355u.jpg",
-
-			"specs": {
-				"cpu": "Intel Core i7-1355U",
-				"cpu-speed": "3.7 GHz - 5.0 GHz",
-				"gpu": "Intel iris Xe Graphicss",
-				"ram": "32 GB",
-				"storage": "1 TB SSD",
-				"os": "Windows 11 Pro 64 bits"
-			}
-		},
-		{
-			"id": 15,
-			"name": "MSI Vector 16 HX A13VHG-465XPT Intel Core i9-13980HX",
-			"price": 2198.99,
-			"description": "Introducing the power of gaming performance: these powerful Intel Core processors are designed to take your gaming experience to the next level.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/msi-16-vector-16-hx-a13vhg.jpg",
-
-			"specs": {
-				"cpu": "Intel Core i9-13980HX",
-				"cpu-speed": "5.6 GHz",
-				"gpu": "NVIDIA GeForce RTX 4080",
-				"ram": "32 GB",
-				"storage": "1 TB SSD",
-				"os": "Windows 11 Pro 64 bits"
-			}
-		},
-		{
-			"id": 16,
-			"name": "Apple MacBook Air 2024 M3 8-Core",
-			"price": 1759.99,
-			"description": "MacBook Air. The most popular laptop in the world, now with the M3 processor, is a marvel of work and play capabilities. The MacBook Air is super portable and has up to 18 hours of battery life, so you can do what you want, where you want, at breakneck speeds.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/apple-macbook-air-13-2024-m3.jpg",
-
-			"specs": {
-				"cpu": "Apple M3 8-core",
-				"cpu-speed": "4.06 GHz",
-				"gpu": "10 core GPU",
-				"ram": "16 GB",
-				"storage": "512 GB SSD",
-				"os": "macOS Sonoma"
-			}
-		},
-		{
-			"id": 17,
-			"name": "MSI Modern 15 B13M-445XPT Intel i5-1335U",
-			"price": 692.9,
-			"description": "the MSI Modern 15 B13M is everything you need to pursue your passions at work and play. Let your performance will help you to do any for your daily task.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/msi-modern-15-b13m-intel-i5-1335u.jpg",
-
-			"specs": {
-				"cpu": "Intel Core i5-1335U",
-				"cpu-speed": "3.4 GHz - 4.6 GHz",
-				"gpu": "Intel Iris Xe Graphics",
-				"ram": "16 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		},
-		{
-			"id": 18,
-			"name": "HP EliteBook 655 G10 Ryzen R5-7530U",
-			"price": 878.9,
-			"description": "Tackle your work with the latest AMD processor efficiently and securely.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/hp-elitebook-655-g10-ryzen-r5-7530u.jpg",
-
-			"specs": {
-				"cpu": "AMD Ryzen 5 7530U Hexa-Core",
-				"cpu-speed": "2.0 GHz - 4.2 GHz",
-				"gpu": "AMD Radeon Graphics",
-				"ram": "8 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Pro 64 bits"
-			}
-		},
-		{
-			"id": 19,
-			"name": "Asus Vivobook Go E1504GA Intel i3-N305",
-			"price": 419.9,
-			"description": "It's light, it's compact, it's the Asus Vivobook Go 15 OLED, and it's designed to make you productive and keep you entertained wherever you go. The NanoEdge thin-bezel design offers more screen real estate for multitasking and immersive viewing.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/asus-vivobook-go-e1504ga-intel-i3-n305.jpg",
-
-			"specs": {
-				"cpu": "Intel Core i3-N305",
-				"cpu-speed": "1.8 GHz - 4.9 GHz",
-				"gpu": "Intel UHD Graphics",
-				"ram": "8 GB",
-				"storage": "512 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		},
-		{
-			"id": 20,
-			"name": "Lenovo IdeaPad Flex 5 14ALC7-999 Ryzen 3 5300U",
-			"price": 648.9,
-			"description": "The IdeaPad Flex 5 has narrow bezels on four sides to give it an elegant, contemporary look and offers more space to enjoy the Full HD screen.",
-			"category": "laptops",
-			"image": "/src/assets/products/laptops/lenovo-ideapad-flex-5-14alc7-999-ryzen-3-5300u.jpg",
-
-			"specs": {
-				"cpu": "AMD Ryzen 3 5300U Quad-Core",
-				"cpu-speed": "2.6 GHz - 4.8 GHz",
-				"gpu": "AMD Radeon Graphics",
-				"ram": "8 GB",
-				"storage": "128 GB SSD",
-				"os": "Windows 11 Home 64 bits"
-			}
-		}
-	],
-
-	"smartphones": [
-		{
-			"id": 21,
-			"name": "Apple iPhone 15 Pro Max 6.7'' 256GB Natural Titanium",
-			"price": 1235.01,
-			"description": "iPhone 15 Pro Max. Forged in titanium and featuring the groundbreaking A17 Pro chip, a customizable Action button, and the most powerful iPhone camera system ever. Get incredible framing flexibility with 7 pro lenses. Capture super high-resolution photos with more color and detail using the 48MP Main camera.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/iphone15-pro-max.jpg",
-
-			"specs": {
-				"screen-size": "6.7''",
-				"screen-resolution": "2796 x 1290",
-				"camera": "48 MP",
-				"os": "Apple iOS 17",
-				"cpu": "Apple A17 Pro",
-				"ram": "8 GB",
-				"storage": "256 GB"
-			}
-		},
-		{
-			"id": 22,
-			"name": "Samsung Galaxy A55 5G 6.6'' Dual SIM 8GB/256GB Navy",
-			"price": 365.5,
-			"description": "The Galaxy A55 5G features an improved, iconic design, engineered with Gorilla Victus+ to make it more resistant to damage, and a metal frame that provides an easy, intuitive grip. Furthermore, this device has three rear cameras.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/samsung-galaxy-a55-5g.jpg",
-
-			"specs": {
-				"screen-size": "6.6''",
-				"screen-resolution": "2340 x 1080",
-				"camera": "50 MP",
-				"os": "Android 14",
-				"cpu": "Samsung Exynos 8 cores",
-				"ram": "8 GB",
-				"storage": "256 GB"
-			}
-		},
-		{
-			"id": 23,
-			"name": "Xiaomi Redmi Note 13 Pro+ 5G 6.67'' Dual SIM 12GB/512GB Midnight Black",
-			"price": 389.0,
-			"description": "The Redmi Note 13 Pro+ is not just a smartphone, it is a true design revolution that will not go unnoticed. Its finish, which is only found on premium devices, will attract attention. With a curved screen and thin metal bezels, this device feels like a jewel in your hands, and its style is undeniable.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/xiaomi-redmi-note-13-pro-plus.jpg",
-
-			"specs": {
-				"screen-size": "6.67''",
-				"screen-resolution": "2712 x 1220",
-				"camera": "200 MP",
-				"os": "MIUI 14 - Android 13",
-				"cpu": "MediaTek Dimensity 7200 Ultra 8 cores",
-				"ram": "12 GB",
-				"storage": "512 GB"
-			}
-		},
-		{
-			"id": 24,
-			"name": "Samsung Galaxy S24 Ultra 5G 6.8'' Dual SIM 12GB/512GB Titanium Grey",
-			"price": 1174.9,
-			"description": "The Galaxy S24 Ultra family presents itself with an exceptional design, evolving with even smaller bezels and advanced materials, maintaining an unwavering commitment to sustainability. This ultra model redefines the standards of elegance and innovation.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/samsung-galaxy-s24-ultra.jpg",
-
-			"specs": {
-				"screen-size": "6.8''",
-				"screen-resolution": "3120 x 1440",
-				"camera": "200 MP",
-				"os": "Android 14",
-				"cpu": "Qualcomm Snapdragon 8 Gen",
-				"ram": "12 GB",
-				"storage": "512 GB"
-			}
-		},
-		{
-			"id": 25,
-			"name": "OnePlus 12R 5G 6.78'' Dual SIM 16GB/256GB Iron Grey",
-			"price": 639.0,
-			"description": "The OnePlus 12R features a bold design with a luxurious camera module and anti-fingerprint matte aluminum frame. With a perfect symphony of elegance and next-level engineering, the experience is perfected.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/oneplus-12r-5g-6-78.jpg",
-
-			"specs": {
-				"screen-size": "6.78''",
-				"screen-resolution": "2780 x 1264",
-				"camera": "50 MP",
-				"os": "Android 14",
-				"cpu": "Qualcomm Snapdragon 8 Gen 2 8 cores",
-				"ram": "16 GB",
-				"storage": "256 GB"
-			}
-		},
-		{
-			"id": 26,
-			"name": "Xiaomi Redmi 13C 6.74'' Dual SIM 4GB/128GB Navy Blue",
-			"price": 107.7,
-			"description": "With its large 6.74'' screen, the Redmi 13C provides an immersive and fluid visual experience that will leave you without looking back.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/xiaomi-redmi-13c.jpg",
-
-			"specs": {
-				"screen-size": "6.74''",
-				"screen-resolution": "1600 x 720",
-				"camera": "50 MP",
-				"os": "Android 13",
-				"cpu": "MediaTek Helio G85",
-				"ram": "4 GB",
-				"storage": "128 GB"
-			}
-		},
-		{
-			"id": 27,
-			"name": "Blackview BV9300 Pro 6.7'' Dual Sim 12GB/256GB Black",
-			"price": 255.72,
-			"description": "The Blackview BV9300 Pro, is a robust smartphone that stands out for its resistance, performance and its impressive set of features, all at a very affordable price. Designed to meet the needs of the average user, this smartphone is ready to exceed all expectations.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/blackview-bv9300-pro.jpg",
-
-			"specs": {
-				"screen-size": "6.7''",
-				"screen-resolution": "2388 x 1080",
-				"camera": "64 MP",
-				"os": "Android 12",
-				"cpu": "MediaTek Helio G99 8 cores",
-				"ram": "12 GB",
-				"storage": "256 GB"
-			}
-		},
-		{
-			"id": 28,
-			"name": "Motorola Moto G73 6.5'' Dual SIM 8GB/256GB Midnight Blue",
-			"price": 171.0,
-			"description": "Moto G73 5G equipped with the powerful MediaTek Dimensity 930 processor brings up to 30% faster performance. Easily switch between your apps with 8GB of memory and enjoy smooth gaming, lag-free videos and better camera performance. You can also download at ultra-fast 5G speeds without worrying about battery life.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/motorola-moto-g73.jpg",
-
-			"specs": {
-				"screen-size": "6.5''",
-				"screen-resolution": "2400 x 1080",
-				"camera": "50 MP",
-				"os": "Android 13",
-				"cpu": "MediaTek Dimensity 930 8 cores",
-				"ram": "8 GB",
-				"storage": "256 GB"
-			}
-		},
-		{
-			"id": 29,
-			"name": "Apple iPhone 14 6.1'' 256GB Starlight",
-			"price": 785.0,
-			"description": "The iPhone 14 incorporates the most impressive camera system ever on an Apple smartphone. It also has the greatest autonomy ever, a processor that is increasingly adapted to you, very important innovations in terms of security, and a sensational Super Retina XDR screen, which allows you to enjoy your favorite content in the best possible quality.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/apple-iphone-14.jpg",
-
-			"specs": {
-				"screen-size": "6.1''",
-				"screen-resolution": "2532 x 1170",
-				"camera": "12 MP",
-				"os": "Apple iOS 16",
-				"cpu": "Apple A15 Bionic",
-				"ram": "6 GB",
-				"storage": "256 GB"
-			}
-		},
-		{
-			"id": 30,
-			"name": "Samsung Galaxy A34 5G 6.6'' Dual SIM 8GB/256GB Lima",
-			"price": 785.0,
-			"description": "The Galaxy A34 5G was designed with the environment in mind with premium finishes for a better user experience and comfort.",
-			"category": "smartphones",
-			"image": "/src/assets/products/smartphones/samsung-galaxy-a34.jpg",
-
-			"specs": {
-				"screen-size": "6.6''",
-				"screen-resolution": "2340 x 1080",
-				"camera": "48 MP",
-				"os": "Android 13",
-				"cpu": "Mediatek Dimensity 1080 8 cores",
-				"ram": "8 GB",
-				"storage": "256 GB"
-			}
-		}
-	],
-
-	"accessories": [
-		{
-			"id": 31,
-			"name": "HyperX Pulsefire Raid",
-			"price": 82.9,
-			"description": "The HyperX Pulsefire Raid™ is an ergonomic mouse that gives you greater control right in your hand.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/hyperx-pulsefire.jpg",
-
-			"specs": {
-				"sensor": "Optical - Pixart 3389",
-				"dpi": "16000",
-				"conectivity": "USB 2.0"
-			}
-		},
-		{
-			"id": 32,
-			"name": "MSI 22 (21,45'')Pro MP223 FHD",
-			"price": 92.9,
-			"description": "The MSI Pro MP223 22'' (21.45'') monitor is designed to simplify your work. Less Blue Light technology effectively reduces blue light that can cause serious long-term damage to your eyes.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/msi-22-2145-pro.jpg",
-
-			"specs": {
-				"screen-size": "21.4''",
-				"screen-resolution": "1920 x 1080",
-				"refresh-rate": "100Hz",
-				"display-type": "LED",
-				"conectivity": "1x HDMI, 1x VGA"
-			}
-		},
-		{
-			"id": 33,
-			"name": "Asus TUF Gaming K3 Blue",
-			"price": 108.9,
-			"description": "The ASUS TUF Gaming K3 is an RGB mechanical keyboard that features durable switches for responsive, reliable performance. Its customizable RGB lighting offers unlimited customization options, while the removable magnetic wrist rest gives you extra support and comfort for gaming marathons.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/asus-tuf-k3.jpg",
-
-			"specs": {
-				"conectivity": "USB Type A",
-				"keyboard-type": "Mechanical"
-			}
-		},
-		{
-			"id": 34,
-			"name": "Lenovo 27'' L27I-40 IPS FHD",
-			"price": 152.9,
-			"description": "The Lenovo L27i-40 monitor is designed to excel at work and play. Its large 27-inch screen allows you to do much more with relative ease.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/lenovo-27-l27i-40-ips-fhd.jpg",
-
-			"specs": {
-				"screen-size": "27''",
-				"screen-resolution": "1920 x 1080",
-				"refresh-rate": "100Hz",
-				"display-type": "IPS",
-				"conectivity": "2x HDMI, 1x VGA"
-			}
-		},
-		{
-			"id": 35,
-			"name": "Sony MDR-RF811RK Black",
-			"price": 54.9,
-			"description": "Sony MDR-RF811RK wireless headphones with a range of up to 100 meters.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/sony-auscultadores-mdr-rf811rk.jpg",
-
-			"specs": {
-				"conectivity": "Wireless",
-				"range": "Up to 100 meters",
-				"frequency": "20 - 20000Hz"
-			}
-		},
-		{
-			"id": 36,
-			"name": "HP 125 Wired Keyboard",
-			"price": 19.9,
-			"description": "HP 125 Wired Keyboard, is a wired keyboard with USB interface.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/teclado-hp-125-wired-keyboard.jpg",
-
-			"specs": {
-				"conectivity": "USB",
-				"keyboard-type": "Membrane"
-			}
-		},
-		{
-			"id": 37,
-			"name": "Hama MW-110 Wireless Black",
-			"price": 8.9,
-			"description": "Mouse with special optical sensor for laptops, with 3 buttons + scroll for numerous functions.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/hama-mw-110-wireless-black.jpg",
-
-			"specs": {
-				"sensor": "Optical",
-				"dpi": "1000",
-				"conectivity": "Wireless",
-				"range": "Up to 8 meters"
-			}
-		},
-		{
-			"id": 38,
-			"name": "HP Wireless Premium",
-			"price": 121.9,
-			"description": "Increase your productivity and work comfortably at your desk or in a room with the sleek, redesigned HP Premium Wireless Keyboard with anodized aluminum edge.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/teclado-hp-wireless-premium.jpg",
-
-			"specs": {
-				"conectivity": "RF Wireless",
-				"range": "Up to 10 meters",
-				"keyboard-type": "Membrane"
-			}
-		},
-		{
-			"id": 39,
-			"name": "LG 27'' 27UP85NP-W IPS Ultra HD 4K",
-			"price": 459.9,
-			"description": "The LG UHD 4K HDR monitor can virtually transform standard content into HDR-quality video right on the screen. Helps improve tone mapping and luminance of SDR content for an HDR-like experience.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/lg-27-27up85np-w-ips-ultra-hd-4k.jpg",
-
-			"specs": {
-				"screen-size": "27''",
-				"screen-resolution": "3840 x 2160 (4k UHD)",
-				"refresh-rate": "60Hz",
-				"display-type": "IPS",
-				"conectivity": "2x HDMI, 1x DisplayPort"
-			}
-		},
-		{
-			"id": 40,
-			"name": "Headset Cooler Master MasterPulse MH752",
-			"price": 117.9,
-			"description": "MasterPulse MH752 deliver quality sound with unprecedented comfort, ideal for your gaming experience.",
-			"category": "accessories",
-			"image": "/src/assets/products/accessories/headset-cooler-master-masterpulse-mh752.jpg",
-
-			"specs": {
-				"conectivity": "USB Type A",
-				"frequency": "20 - 20000Hz"
-			}
-		}
-	],
-
-	"components": [
-		{
-			"id": 41,
-			"name": "Asus PRIME Z790M-PLUS",
-			"price": 243.9,
-			"description": "Asus Prime series motherboards are expertly designed to unleash the full potential of 13th Gen Intel Core processors. With a robust power design, comprehensive cooling solutions and intelligent tuning options.",
-			"category": "components",
-			"image": "/src/assets/products/components/asus-prime-z790m.jpg",
-
-			"specs": {
-				"chipset": "Intel Z790",
-				"cpu-support": ["Intel Celeron", "Intel Core i3", "Intel Core i5", "Intel Core i7", "Intel Core i9", "Intel Pentium Gold"],
-				"conectivity": ["1x DisplayPort", "1x HDMI", "1x Intel 1Gb Ethernet port", "1 x USB 3.2 Gen2", "1x USB 3.2 Gen 2x2", "2x USB 2.0 ports", "3x Audio jacks", "4x USB 3.2 Gen 1"],
-				"os-supported": ["Windows 10", "Windows 11"]
-			}
-		},
-		{
-			"id": 42,
-			"name": "Intel Core i9-14900KF 24-Cores 2.4GHz",
-			"price": 624.9,
-			"description": "New 14th Gen Intel Core processors help make it all possible. Get the performance you need, where you need it, whether you're a gamer, content creator or everyday user.",
-			"category": "components",
-			"image": "/src/assets/products/components/cpu-core-i9-14900.jpg",
-
-			"specs": {
-				"cache": "36 MB Intel Smart Cache",
-				"internal-gpu": "Intel UHD Graphics 770",
-				"threads": "32",
-				"cores": "24",
-				"cpu-frequency": "2.4 GHz",
-				"cpu-frequency-turbo": "6.0 GHz"
-			}
-		},
-		{
-			"id": 43,
-			"name": "Kingston 32GB DDR5 5600MT/s",
-			"price": 118.9,
-			"description": "Kingston launches new generation DDR5 memory module.",
-			"category": "components",
-			"image": "/src/assets/products/components/kingston-32gb-ddr5-5600mts.jpg",
-
-			"specs": {
-				"ram": "32 GB",
-				"memory-type": "DDR5",
-				"clock-speed": "5600 MHz"
-			}
-		},
-		{
-			"id": 44,
-			"name": "Asus Dual-RTX4060-O8G-EVO",
-			"price": 359.9,
-			"description": "Asus Dual is the perfect choice for gamers who want serious graphics performance in a compact build.",
-			"category": "components",
-			"image": "/src/assets/products/components/asus-dual-rtx4060-o8g-evo.jpg",
-
-			"specs": {
-				"vram": "8 GB",
-				"memory-type": "GDDR6",
-				"conectivity": "1x HDMI, 3x DisplayPort",
-				"interface": "PCI Express 4.0",
-				"clock-speed": "2535 MHz",
-				"opengl": "OpenGL 4.6",
-				"directx": "DirectX 12 Ultimate"
-			}
-		},
-		{
-			"id": 45,
-			"name": "Water Cooler CPU Asus ROG Ryuo III 240 ARGB",
-			"price": 287.9,
-			"description": "The ROG Ryuo III series is 400mm thick and compatible with a wide range of Intel and AMD motherboard platforms, giving you broad processor and build flexibility.",
-			"category": "components",
-			"image": "/src/assets/products/components/water-cooler-cpu-asus-rog-ryuo-iii-240-argb.jpg",
-
-			"specs": {
-				"cooler-type": "Water Cooler",
-				"fans": "2 Fans x 120mm"
-			}
-		},
-		{
-			"id": 46,
-			"name": "AMD Ryzen 7 8700G 8 Core 4.2GHz",
-			"price": 409.9,
-			"description": "With the AMD Ryzen™ 8000G Series processor, start gaming in high definition right away. AMD Ryzen™ 7 8700G with AMD Ryzen AI is the best all-in-one desktop processor with AMD Radeon™ 780M graphics capabilities.",
-			"category": "components",
-			"image": "/src/assets/products/components/amd-ryzen-7-8700g-8-core-42ghz.jpg",
-
-			"specs": {
-				"cache": "16 MB Amd L3",
-				"internal-gpu": "AMD Radeon 780M",
-				"threads": "16",
-				"cores": "8",
-				"cpu-frequency": "4.2 GHz",
-				"cpu-frequency-turbo": "5.1 GHz"
-			}
-		},
-		{
-			"id": 47,
-			"name": "Samsung PM893 1.92TB Sata SSD",
-			"price": 401.9,
-			"description": "With a 2.5-inch form factor and a 6 Gb/s SATA interface, the PM893 meets the demands of server storage systems, with increased reliability for critical data thanks to end-to-end data protection.",
-			"category": "components",
-			"image": "/src/assets/products/components/samsung-pm893-192tb-sata.jpg",
-
-			"specs": {
-				"storage": "1.92 TB",
-				"read-speed": "550 MB/s",
-				"write-speed": "520 MB/s"
-			}
-		},
-		{
-			"id": 48,
-			"name": "Asus ROG STRIX X670E-F GAMING WIFI",
-			"price": 429.9,
-			"description": "Build your next rig with an AMD Ryzen™ 7000 Series processor and ROG Strix X670E-F Gaming WiFi to experience advanced performance.",
-			"category": "components",
-			"image": "/src/assets/products/components/asus-rog-strix-x670e-f-gaming-wifi.jpg",
-
-			"specs": {
-				"chipset": "Intel Z790",
-				"cpu-support": "AMD Ryzen 7000 series",
-				"conectivity": [
-					"1 x BIOS FlashBack button",
-					"1 x DisplayPort",
-					"1 x HDMI",
-					"1 x Intel 2.5Gb Ethernet port",
-					"1 x Optical S/PDIF out port",
-					"1 x USB 3.2 Gen 2x2 port (1 x Type-C)",
-					"1 x Wi-Fi Module",
-					"2 x USB 2.0 ports",
-					"5 x Gold-plated audio jacks",
-					"9 x USB 3.2 Gen 2 ports (7 x Type-A, 2 xUSB Type-C)"
-				],
-				"os-supported": ["Windows 10", "Windows 11"]
-			}
-		},
-		{
-			"id": 49,
-			"name": "Corsair 64GB (2 x32GB) DDR5 6000MHz Vengeance Black",
-			"price": 248.9,
-			"description": "Corsair Vengeance DDR5, optimized for Intel motherboards, delivers the higher frequencies and greater capabilities of DDR5 technology in a compact, high-quality module that fits into your system.",
-			"category": "components",
-			"image": "/src/assets/products/components/corsair-64gb-2-x32gb-ddr5-6000mhz.jpg",
-
-			"specs": {
-				"ram": "64 GB",
-				"memory-type": "DDR5",
-				"clock-speed": "6000 MHz"
-			}
-		},
-		{
-			"id": 50,
-			"name": "Asus GeForce RTX 4070 TUF GAMING 12GB OC GDDR6X",
-			"price": 741.9,
-			"description": "NVIDIA® GeForce RTX 40 Series GPUs are the fastest for gamers and creators. They are powered by the ultra-efficient NVIDIA Ada Lovelace architecture, which provides good performance in games.",
-			"category": "components",
-			"image": "/src/assets/products/components/asus-geforce-rtx-4070-tuf-gaming-12gb.jpg",
-
-			"specs": {
-				"vram": "12 GB",
-				"memory-type": "GDDR6X",
-				"conectivity": "1x HDMI, 3x DisplayPort",
-				"interface": "PCI Express 4.0",
-				"clock-speed": "2550 MHz",
-				"opengl": "OpenGL 4.6",
-				"directx": "DirectX 12 Ultimate"
-			}
-		}
-	]
+  "computers": [
+    {
+      "id": "1",
+      "name": "Acer Veriton X2710G Intel I7-13700",
+      "price": 879.99,
+      "description": "Acer Veriton desktop computers offer high reliability. Enjoy a desktop with enterprise-grade performance, security and manageability",
+      "category": "computers",
+      "image": "/src/assets/products/computers/acer-veriton-x2710g.jpg",
+      "specs": {
+        "cpu": "Intel Core i7-13700",
+        "cpu-speed": "5.2 GHz",
+        "gpu": "Intel UHD Graphics 770",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Pro 64 bits"
+      }
+    },
+    {
+      "id": "2",
+      "name": "HP Desktop M01-F3006NP I5-13400",
+      "price": 529.9,
+      "description": "A stylish desktop PC that combines design and technology from a brand you can trust.",
+      "category": "computers",
+      "image": "/src/assets/products/computers/hp-desktop-m01-f3006np-i5-13400.jpg",
+      "specs": {
+        "cpu": "Intel Core i5-13400",
+        "cpu-speed": "2.5 GHz - 4.6 GHz",
+        "gpu": "Intel UHD Graphics 730",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    },
+    {
+      "id": "3",
+      "name": "Acer Veriton X2710G Intel I7-13700",
+      "price": 879.99,
+      "description": "Acer Veriton desktop computers offer high reliability. Enjoy a desktop with enterprise-grade performance, security and manageability",
+      "category": "computers",
+      "image": "/src/assets/products/computers/acer-veriton-x2710g.jpg",
+      "specs": {
+        "cpu": "Intel Core i7-13700",
+        "cpu-speed": "5.2 GHz",
+        "gpu": "Intel UHD Graphics 770",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Pro 64 bits"
+      }
+    },
+    {
+      "id": "4",
+      "name": "Acer Veriton X2710G Intel I7-13700",
+      "price": 879.99,
+      "description": "Acer Veriton desktop computers offer high reliability. Enjoy a desktop with enterprise-grade performance, security and manageability",
+      "category": "computers",
+      "image": "/src/assets/products/computers/acer-veriton-x2710g.jpg",
+      "specs": {
+        "cpu": "Intel Core i7-13700",
+        "cpu-speed": "5.2 GHz",
+        "gpu": "Intel UHD Graphics 770",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Pro 64 bits"
+      }
+    },
+    {
+      "id": "5",
+      "name": "Acer Veriton X2710G Intel I7-13700",
+      "price": 879.99,
+      "description": "Acer Veriton desktop computers offer high reliability. Enjoy a desktop with enterprise-grade performance, security and manageability",
+      "category": "computers",
+      "image": "/src/assets/products/computers/acer-veriton-x2710g.jpg",
+      "specs": {
+        "cpu": "Intel Core i7-13700",
+        "cpu-speed": "5.2 GHz",
+        "gpu": "Intel UHD Graphics 770",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Pro 64 bits"
+      }
+    },
+    {
+      "id": "6",
+      "name": "Dell Optiplex 7010 SFF Core i5 12500",
+      "price": 604.9,
+      "description": "The Dell Optiplex 7010 SFF Core i5 12500 is a powerful desktop computer designed for productivity and efficiency. It features a sleek and compact design, making it perfect for small spaces.",
+      "category": "computers",
+      "image": "/src/assets/products/computers/dell-optiplex-7010.jpg",
+      "specs": {
+        "cpu": "intel Core I5 12500 6 Cores",
+        "cpu-speed": "4.6 GHz",
+        "gpu": "Intel UHD Graphics 770",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Pro 64 bits"
+      }
+    },
+    {
+      "id": "7",
+      "name": "HP Desktop M01-F3000np Ryzen 5 5600G",
+      "price": 555.9,
+      "description": "A stylish desktop PC that combines design and technology from a brand you can trust.",
+      "category": "computers",
+      "image": "/src/assets/products/computers/hp-desktop-m01-f3000np-ryzen-5-5600g.jpg",
+      "specs": {
+        "cpu": "AMD Ryzen 5 5600G",
+        "cpu-speed": "4.4 GHz",
+        "gpu": "AMD Radeon Graphics",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    },
+    {
+      "id": "8",
+      "name": "Blackview Mini MP200 Intel Core i9-11900H",
+      "price": 439.9,
+      "description": "The Blackview MP200 Mini PC delivers compact power for everyday tasks and entertainment, with reliable performance and energy efficiency.",
+      "category": "computers",
+      "image": "/src/assets/products/computers/blackview-mini-mp200-intel-core-i9-11900h.jpg",
+      "specs": {
+        "cpu": "intel Core I9 11900H 8 Cores",
+        "cpu-speed": "4.9 GHz",
+        "gpu": "Intel UHD Graphics",
+        "ram": "16 GB",
+        "storage": "1 TB SSD",
+        "os": "Windows 11 Pro 64 bits"
+      }
+    },
+    {
+      "id": "9",
+      "name": "ASUS ROG G22CH Intel Core i7-14700F",
+      "price": 1720.99,
+      "description": "The ASUS ROG G22CH is a powerful gaming desktop PC that is designed for gamers who demand high performance. It features an Intel i7-14700F processor, 32GB of RAM, and a 1TB SSD for ultra-fast load times and system response.",
+      "category": "computers",
+      "image": "/src/assets/products/computers/asus-rog-g22ch-intel-core-i7-14700f.jpg",
+      "specs": {
+        "cpu": "intel Core I7 14700F",
+        "cpu-speed": "3.5 GHz",
+        "gpu": "NVIDIA GeForce RTX 4060",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "os": "Windows 11 Pro 64 bits"
+      }
+    },
+    {
+      "id": "10",
+      "name": "Asus Essential S501ME Intel i5-13400",
+      "price": 661.9,
+      "description": "The Asus S501ME is a powerful, stylish and versatile home desktop PC ideal for a wide range of uses, from everyday content creation and working from home to online learning and casual gaming.",
+      "category": "computers",
+      "image": "/src/assets/products/computers/asus-essential-s501me-intel-i5-13400.jpg",
+      "specs": {
+        "cpu": "Intel® Core i5-13400",
+        "cpu-speed": "2.5 GHz - 4.6 GHz",
+        "gpu": "Intel UHD Graphics 730",
+        "ram": "8 GB",
+        "storage": "250 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    }
+  ],
+  "laptops": [
+    {
+      "id": "11",
+      "name": "HP Pavilion x360 14-ek1012np Intel i5-1335U",
+      "price": 873.9,
+      "description": "Exceptional performance to get even more out of your PC. Much more than performance. 13th Gen Intel Core processors enhance computing that allows you to multitask extremely efficiently.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/hp-pavilion-x360.jpg",
+      "specs": {
+        "cpu": "Intel Core i5-1335U",
+        "cpu-speed": "3.4 GHz",
+        "gpu": "Intel Iris Xe Graphics",
+        "ram": "16 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    },
+    {
+      "id": "12",
+      "name": "Acer Aspire 3 15 A315-44P Ryzen 7 5700U",
+      "price": 572.9,
+      "description": "Choose the action-ready Aspire 3 with the latest AMD Ryzen processors, designed for multitasking and productivity.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/acer-aspire-3-15-a315-44p-ryzen-7-5700u.jpg",
+      "specs": {
+        "cpu": "AMD Ryzen 7 5700U",
+        "cpu-speed": "1.8 GHz - 4.3 GHz",
+        "gpu": "AMD Radeon Graphics",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    },
+    {
+      "id": "13",
+      "name": "Lenovo IdeaPad 3 14ITL6-512 Intel i5-1155G7",
+      "price": 698.9,
+      "description": "The IdeaPad 3 combines the performance of 11th generation Intel® Core™ processors with smart features that reduce eye strain and distractions.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/lenovo-ideapad-3-14itl6-512-intel-i5-1155g7.jpg",
+      "specs": {
+        "cpu": "Intel Core i5-1155G7 Quad-Core",
+        "cpu-speed": "2.5 GHz - 4.5 GHz",
+        "gpu": "Intel iris Xe Graphicss",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    },
+    {
+      "id": "14",
+      "name": "Acer TravelMate P6 TMP614-53 Intel I7-1355U",
+      "price": 1798.9,
+      "description": "This high-quality business laptop lets you work easily from anywhere. Elevate your work experience with the brilliant graphics offered by the OLED laptop.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/acer-travelmate-p6-tmp614-53-intel-i7-1355u.jpg",
+      "specs": {
+        "cpu": "Intel Core i7-1355U",
+        "cpu-speed": "3.7 GHz - 5.0 GHz",
+        "gpu": "Intel iris Xe Graphicss",
+        "ram": "32 GB",
+        "storage": "1 TB SSD",
+        "os": "Windows 11 Pro 64 bits"
+      }
+    },
+    {
+      "id": "15",
+      "name": "Asus Vivobook Go E1504GA Intel i3-N305",
+      "price": 419.9,
+      "description": "It's light, it's compact, it's the Asus Vivobook Go 15 OLED, and it's designed to make you productive and keep you entertained wherever you go. The NanoEdge thin-bezel design offers more screen real estate for multitasking and immersive viewing.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/asus-vivobook-go-e1504ga-intel-i3-n305.jpg",
+      "specs": {
+        "cpu": "Intel Core i3-N305",
+        "cpu-speed": "1.8 GHz - 4.9 GHz",
+        "gpu": "Intel UHD Graphics",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    },
+    {
+      "id": "16",
+      "name": "Asus Vivobook Go E1504GA Intel i3-N305",
+      "price": 419.9,
+      "description": "It's light, it's compact, it's the Asus Vivobook Go 15 OLED, and it's designed to make you productive and keep you entertained wherever you go. The NanoEdge thin-bezel design offers more screen real estate for multitasking and immersive viewing.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/asus-vivobook-go-e1504ga-intel-i3-n305.jpg",
+      "specs": {
+        "cpu": "Intel Core i3-N305",
+        "cpu-speed": "1.8 GHz - 4.9 GHz",
+        "gpu": "Intel UHD Graphics",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    },
+    {
+      "id": "17",
+      "name": "Asus Vivobook Go E1504GA Intel i3-N305",
+      "price": 419.9,
+      "description": "It's light, it's compact, it's the Asus Vivobook Go 15 OLED, and it's designed to make you productive and keep you entertained wherever you go. The NanoEdge thin-bezel design offers more screen real estate for multitasking and immersive viewing.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/asus-vivobook-go-e1504ga-intel-i3-n305.jpg",
+      "specs": {
+        "cpu": "Intel Core i3-N305",
+        "cpu-speed": "1.8 GHz - 4.9 GHz",
+        "gpu": "Intel UHD Graphics",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    },
+    {
+      "id": "18",
+      "name": "HP EliteBook 655 G10 Ryzen R5-7530U",
+      "price": 878.9,
+      "description": "Tackle your work with the latest AMD processor efficiently and securely.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/hp-elitebook-655-g10-ryzen-r5-7530u.jpg",
+      "specs": {
+        "cpu": "AMD Ryzen 5 7530U Hexa-Core",
+        "cpu-speed": "2.0 GHz - 4.2 GHz",
+        "gpu": "AMD Radeon Graphics",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Pro 64 bits"
+      }
+    },
+    {
+      "id": "19",
+      "name": "Asus Vivobook Go E1504GA Intel i3-N305",
+      "price": 419.9,
+      "description": "It's light, it's compact, it's the Asus Vivobook Go 15 OLED, and it's designed to make you productive and keep you entertained wherever you go. The NanoEdge thin-bezel design offers more screen real estate for multitasking and immersive viewing.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/asus-vivobook-go-e1504ga-intel-i3-n305.jpg",
+      "specs": {
+        "cpu": "Intel Core i3-N305",
+        "cpu-speed": "1.8 GHz - 4.9 GHz",
+        "gpu": "Intel UHD Graphics",
+        "ram": "8 GB",
+        "storage": "512 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    },
+    {
+      "id": "20",
+      "name": "Lenovo IdeaPad Flex 5 14ALC7-999 Ryzen 3 5300U",
+      "price": 648.9,
+      "description": "The IdeaPad Flex 5 has narrow bezels on four sides to give it an elegant, contemporary look and offers more space to enjoy the Full HD screen.",
+      "category": "laptops",
+      "image": "/src/assets/products/laptops/lenovo-ideapad-flex-5-14alc7-999-ryzen-3-5300u.jpg",
+      "specs": {
+        "cpu": "AMD Ryzen 3 5300U Quad-Core",
+        "cpu-speed": "2.6 GHz - 4.8 GHz",
+        "gpu": "AMD Radeon Graphics",
+        "ram": "8 GB",
+        "storage": "128 GB SSD",
+        "os": "Windows 11 Home 64 bits"
+      }
+    }
+  ],
+  "smartphones": [
+    {
+      "id": "21",
+      "name": "Apple iPhone 15 Pro Max 6.7'' 256GB Natural Titanium",
+      "price": 1235.01,
+      "description": "iPhone 15 Pro Max. Forged in titanium and featuring the groundbreaking A17 Pro chip, a customizable Action button, and the most powerful iPhone camera system ever. Get incredible framing flexibility with 7 pro lenses. Capture super high-resolution photos with more color and detail using the 48MP Main camera.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/iphone15-pro-max.jpg",
+      "specs": {
+        "screen-size": "6.7''",
+        "screen-resolution": "2796 x 1290",
+        "camera": "48 MP",
+        "os": "Apple iOS 17",
+        "cpu": "Apple A17 Pro",
+        "ram": "8 GB",
+        "storage": "256 GB"
+      }
+    },
+    {
+      "id": "22",
+      "name": "Samsung Galaxy A55 5G 6.6'' Dual SIM 8GB/256GB Navy",
+      "price": 365.5,
+      "description": "The Galaxy A55 5G features an improved, iconic design, engineered with Gorilla Victus+ to make it more resistant to damage, and a metal frame that provides an easy, intuitive grip. Furthermore, this device has three rear cameras.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/samsung-galaxy-a55-5g.jpg",
+      "specs": {
+        "screen-size": "6.6''",
+        "screen-resolution": "2340 x 1080",
+        "camera": "50 MP",
+        "os": "Android 14",
+        "cpu": "Samsung Exynos 8 cores",
+        "ram": "8 GB",
+        "storage": "256 GB"
+      }
+    },
+    {
+      "id": "23",
+      "name": "Xiaomi Redmi Note 13 Pro+ 5G 6.67'' Dual SIM 12GB/512GB Midnight Black",
+      "price": 389,
+      "description": "The Redmi Note 13 Pro+ is not just a smartphone, it is a true design revolution that will not go unnoticed. Its finish, which is only found on premium devices, will attract attention. With a curved screen and thin metal bezels, this device feels like a jewel in your hands, and its style is undeniable.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/xiaomi-redmi-note-13-pro-plus.jpg",
+      "specs": {
+        "screen-size": "6.67''",
+        "screen-resolution": "2712 x 1220",
+        "camera": "200 MP",
+        "os": "MIUI 14 - Android 13",
+        "cpu": "MediaTek Dimensity 7200 Ultra 8 cores",
+        "ram": "12 GB",
+        "storage": "512 GB"
+      }
+    },
+    {
+      "id": "24",
+      "name": "Samsung Galaxy S24 Ultra 5G 6.8'' Dual SIM 12GB/512GB Titanium Grey",
+      "price": 1174.9,
+      "description": "The Galaxy S24 Ultra family presents itself with an exceptional design, evolving with even smaller bezels and advanced materials, maintaining an unwavering commitment to sustainability. This ultra model redefines the standards of elegance and innovation.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/samsung-galaxy-s24-ultra.jpg",
+      "specs": {
+        "screen-size": "6.8''",
+        "screen-resolution": "3120 x 1440",
+        "camera": "200 MP",
+        "os": "Android 14",
+        "cpu": "Qualcomm Snapdragon 8 Gen",
+        "ram": "12 GB",
+        "storage": "512 GB"
+      }
+    },
+    {
+      "id": "25",
+      "name": "OnePlus 12R 5G 6.78'' Dual SIM 16GB/256GB Iron Grey",
+      "price": 639,
+      "description": "The OnePlus 12R features a bold design with a luxurious camera module and anti-fingerprint matte aluminum frame. With a perfect symphony of elegance and next-level engineering, the experience is perfected.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/oneplus-12r-5g-6-78.jpg",
+      "specs": {
+        "screen-size": "6.78''",
+        "screen-resolution": "2780 x 1264",
+        "camera": "50 MP",
+        "os": "Android 14",
+        "cpu": "Qualcomm Snapdragon 8 Gen 2 8 cores",
+        "ram": "16 GB",
+        "storage": "256 GB"
+      }
+    },
+    {
+      "id": "26",
+      "name": "Xiaomi Redmi 13C 6.74'' Dual SIM 4GB/128GB Navy Blue",
+      "price": 107.7,
+      "description": "With its large 6.74'' screen, the Redmi 13C provides an immersive and fluid visual experience that will leave you without looking back.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/xiaomi-redmi-13c.jpg",
+      "specs": {
+        "screen-size": "6.74''",
+        "screen-resolution": "1600 x 720",
+        "camera": "50 MP",
+        "os": "Android 13",
+        "cpu": "MediaTek Helio G85",
+        "ram": "4 GB",
+        "storage": "128 GB"
+      }
+    },
+    {
+      "id": "27",
+      "name": "Blackview BV9300 Pro 6.7'' Dual Sim 12GB/256GB Black",
+      "price": 255.72,
+      "description": "The Blackview BV9300 Pro, is a robust smartphone that stands out for its resistance, performance and its impressive set of features, all at a very affordable price. Designed to meet the needs of the average user, this smartphone is ready to exceed all expectations.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/blackview-bv9300-pro.jpg",
+      "specs": {
+        "screen-size": "6.7''",
+        "screen-resolution": "2388 x 1080",
+        "camera": "64 MP",
+        "os": "Android 12",
+        "cpu": "MediaTek Helio G99 8 cores",
+        "ram": "12 GB",
+        "storage": "256 GB"
+      }
+    },
+    {
+      "id": "28",
+      "name": "Motorola Moto G73 6.5'' Dual SIM 8GB/256GB Midnight Blue",
+      "price": 171,
+      "description": "Moto G73 5G equipped with the powerful MediaTek Dimensity 930 processor brings up to 30% faster performance. Easily switch between your apps with 8GB of memory and enjoy smooth gaming, lag-free videos and better camera performance. You can also download at ultra-fast 5G speeds without worrying about battery life.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/motorola-moto-g73.jpg",
+      "specs": {
+        "screen-size": "6.5''",
+        "screen-resolution": "2400 x 1080",
+        "camera": "50 MP",
+        "os": "Android 13",
+        "cpu": "MediaTek Dimensity 930 8 cores",
+        "ram": "8 GB",
+        "storage": "256 GB"
+      }
+    },
+    {
+      "id": "29",
+      "name": "Apple iPhone 14 6.1'' 256GB Starlight",
+      "price": 785,
+      "description": "The iPhone 14 incorporates the most impressive camera system ever on an Apple smartphone. It also has the greatest autonomy ever, a processor that is increasingly adapted to you, very important innovations in terms of security, and a sensational Super Retina XDR screen, which allows you to enjoy your favorite content in the best possible quality.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/apple-iphone-14.jpg",
+      "specs": {
+        "screen-size": "6.1''",
+        "screen-resolution": "2532 x 1170",
+        "camera": "12 MP",
+        "os": "Apple iOS 16",
+        "cpu": "Apple A15 Bionic",
+        "ram": "6 GB",
+        "storage": "256 GB"
+      }
+    },
+    {
+      "id": "30",
+      "name": "Samsung Galaxy A34 5G 6.6'' Dual SIM 8GB/256GB Lima",
+      "price": 785,
+      "description": "The Galaxy A34 5G was designed with the environment in mind with premium finishes for a better user experience and comfort.",
+      "category": "smartphones",
+      "image": "/src/assets/products/smartphones/samsung-galaxy-a34.jpg",
+      "specs": {
+        "screen-size": "6.6''",
+        "screen-resolution": "2340 x 1080",
+        "camera": "48 MP",
+        "os": "Android 13",
+        "cpu": "Mediatek Dimensity 1080 8 cores",
+        "ram": "8 GB",
+        "storage": "256 GB"
+      }
+    }
+  ],
+  "accessories": [
+    {
+      "id": "31",
+      "name": "Lenovo 27'' L27I-40 IPS FHD",
+      "price": 152.9,
+      "description": "The Lenovo L27i-40 monitor is designed to excel at work and play. Its large 27-inch screen allows you to do much more with relative ease.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/lenovo-27-l27i-40-ips-fhd.jpg",
+      "specs": {
+        "screen-size": "27''",
+        "screen-resolution": "1920 x 1080",
+        "refresh-rate": "100Hz",
+        "display-type": "IPS",
+        "conectivity": "2x HDMI, 1x VGA"
+      }
+    },
+    {
+      "id": "32",
+      "name": "MSI 22 (21,45'')Pro MP223 FHD",
+      "price": 92.9,
+      "description": "The MSI Pro MP223 22'' (21.45'') monitor is designed to simplify your work. Less Blue Light technology effectively reduces blue light that can cause serious long-term damage to your eyes.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/msi-22-2145-pro.jpg",
+      "specs": {
+        "screen-size": "21.4''",
+        "screen-resolution": "1920 x 1080",
+        "refresh-rate": "100Hz",
+        "display-type": "LED",
+        "conectivity": "1x HDMI, 1x VGA"
+      }
+    },
+    {
+      "id": "33",
+      "name": "LG 27'' 27UP85NP-W IPS Ultra HD 4K",
+      "price": 459.9,
+      "description": "The LG UHD 4K HDR monitor can virtually transform standard content into HDR-quality video right on the screen. Helps improve tone mapping and luminance of SDR content for an HDR-like experience.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/lg-27-27up85np-w-ips-ultra-hd-4k.jpg",
+      "specs": {
+        "screen-size": "27''",
+        "screen-resolution": "3840 x 2160 (4k UHD)",
+        "refresh-rate": "60Hz",
+        "display-type": "IPS",
+        "conectivity": "2x HDMI, 1x DisplayPort"
+      }
+    },
+    {
+      "id": "34",
+      "name": "LG 27'' 27UP85NP-W IPS Ultra HD 4K",
+      "price": 459.9,
+      "description": "The LG UHD 4K HDR monitor can virtually transform standard content into HDR-quality video right on the screen. Helps improve tone mapping and luminance of SDR content for an HDR-like experience.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/lg-27-27up85np-w-ips-ultra-hd-4k.jpg",
+      "specs": {
+        "screen-size": "27''",
+        "screen-resolution": "3840 x 2160 (4k UHD)",
+        "refresh-rate": "60Hz",
+        "display-type": "IPS",
+        "conectivity": "2x HDMI, 1x DisplayPort"
+      }
+    },
+    {
+      "id": "35",
+      "name": "LG 27'' 27UP85NP-W IPS Ultra HD 4K",
+      "price": 459.9,
+      "description": "The LG UHD 4K HDR monitor can virtually transform standard content into HDR-quality video right on the screen. Helps improve tone mapping and luminance of SDR content for an HDR-like experience.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/lg-27-27up85np-w-ips-ultra-hd-4k.jpg",
+      "specs": {
+        "screen-size": "27''",
+        "screen-resolution": "3840 x 2160 (4k UHD)",
+        "refresh-rate": "60Hz",
+        "display-type": "IPS",
+        "conectivity": "2x HDMI, 1x DisplayPort"
+      }
+    },
+    {
+      "id": "36",
+      "name": "MSI 22 (21,45'')Pro MP223 FHD",
+      "price": 92.9,
+      "description": "The MSI Pro MP223 22'' (21.45'') monitor is designed to simplify your work. Less Blue Light technology effectively reduces blue light that can cause serious long-term damage to your eyes.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/msi-22-2145-pro.jpg",
+      "specs": {
+        "screen-size": "21.4''",
+        "screen-resolution": "1920 x 1080",
+        "refresh-rate": "100Hz",
+        "display-type": "LED",
+        "conectivity": "1x HDMI, 1x VGA"
+      }
+    },
+    {
+      "id": "37",
+      "name": "MSI 22 (21,45'')Pro MP223 FHD",
+      "price": 92.9,
+      "description": "The MSI Pro MP223 22'' (21.45'') monitor is designed to simplify your work. Less Blue Light technology effectively reduces blue light that can cause serious long-term damage to your eyes.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/msi-22-2145-pro.jpg",
+      "specs": {
+        "screen-size": "21.4''",
+        "screen-resolution": "1920 x 1080",
+        "refresh-rate": "100Hz",
+        "display-type": "LED",
+        "conectivity": "1x HDMI, 1x VGA"
+      }
+    },
+    {
+      "id": "38",
+      "name": "MSI 22 (21,45'')Pro MP223 FHD",
+      "price": 92.9,
+      "description": "The MSI Pro MP223 22'' (21.45'') monitor is designed to simplify your work. Less Blue Light technology effectively reduces blue light that can cause serious long-term damage to your eyes.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/msi-22-2145-pro.jpg",
+      "specs": {
+        "screen-size": "21.4''",
+        "screen-resolution": "1920 x 1080",
+        "refresh-rate": "100Hz",
+        "display-type": "LED",
+        "conectivity": "1x HDMI, 1x VGA"
+      }
+    },
+    {
+      "id": "39",
+      "name": "MSI 22 (21,45'')Pro MP223 FHD",
+      "price": 92.9,
+      "description": "The MSI Pro MP223 22'' (21.45'') monitor is designed to simplify your work. Less Blue Light technology effectively reduces blue light that can cause serious long-term damage to your eyes.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/msi-22-2145-pro.jpg",
+      "specs": {
+        "screen-size": "21.4''",
+        "screen-resolution": "1920 x 1080",
+        "refresh-rate": "100Hz",
+        "display-type": "LED",
+        "conectivity": "1x HDMI, 1x VGA"
+      }
+    },
+    {
+      "id": "40",
+      "name": "MSI 22 (21,45'')Pro MP223 FHD",
+      "price": 92.9,
+      "description": "The MSI Pro MP223 22'' (21.45'') monitor is designed to simplify your work. Less Blue Light technology effectively reduces blue light that can cause serious long-term damage to your eyes.",
+      "category": "accessories",
+      "image": "/src/assets/products/accessories/msi-22-2145-pro.jpg",
+      "specs": {
+        "screen-size": "21.4''",
+        "screen-resolution": "1920 x 1080",
+        "refresh-rate": "100Hz",
+        "display-type": "LED",
+        "conectivity": "1x HDMI, 1x VGA"
+      }
+    }
+  ],
+  "components": [
+    {
+      "id": "41",
+      "name": "Asus PRIME Z790M-PLUS",
+      "price": 243.9,
+      "description": "Asus Prime series motherboards are expertly designed to unleash the full potential of 13th Gen Intel Core processors. With a robust power design, comprehensive cooling solutions and intelligent tuning options.",
+      "category": "components",
+      "image": "/src/assets/products/components/asus-prime-z790m.jpg",
+      "specs": {
+        "chipset": "Intel Z790",
+        "cpu-support": [
+          "Intel Celeron",
+          "Intel Core i3",
+          "Intel Core i5",
+          "Intel Core i7",
+          "Intel Core i9",
+          "Intel Pentium Gold"
+        ],
+        "conectivity": [
+          "1x DisplayPort",
+          "1x HDMI",
+          "1x Intel 1Gb Ethernet port",
+          "1 x USB 3.2 Gen2",
+          "1x USB 3.2 Gen 2x2",
+          "2x USB 2.0 ports",
+          "3x Audio jacks",
+          "4x USB 3.2 Gen 1"
+        ],
+        "os-supported": [
+          "Windows 10",
+          "Windows 11"
+        ]
+      }
+    },
+    {
+      "id": "42",
+      "name": "Intel Core i9-14900KF 24-Cores 2.4GHz",
+      "price": 624.9,
+      "description": "New 14th Gen Intel Core processors help make it all possible. Get the performance you need, where you need it, whether you're a gamer, content creator or everyday user.",
+      "category": "components",
+      "image": "/src/assets/products/components/cpu-core-i9-14900.jpg",
+      "specs": {
+        "cache": "36 MB Intel Smart Cache",
+        "internal-gpu": "Intel UHD Graphics 770",
+        "threads": "32",
+        "cores": "24",
+        "cpu-frequency": "2.4 GHz",
+        "cpu-frequency-turbo": "6.0 GHz"
+      }
+    },
+    {
+      "id": "43",
+      "name": "Kingston 32GB DDR5 5600MT/s",
+      "price": 118.9,
+      "description": "Kingston launches new generation DDR5 memory module.",
+      "category": "components",
+      "image": "/src/assets/products/components/kingston-32gb-ddr5-5600mts.jpg",
+      "specs": {
+        "ram": "32 GB",
+        "memory-type": "DDR5",
+        "clock-speed": "5600 MHz"
+      }
+    },
+    {
+      "id": "44",
+      "name": "Asus Dual-RTX4060-O8G-EVO",
+      "price": 359.9,
+      "description": "Asus Dual is the perfect choice for gamers who want serious graphics performance in a compact build.",
+      "category": "components",
+      "image": "/src/assets/products/components/asus-dual-rtx4060-o8g-evo.jpg",
+      "specs": {
+        "vram": "8 GB",
+        "memory-type": "GDDR6",
+        "conectivity": "1x HDMI, 3x DisplayPort",
+        "interface": "PCI Express 4.0",
+        "clock-speed": "2535 MHz",
+        "opengl": "OpenGL 4.6",
+        "directx": "DirectX 12 Ultimate"
+      }
+    },
+    {
+      "id": "45",
+      "name": "Samsung PM893 1.92TB Sata SSD",
+      "price": 401.9,
+      "description": "With a 2.5-inch form factor and a 6 Gb/s SATA interface, the PM893 meets the demands of server storage systems, with increased reliability for critical data thanks to end-to-end data protection.",
+      "category": "components",
+      "image": "/src/assets/products/components/samsung-pm893-192tb-sata.jpg",
+      "specs": {
+        "storage": "1.92 TB",
+        "read-speed": "550 MB/s",
+        "write-speed": "520 MB/s"
+      }
+    },
+    {
+      "id": "46",
+      "name": "AMD Ryzen 7 8700G 8 Core 4.2GHz",
+      "price": 409.9,
+      "description": "With the AMD Ryzen™ 8000G Series processor, start gaming in high definition right away. AMD Ryzen™ 7 8700G with AMD Ryzen AI is the best all-in-one desktop processor with AMD Radeon™ 780M graphics capabilities.",
+      "category": "components",
+      "image": "/src/assets/products/components/amd-ryzen-7-8700g-8-core-42ghz.jpg",
+      "specs": {
+        "cache": "16 MB Amd L3",
+        "internal-gpu": "AMD Radeon 780M",
+        "threads": "16",
+        "cores": "8",
+        "cpu-frequency": "4.2 GHz",
+        "cpu-frequency-turbo": "5.1 GHz"
+      }
+    },
+    {
+      "id": "47",
+      "name": "Water Cooler CPU Asus ROG Ryuo III 240 ARGB",
+      "price": 287.9,
+      "description": "The ROG Ryuo III series is 400mm thick and compatible with a wide range of Intel and AMD motherboard platforms, giving you broad processor and build flexibility.",
+      "category": "components",
+      "image": "/src/assets/products/components/water-cooler-cpu-asus-rog-ryuo-iii-240-argb.jpg",
+      "specs": {
+        "cooler-type": "Water Cooler",
+        "fans": "2 Fans x 120mm"
+      }
+    },
+    {
+      "id": "48",
+      "name": "Water Cooler CPU Asus ROG Ryuo III 240 ARGB",
+      "price": 287.9,
+      "description": "The ROG Ryuo III series is 400mm thick and compatible with a wide range of Intel and AMD motherboard platforms, giving you broad processor and build flexibility.",
+      "category": "components",
+      "image": "/src/assets/products/components/water-cooler-cpu-asus-rog-ryuo-iii-240-argb.jpg",
+      "specs": {
+        "cooler-type": "Water Cooler",
+        "fans": "2 Fans x 120mm"
+      }
+    },
+    {
+      "id": "49",
+      "name": "Water Cooler CPU Asus ROG Ryuo III 240 ARGB",
+      "price": 287.9,
+      "description": "The ROG Ryuo III series is 400mm thick and compatible with a wide range of Intel and AMD motherboard platforms, giving you broad processor and build flexibility.",
+      "category": "components",
+      "image": "/src/assets/products/components/water-cooler-cpu-asus-rog-ryuo-iii-240-argb.jpg",
+      "specs": {
+        "cooler-type": "Water Cooler",
+        "fans": "2 Fans x 120mm"
+      }
+    },
+    {
+      "id": "50",
+      "name": "Asus GeForce RTX 4070 TUF GAMING 12GB OC GDDR6X",
+      "price": 741.9,
+      "description": "NVIDIA® GeForce RTX 40 Series GPUs are the fastest for gamers and creators. They are powered by the ultra-efficient NVIDIA Ada Lovelace architecture, which provides good performance in games.",
+      "category": "components",
+      "image": "/src/assets/products/components/asus-geforce-rtx-4070-tuf-gaming-12gb.jpg",
+      "specs": {
+        "vram": "12 GB",
+        "memory-type": "GDDR6X",
+        "conectivity": "1x HDMI, 3x DisplayPort",
+        "interface": "PCI Express 4.0",
+        "clock-speed": "2550 MHz",
+        "opengl": "OpenGL 4.6",
+        "directx": "DirectX 12 Ultimate"
+      }
+    }
+  ]
 }

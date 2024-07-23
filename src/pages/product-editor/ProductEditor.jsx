@@ -65,7 +65,7 @@ const ProductEditor = () => {
 						<div className='productEditor__products-title'>
 							<h3>List of Products:</h3>
 
-							<Link to='/product-editor/create-product' className='btn-type4'>
+							<Link to='/product-editor/create-product' className='btn-type4' onClick={() => window.scrollTo(0, 0)}>
 								<IoIosAddCircleOutline />
 								<span>Add Product</span>
 							</Link>
@@ -104,10 +104,10 @@ const ProductEditor = () => {
 										<td data-title='Description'>{product.description.length > 100 ? product.description.slice(0, 100) + ' ...' : product.description}</td>
 										<td data-title='Category'>{product.category}</td>
 										<td data-title='Edit'>
-											<Link>
+											<Link onClick={() => window.scrollTo(0, 0)}>
 												<RiEdit2Line />
 											</Link>
-											<Link>
+											<Link to={`/product-editor/delete-product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
 												<MdDeleteOutline />
 											</Link>
 										</td>
