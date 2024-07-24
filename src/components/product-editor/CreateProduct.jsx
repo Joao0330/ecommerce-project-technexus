@@ -68,7 +68,7 @@ const CreateProduct = () => {
 			dispatch({ type: 'CREATE_PRODUCT', payload: data });
 
 			// Append the new product to the allProducts array
-			setAllProducts([...allProducts, data]);
+			setAllProducts(prevProducts => [...prevProducts, data]);
 
 			alert('Product created successfully!');
 			navigate('/product-editor');

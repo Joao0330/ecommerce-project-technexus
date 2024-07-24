@@ -1,4 +1,4 @@
-// impoer hooks
+// import hooks
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
 
@@ -104,12 +104,15 @@ const ProductEditor = () => {
 										<td data-title='Description'>{product.description.length > 100 ? product.description.slice(0, 100) + ' ...' : product.description}</td>
 										<td data-title='Category'>{product.category}</td>
 										<td data-title='Edit'>
-											<Link onClick={() => window.scrollTo(0, 0)}>
+											<Link to={`/product-editor/update-product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
 												<RiEdit2Line />
 											</Link>
+											
+
 											<Link to={`/product-editor/delete-product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
 												<MdDeleteOutline />
 											</Link>
+											
 										</td>
 									</tr>
 								))}
