@@ -42,15 +42,14 @@ const ProductSpecs = ({ product }) => {
 	];
 
 	return (
-		<section className='productSpecs'>
-			<div className='container'>
-				<div className='productSpecs__wrapper'>
-					{product.specs && (
+		product.specs && (
+			<section className='productSpecs'>
+				<div className='container'>
+					<div className='productSpecs__wrapper'>
 						<div>
 							<h4>Specifications</h4>
 							<ul>
 								{Object.entries(product.specs).map(([key, value]) => {
-									// Get the modified key that matches the current key and replace the key with the modified key, if it doesnt exist return the original key
 									const modifiedKey = keyModifications.find(modification => modification.key === key)?.modifiedKey || key;
 									return (
 										<li key={key}>
@@ -73,10 +72,10 @@ const ProductSpecs = ({ product }) => {
 								})}
 							</ul>
 						</div>
-					)}
+					</div>
 				</div>
-			</div>
-		</section>
+			</section>
+		)
 	);
 };
 

@@ -1,4 +1,4 @@
-import React from 'react';
+// import context
 import { useStates } from '../../context/useStates';
 
 const ShopCartBottom = () => {
@@ -28,12 +28,12 @@ const ShopCartBottom = () => {
 			<div style="height: 100vh; display: flex; flex-direction: column; align-items: center; background-color: #1a1a1a; font-family: sans-serif; color: #fff;">
 				<h2 style="margin-bottom: 5rem;">Thank you for your purchase!</h2>
 
-				<table style="color: #fff;border: 1px solid; text-align: center">
+				<table style="color: #fff; border-collapse: separate; border-spacing: 0; text-align: center">
 					<thead>
 						<tr style="padding: 1rem">
-							<th style="border: 1px solid; padding: 1rem">Product</th>
-							<th style="border: 1px solid;">Quantity</th>
-							<th style="border: 1px solid;">Price</th>
+							<th style="padding: 1rem">Product</th>
+							<th>Quantity</th>
+							<th>Price</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -43,8 +43,10 @@ const ShopCartBottom = () => {
 			</div>
         `;
 
-		const newWindow = window.open('', '_blank', 'width=700,height=500');
+		const newWindow = window.open('', '_blank', 'width=600,height=400');
 		newWindow.document.write(content);
+
+		localStorage.setItem('cartItems', JSON.stringify([]));
 	};
 
 	return (

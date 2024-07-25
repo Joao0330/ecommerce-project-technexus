@@ -12,6 +12,7 @@
 	},
 	"dependencies": {
 		"@hookform/resolvers": "^3.9.0",
+		"@stripe/stripe-js": "^4.1.0",
 		"fslightbox-react": "^1.7.6",
 		"json-server": "^1.0.0-beta.1",
 		"react": "^18.2.0",
