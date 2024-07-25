@@ -8,6 +8,10 @@ import { fetchNews } from '../api/api';
 import Products from '../data/products.json';
 
 export const StateProvider = ({ children }) => {
+	// Initial values for cart and wishlist local storage
+	const cartItemsFromLocalStorage = JSON.parse(localStorage.getItem('cartItems')) || [];
+	const wishlistItemsFromLocalStorage = JSON.parse(localStorage.getItem('wishlistItems')) || [];
+
 	//? ------------------STATE VARIABLES--------------------
 	//! State to control the homepage lightbox gallery
 	const [toggler, setToggler] = useState(false);
@@ -66,10 +70,10 @@ export const StateProvider = ({ children }) => {
 	const [scrollPosition, setScrollPosition] = useState(0);
 
 	//! State to control the cart system
-	const [cartItems, setCartItems] = useState([]);
+	const [cartItems, setCartItems] = useState(cartItemsFromLocalStorage);
 
 	//! State to control the wishlist system
-	const [wishlistItems, setWishlistItems] = useState([]);
+	const [wishlistItems, setWishlistItems] = useState(wishlistItemsFromLocalStorage);
 
 	//! State to control the searchbar
 	const [searchValue, setSearchValue] = useState('');
@@ -96,8 +100,12 @@ export const StateProvider = ({ children }) => {
 			const existingItem = prevCartItems.find(cartItem => cartItem.id === item.id);
 			// if item exists, update the quantity in the cart
 			if (existingItem) {
+				localStorage.setItem('cartItems', JSON.stringify(prevCartItems.map(cartItem => (cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + item.quantity } : cartItem))));
+
 				return prevCartItems.map(cartItem => (cartItem.id === item.id ? { ...cartItem, quantity: cartItem.quantity + item.quantity } : cartItem));
 			} else {
+				localStorage.setItem('cartItems', JSON.stringify([...prevCartItems, item]));
+
 				return [...prevCartItems, { ...item }];
 			}
 		});
@@ -108,8 +116,12 @@ export const StateProvider = ({ children }) => {
 		setWishlistItems(prevWishlistItems => {
 			const isItemInWishlist = prevWishlistItems.some(wishlistItem => wishlistItem.id === item.id);
 			if (!isItemInWishlist) {
+				localStorage.setItem('wishlistItems', JSON.stringify([...prevWishlistItems, item]));
+
 				return [...prevWishlistItems, { ...item }];
 			} else {
+				localStorage.setItem('wishlistItems', JSON.stringify(prevWishlistItems));
+
 				return prevWishlistItems;
 			}
 		});

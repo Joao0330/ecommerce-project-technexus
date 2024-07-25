@@ -8,7 +8,7 @@ import CartQuantitySelector from '../shop-cart/CartQuantitySelector';
 import placeholderImage from '../../assets/placeholder.jpg';
 
 const ShopCartTableItem = ({ item }) => {
-	const { setCartItems } = useStates();
+	const { setCartItems, cartItems } = useStates();
 	const { id, image, name, price, quantity } = item;
 	const totalPrice = (price * quantity).toFixed(2);
 
@@ -19,12 +19,19 @@ const ShopCartTableItem = ({ item }) => {
 
 	// function that removes an item from the cart
 	const removeFromCart = item => {
-		setCartItems(prevCartItems => prevCartItems.filter(cartItem => cartItem.id !== item.id));
+		const itemIndex = cartItems.findIndex(cartItem => cartItem.id === item.id);
+		if (itemIndex !== -1) {
+			const updatedCartItems = [...cartItems.slice(0, itemIndex), ...cartItems.slice(itemIndex + 1)];
+			setCartItems(updatedCartItems);
+			localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
+		}
 	};
 
 	// Handler function to update the quantity
 	const handleQuantityChange = newQuantity => {
 		updateCartQuantity(id, newQuantity);
+		const updatedCartItems = cartItems.map(cartItem => (cartItem.id === id ? { ...cartItem, quantity: newQuantity } : cartItem));
+		localStorage.setItem('cartItems', JSON.stringify(updatedCartItems));
 	};
 
 	return (

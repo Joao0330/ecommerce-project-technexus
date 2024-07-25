@@ -5,12 +5,17 @@ import { useStates } from '../../context/useStates';
 import placeholderImage from '../../assets/placeholder.jpg';
 
 const WishlistTableItem = ({ item }) => {
-	const { setWishlistItems } = useStates();
+	const { setWishlistItems, wishlistItems } = useStates();
 	const { id, image, name, price } = item;
 
 	// function that removes an item from the wishlist
 	const removeFromWishlist = item => {
-		setWishlistItems(prevWishlistItems => prevWishlistItems.filter(wishlistItem => wishlistItem.id !== item.id));
+		const itemIndex = wishlistItems.findIndex(wishlistItem => wishlistItem.id === item.id);
+		if (itemIndex !== -1) {
+			const updatedWishlistItems = [...wishlistItems.slice(0, itemIndex), ...wishlistItems.slice(itemIndex + 1)];
+			setWishlistItems(updatedWishlistItems);
+			localStorage.setItem('wishlistItems', JSON.stringify(updatedWishlistItems));
+		}
 	};
 
 	return (
