@@ -14,7 +14,7 @@ const Hero = () => {
 		<section className='hero'>
 			<div className='container'>
 				<div className='hero__wrapper'>
-					<div className='hero__content-left'>
+					<div className='hero__content'>
 						<h2>Welcome to TechNexus</h2>
 						<h3>Unleash Your Potential with Our Innovative Gadgets</h3>
 						<Link to='/product-list/all' onClick={handleCategoryClick} className='btn-type1'>
@@ -22,9 +22,9 @@ const Hero = () => {
 						</Link>
 					</div>
 
-					<div className='hero__content-right'>
+					{/* <div className='hero__content-right'>
 						<img src={heroimg} alt='An image of computer gadgets' className='img-fluid' />
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>

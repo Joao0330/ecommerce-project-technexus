@@ -8,7 +8,7 @@ import { fetchNews } from '../api/api';
 import Products from '../data/products.json';
 
 export const StateProvider = ({ children }) => {
-	// Initial values for cart and wishlist local storage
+	//* Initial values for cart and wishlist local storage
 	const cartItemsFromLocalStorage = JSON.parse(localStorage.getItem('cartItems')) || [];
 	const wishlistItemsFromLocalStorage = JSON.parse(localStorage.getItem('wishlistItems')) || [];
 

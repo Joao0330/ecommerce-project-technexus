@@ -1,5 +1,5 @@
 // import hooks
-import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 // Import styles
 import './styles/main.scss';
@@ -7,6 +7,10 @@ import './styles/main.scss';
 // Import components
 import Navbar from './components/Navbar.jsx';
 import Footer from './components/Footer.jsx';
+import CreateProduct from './components/product-editor/CreateProduct.jsx';
+import DeleteProduct from './components/product-editor/DeleteProduct.jsx';
+import UpdateProduct from './components/product-editor/UpdateProduct.jsx';
+import NoProductFound from './components/search/NoProductFound.jsx';
 
 // Import Pages
 import Home from './pages/home/Home.jsx';
@@ -16,10 +20,6 @@ import Contact from './pages/contact/Contact.jsx';
 import ShopCart from './pages/shop-cart/ShopCart.jsx';
 import Wishlist from './pages/wishlist/Wishlist.jsx';
 import ProductEditor from './pages/product-editor/ProductEditor.jsx';
-import CreateProduct from './components/product-editor/CreateProduct.jsx';
-import DeleteProduct from './components/product-editor/DeleteProduct.jsx';
-import UpdateProduct from './components/product-editor/UpdateProduct.jsx';
-import NoProductFound from './components/search/NoProductFound.jsx';
 
 const App = () => {
 	return (

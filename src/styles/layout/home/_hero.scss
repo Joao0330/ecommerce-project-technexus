@@ -2,7 +2,11 @@
 
 .hero {
 	font-size: 1rem;
-	background: var(--bg-color2);
+	background-image: url("/src/assets/hardware-black-slide-1.jpg");
+	background-position: left;
+	background-size: 110%;
+	background-repeat: no-repeat;
+	/* background: var(--bg-color2); */
 	height: 100vh;
 	padding-top: 8rem;
 
@@ -16,14 +20,14 @@
 	&__wrapper {
 		display: flex;
 		align-items: center;
-		justify-content: center;
+		
 
 		@include breakpointDesktop(991px) {
 			flex-direction: column;
 		}
 	}
 
-	&__content-left {
+	&__content {
 		width: 50%;
 		display: flex;
 		flex-wrap: wrap;
@@ -46,24 +50,6 @@
 			font-weight: 500;
 			line-height: 1.5;
 			color: var(--text-color2);
-		}
-	}
-
-	&__content-right {
-		width: 50%;
-
-		@include breakpointDesktop(991px) {
-			margin-top: 5rem;
-			width: 70%;
-		}
-
-		@include breakpointDesktop(768px) {
-			width: 100%;
-		}
-
-		img {
-			border-radius: 15px;
-			box-shadow: 0 10px 15px 0 rgba(0, 0, 0, 0.5);
 		}
 	}
 }

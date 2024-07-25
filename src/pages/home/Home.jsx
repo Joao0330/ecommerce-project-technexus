@@ -4,7 +4,6 @@ import Categories from './Categories.jsx';
 import Featured from './Featured.jsx';
 import Gallery from './Gallery.jsx';
 import News from './News.jsx';
-import Test from './Test.jsx';
 
 const Home = () => {
 	return (
@@ -14,7 +13,6 @@ const Home = () => {
 			<Featured />
 			<Gallery />
 			<News />
-			{/* <Test /> */}
 		</>
 	);
 };
