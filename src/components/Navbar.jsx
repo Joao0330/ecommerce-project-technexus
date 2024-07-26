@@ -72,9 +72,7 @@ const Navbar = () => {
 									Products
 								</Link>
 							</li>
-							<li>
-								<a href='#'>About Us</a>
-							</li>
+						
 							<li>
 								<Link
 									to='/contact'

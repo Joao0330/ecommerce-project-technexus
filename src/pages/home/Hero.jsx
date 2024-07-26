@@ -4,9 +4,6 @@ import { useStates } from '../../context/useStates';
 // import hooks
 import { Link } from 'react-router-dom';
 
-// Import images
-import heroimg from '../../assets/hero.jpg';
-
 const Hero = () => {
 	const { handleCategoryClick } = useStates();
 
@@ -21,10 +18,6 @@ const Hero = () => {
 							Shop Now
 						</Link>
 					</div>
-
-					{/* <div className='hero__content-right'>
-						<img src={heroimg} alt='An image of computer gadgets' className='img-fluid' />
-					</div> */}
 				</div>
 			</div>
 		</section>
