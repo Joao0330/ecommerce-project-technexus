@@ -7,6 +7,9 @@ import { fetchNews } from '../api/api';
 // import product data json
 import Products from '../data/products.json';
 
+// import toast tools
+import { toast } from 'react-toastify';
+
 export const StateProvider = ({ children }) => {
 	//* Initial values for cart and wishlist local storage
 	const cartItemsFromLocalStorage = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -94,6 +97,28 @@ export const StateProvider = ({ children }) => {
 		setSidebarActive(sidebarActive => !sidebarActive);
 	};
 
+	//* Function to activate the wishlist toast
+	const wishlistToast = item => {
+		if (wishlistItems.some(wishlistItem => wishlistItem.id === item.id)) {
+			toast.error('You already have this product in your wishlist', {
+				pauseOnHover: false,
+				draggable: true,
+			});
+		} else {
+			toast('Product added to your wishlist!', {
+				pauseOnHover: false,
+				draggable: true,
+			});
+		}
+	};
+
+	//* Function to activate the cart toast
+	const cartToast = () =>
+		toast.success('Product added to your cart!', {
+			pauseOnHover: false,
+			draggable: true,
+		});
+
 	//* Function that adds an item to the cart
 	const addToCart = item => {
 		setCartItems(prevCartItems => {
@@ -168,6 +193,8 @@ export const StateProvider = ({ children }) => {
 		setShowFormToast,
 		setScrollPosition,
 		setCartItems,
+		cartToast,
+		wishlistToast,
 		addToCart,
 		setWishlistItems,
 		addToWishlist,

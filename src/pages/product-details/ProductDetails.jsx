@@ -16,7 +16,7 @@ import CartQuantitySelector from '../../components/shop-cart/CartQuantitySelecto
 import placeholderImage from '../../assets/placeholder.jpg';
 
 const ProductDetail = () => {
-	const { allProducts, addToCart, addToWishlist } = useStates();
+	const { allProducts, addToCart, addToWishlist, cartToast, wishlistToast } = useStates();
 	const { id } = useParams();
 	const product = allProducts.find(product => product.id === id);
 
@@ -31,6 +31,13 @@ const ProductDetail = () => {
 	// Function to handle the add to wishlist functionality
 	const handleAddToWishlist = () => {
 		addToWishlist({
+			...product,
+		});
+	};
+
+	// Function to handle the wishlist toast
+	const handleWishlistToast = () => {
+		wishlistToast({
 			...product,
 		});
 	};
@@ -60,13 +67,26 @@ const ProductDetail = () => {
 
 								<div className='productDetails__info-quantity'>
 									<CartQuantitySelector initialQuantity={quantity} onQuantityChange={setQuantity} />
-									<button type='button' className='btn-type2' onClick={handleAddToCart}>
+									<button
+										type='button'
+										className='btn-type2'
+										onClick={() => {
+											handleAddToCart();
+											cartToast();
+										}}
+									>
 										Add to cart
 									</button>
 								</div>
 
 								<div className='productDetails__info-wishlist'>
-									<button type='button' onClick={handleAddToWishlist}>
+									<button
+										type='button'
+										onClick={() => {
+											handleAddToWishlist();
+											handleWishlistToast();
+										}}
+									>
 										<TiHeartOutline />
 										<span>Add to wishlist</span>
 									</button>

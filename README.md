@@ -47,6 +47,5 @@ Existem ainda alguns aspetos que gostaria que fossem implementados no futuro com
 
 - Utilização do stripe para a finalização da compra
 - Permitir a criação das especificações ao criar um novo produto no editor
-- Algum tipo de notificação visual mais expressiva ao adicionar items no carrinho de compras e na wishlist
 - Melhorar alguns estilos/efeitos de css
 - Implementação do backend

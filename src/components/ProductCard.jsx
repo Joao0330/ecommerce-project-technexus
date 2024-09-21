@@ -12,7 +12,7 @@ import { TbShoppingCartPlus } from 'react-icons/tb';
 import placeholderImage from '../assets/placeholder.jpg';
 
 const ProductCard = ({ image, title, category, price, productId }) => {
-	const { setFilters, addToCart, addToWishlist } = useStates();
+	const { setFilters, addToCart, addToWishlist, cartToast, wishlistToast } = useStates();
 	const navigate = useNavigate();
 
 	const handleCategoryClick = () => {
@@ -47,6 +47,13 @@ const ProductCard = ({ image, title, category, price, productId }) => {
 		});
 	};
 
+	// Function to handle the wishlist toast
+	const handleWishlistToast = () => {
+		wishlistToast({
+			id: productId,
+		});
+	};
+
 	return (
 		<article className='productCard'>
 			<Link to={`/product-details/${productId}/${encodeURIComponent(title)}`}>
@@ -65,6 +72,7 @@ const ProductCard = ({ image, title, category, price, productId }) => {
 						onClick={e => {
 							e.preventDefault();
 							handleAddToWishlist();
+							handleWishlistToast();
 						}}
 					>
 						<TiHeartOutline />
@@ -80,6 +88,7 @@ const ProductCard = ({ image, title, category, price, productId }) => {
 						onClick={e => {
 							e.preventDefault();
 							handleAddToCart();
+							cartToast();
 						}}
 					>
 						<span>add to cart</span>
