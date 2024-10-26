@@ -16,11 +16,11 @@ const News = () => {
 						<p>See the latest news from the tech world.</p>
 					</div>
 
-					<div className='news__content'>
+					{/* <div className='news__content'>
 						{news.map((item, index) => (
 							<NewsCard key={index} item={item} />
 						))}
-					</div>
+					</div> */}
 				</div>
 			</div>
 		</section>

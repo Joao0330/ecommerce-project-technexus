@@ -23,7 +23,7 @@ export const StateProvider = ({ children }) => {
 	const [isOpen, setIsOpen] = useState(false);
 
 	//! State to control the news api
-	const [news, setNews] = useState([]);
+	/* const [news, setNews] = useState([]);
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
@@ -35,7 +35,7 @@ export const StateProvider = ({ children }) => {
 			}
 		};
 		fetchData();
-	}, []);
+	}, []); */
 
 	//! State to control the products data json
 	const [productsData, setProductsData] = useState(Products);
@@ -165,7 +165,7 @@ export const StateProvider = ({ children }) => {
 	const value = {
 		toggler,
 		isOpen,
-		news,
+		/* news, */
 		allProducts,
 		sidebarActive,
 		currentPage,

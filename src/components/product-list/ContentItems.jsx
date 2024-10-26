@@ -19,15 +19,10 @@ const Content = ({ currentCards, handleSortOrderChange }) => {
 
 	// Filtering
 	useEffect(() => {
-		let filteredProducts;
+		// Filter by category first
+		let filteredProducts = filters.category === 'all' ? allProducts : allProducts.filter(product => product.category === filters.category);
 
-		if (filters.category === 'all') {
-			filteredProducts = allProducts;
-		} else {
-			filteredProducts = allProducts.filter(product => product.category === filters.category);
-		}
-
-		// Filter the products based on the values defined in the price filters
+		// Filter by price range
 		if (filters.price.min !== null) {
 			filteredProducts = filteredProducts.filter(product => {
 				const price = product.price;
@@ -35,8 +30,8 @@ const Content = ({ currentCards, handleSortOrderChange }) => {
 			});
 		}
 
-		// Sorts the products by lowest price, highest price or alphabetically (for the filter buttons on the right side)
-		const sorted = filteredProducts.sort((a, b) => {
+		// Sort the products based on sortOrder
+		filteredProducts.sort((a, b) => {
 			if (sortOrder === 'asc') {
 				return a.price - b.price;
 			} else if (sortOrder === 'desc') {
@@ -46,15 +41,13 @@ const Content = ({ currentCards, handleSortOrderChange }) => {
 			}
 		});
 
-		// Updates the order of the sorted products only if it has changed
-		if (JSON.stringify(sorted) !== JSON.stringify(sortedProducts)) {
-			setSortedProducts(sorted);
-		}
+		// Update sortedProducts if the filtered and sorted result has changed
+		setSortedProducts([...filteredProducts]);
 
 		// Check if no products were found
 		setNoProductsFound(filteredProducts.length === 0);
-	}, [filters, allProducts, setSortedProducts, sortedProducts, setNoProductsFound, sortOrder]);
-
+	}, [filters, allProducts, sortOrder, setSortedProducts, setNoProductsFound]);
+	
 	return (
 		<div className={`productList__content ${sidebarActive ? 'active' : ''}`}>
 			{noProductsFound ? (
