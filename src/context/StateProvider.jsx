@@ -81,6 +81,50 @@ export const StateProvider = ({ children }) => {
 	//! State to control the searchbar
 	const [searchValue, setSearchValue] = useState('');
 
+	//! State to control the sub categories
+	const [subCategory, setSubCategory] = useState('');
+
+	//! State to control the specs creation
+	const [specs, setSpecs] = useState({
+		cpu: '',
+		cpuSpeed: '',
+		gpu: '',
+		ram: '',
+		storage: '',
+		os: '',
+		screenSize: '',
+		screenResolution: '',
+		camera: '',
+		sensor: '',
+		dpi: '',
+		conectivity: '',
+		refreshRate: '',
+		displayType: '',
+		keyboardType: '',
+		range: '',
+		frequency: '',
+		chipset: '',
+		cpuSupport: [],
+		motherboardConnectivity: [],
+		osSupported: [],
+		cache: '',
+		internalGpu: '',
+		threads: '',
+		cores: '',
+		cpuFrequency: '',
+		cpuFrequencyTurbo: '',
+		memoryType: '',
+		clockSpeed: '',
+		vram: '',
+		interface: '',
+		opengl: '',
+		directx: '',
+		coolerType: '',
+		fans: '',
+		readSpeed: '',
+		writeSpeed: '',
+	});
+
 	//? -------------------FUNCTIONS---------------------
 	//* Function to control the mobile menu
 	const toggleMenu = () => {
@@ -162,6 +206,77 @@ export const StateProvider = ({ children }) => {
 		}));
 	};
 
+	//* Function to reset the specs on the product editor
+	const resetSpecs = () => {
+		setSpecs({
+			cpu: '',
+			cpuSpeed: '',
+			gpu: '',
+			ram: '',
+			storage: '',
+			os: '',
+			screenSize: '',
+			screenResolution: '',
+			camera: '',
+			sensor: '',
+			dpi: '',
+			conectivity: '',
+			refreshRate: '',
+			displayType: '',
+			keyboardType: '',
+			range: '',
+			frequency: '',
+			chipset: '',
+			cpuSupport: [],
+			motherboardConnectivity: [],
+			osSupported: [],
+			cache: '',
+			internalGpu: '',
+			threads: '',
+			cores: '',
+			cpuFrequency: '',
+			cpuFrequencyTurbo: '',
+			memoryType: '',
+			clockSpeed: '',
+			vram: '',
+			interface: '',
+			opengl: '',
+			directx: '',
+			coolerType: '',
+			fans: '',
+			readSpeed: '',
+			writeSpeed: '',
+		});
+	};
+
+	//* Function to handle the addition of specs into an array
+	const handleAddToArray = (field, value) => {
+		setSpecs(prevSpecs => ({
+			...prevSpecs,
+			[field]: [...prevSpecs[field], value],
+		}));
+	};
+
+	//* Function to handle the removal of specs from an array
+	const handleRemoveFromArray = (field, index) => {
+		setSpecs(prevSpecs => ({
+			...prevSpecs,
+			[field]: prevSpecs[field].filter((_, i) => i !== index),
+		}));
+	};
+
+	//* Function to handle the change of specs in an array
+	const handleArrayInputChange = (field, index, value) => {
+		setSpecs(prevSpecs => {
+			const updatedArray = [...prevSpecs[field]];
+			updatedArray[index] = value;
+			return {
+				...prevSpecs,
+				[field]: updatedArray,
+			};
+		});
+	};
+
 	const value = {
 		toggler,
 		isOpen,
@@ -180,6 +295,8 @@ export const StateProvider = ({ children }) => {
 		cartItems,
 		wishlistItems,
 		searchValue,
+		subCategory,
+		specs,
 		openLightbox,
 		toggleMenu,
 		toggleSidebar,
@@ -200,6 +317,12 @@ export const StateProvider = ({ children }) => {
 		addToWishlist,
 		handleCategoryClick,
 		setSearchValue,
+		setSubCategory,
+		setSpecs,
+		resetSpecs,
+		handleAddToArray,
+		handleRemoveFromArray,
+		handleArrayInputChange,
 	};
 
 	return <StateContext.Provider value={value}>{children}</StateContext.Provider>;

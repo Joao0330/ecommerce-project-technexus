@@ -172,16 +172,16 @@
 				grid-template-columns: repeat(3, 1fr);
 			}
 
-			@include breakpointDesktop(768px) {
+			@include breakpointDesktop(830px) {
 				grid-template-columns: repeat(2, 1fr);
 			}
 
-			@include breakpointDesktop(480px) {
-				grid-template-columns: repeat(2, 1fr);
+			@include breakpointDesktop(550px) {
+				grid-template-columns: 1fr;
 				margin-top: 3rem;
 
 				article {
-					width: 200px;
+					width: 300px;
 				}
 			}
 
@@ -206,12 +206,12 @@
 					grid-template-columns: repeat(3, 1fr);
 				}
 
-				@include breakpointDesktop(768px) {
+				@include breakpointDesktop(850px) {
 					grid-template-columns: repeat(2, 1fr);
 				}
 
-				@include breakpointDesktop(480px) {
-					grid-template-columns: repeat(2, 1fr);
+				@include breakpointDesktop(550px) {
+					grid-template-columns: 1fr;
 				}
 			}
 		}

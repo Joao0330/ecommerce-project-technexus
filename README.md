@@ -1,12 +1,6 @@
-# Projeto E-commerce "TechNexus"
+# Projeto react ecommerce "TechNexus"
 
-Neste projeto foi construido um website de e-commerce que vende vários produtos relacionados a informática como:
-
-- Computadores
-- Laptops
-- Smartphones
-- Acessórios informáticos
-- Componentes
+Este é um projeto feito em REACT js durante o curso de front-end da FLAG.
 
 ## Features
 
@@ -32,7 +26,7 @@ Este e-commerce foi feito com as seguintes tecnologias:
 
 - HTML
 - ReactJS
-- SASS - Para os estilos do site´
+- SASS - Para os estilos do site
 - Ficheiro .json que possui toda a data dos produtos da loja
 - json-server - Para fazer o editor de produtos
 - react Icons - Utilização de ícones
@@ -41,11 +35,24 @@ Este e-commerce foi feito com as seguintes tecnologias:
 - Newsapi - API usada para obter as noticias
 - Local storage para armazenar os produtos do carrinho de compras e da wishlist
 
-## Aspetos a melhorar
+## Como correr o programa
 
-Existem ainda alguns aspetos que gostaria que fossem implementados no futuro como:
+Primeiramente, para poder visualizar o site é necessário possuir o nodeJS instalado no computador.
+Após isso, o primeiro comando a ser utilizado será
 
-- Utilização do stripe para a finalização da compra
-- Permitir a criação das especificações ao criar um novo produto no editor
-- Melhorar alguns estilos/efeitos de css
-- Implementação do backend
+` npm install ` ou `npm i`
+
+Este comando irá instalar todas as dependencias necessárias listadas no ficheiro package.json para o site funcionar.
+
+Depois, basta apenas correr o seguinte código para poder visualizar o site no browser:
+
+`npm run dev`
+
+Para abrir o site no browser basta ir para o endereço ` http://localhost:5173/ `
+
+
+Para poder aceder ao editor de produtos é necessário abrir um segundo terminal e escrever o seguinte comando:
+
+`npm run server`
+
+Assim, com os dois terminais é possivel aceder ao editor de produtos.

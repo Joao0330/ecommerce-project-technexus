@@ -1,7 +1,27 @@
 // import hooks
 import { useNavigate } from 'react-router-dom';
 
-const ProductForm = ({ action, name, onSubmit, onNameChange, handleImageChange, price, onPriceChange, description, onDescriptionChange, category, onCategoryChange }) => {
+// import components
+import SubcategorySelector from './SubcategorySelector';
+import SpecsForm from './product-specs/SpecsForm';
+
+const ProductForm = ({
+	action,
+	name,
+	onSubmit,
+	onNameChange,
+	handleImageChange,
+	price,
+	onPriceChange,
+	description,
+	onDescriptionChange,
+	category,
+	onCategoryChange,
+	subCategory,
+	onSubCategoryChange,
+	specs,
+	onSpecsChange,
+}) => {
 	const navigate = useNavigate();
 
 	return (
@@ -35,7 +55,7 @@ const ProductForm = ({ action, name, onSubmit, onNameChange, handleImageChange, 
 
 						<div className='productForm__category'>
 							<label>Category:</label>
-							<select value={category} onChange={e => onCategoryChange(e.target.value)} name='category' id='category' required>
+							<select className='selectMenu' value={category} onChange={e => onCategoryChange(e.target.value)} name='category' id='category' required>
 								<option value='computers'>Computers</option>
 								<option value='laptops'>Laptops</option>
 								<option value='smartphones'>Smartphones</option>
@@ -43,6 +63,12 @@ const ProductForm = ({ action, name, onSubmit, onNameChange, handleImageChange, 
 								<option value='components'>Components</option>
 							</select>
 						</div>
+
+						{category === 'computers' || category === 'laptops' || category === 'smartphones' ? (
+							<SpecsForm category={category} specs={specs} onSpecsChange={onSpecsChange} />
+						) : category === 'accessories' || category === 'components' ? (
+							<SubcategorySelector subCategory={subCategory} onSubCategoryChange={onSubCategoryChange} category={category} specs={specs} onSpecsChange={onSpecsChange} />
+						) : null}
 
 						<div className='productForm__buttons'>
 							{action === 'delete' ? (

@@ -9,7 +9,7 @@
       "image": "/src/assets/products/computers/acer-veriton-x2710g.jpg",
       "specs": {
         "cpu": "Intel Core i7-13700",
-        "cpu-speed": "5.2 GHz",
+        "cpuSpeed": "5.2 GHz",
         "gpu": "Intel UHD Graphics 770",
         "ram": "16 GB",
         "storage": "512 GB SSD",
@@ -25,7 +25,7 @@
       "image": "/src/assets/products/computers/hp-desktop-m01-f3006np-i5-13400.jpg",
       "specs": {
         "cpu": "Intel Core i5-13400",
-        "cpu-speed": "2.5 GHz - 4.6 GHz",
+        "cpuSpeed": "2.5 GHz - 4.6 GHz",
         "gpu": "Intel UHD Graphics 730",
         "ram": "8 GB",
         "storage": "512 GB SSD",
@@ -41,7 +41,7 @@
       "image": "/src/assets/products/computers/lenovo-legion-t5-26iab7-430-intel-i5-12400f.jpg",
       "specs": {
         "cpu": "Intel Core i5-12400F Hexa-Core",
-        "cpu-speed": "2.5 GHz - 4.4 GHz",
+        "cpuSpeed": "2.5 GHz - 4.4 GHz",
         "gpu": "NVIDIA GeForce RTX 3060 12GB GDDR6",
         "ram": "8 GB",
         "storage": "512 GB SSD",
@@ -57,7 +57,7 @@
       "image": "/src/assets/products/computers/lenovo-ideacentre-3-07ada5-457.jpg",
       "specs": {
         "cpu": "AMD Athlon Silver 3050U",
-        "cpu-speed": "2.3 GHz - 3.2 GHz",
+        "cpuSpeed": "2.3 GHz - 3.2 GHz",
         "gpu": "AMD Radeon Graphics",
         "ram": "4 GB",
         "storage": "128 GB SSD",
@@ -73,7 +73,7 @@
       "image": "/src/assets/products/computers/asus-expertcenter-advanced-d700sdcz-52ehdpp1-i5-12400.jpg",
       "specs": {
         "cpu": "intel Core I5-12400 6 Cores",
-        "cpu-speed": "2.5 GHz - 4.4 GHz",
+        "cpuSpeed": "2.5 GHz - 4.4 GHz",
         "gpu": "Intel UHD Graphics 730",
         "ram": "16 GB",
         "storage": "512 GB SSD",
@@ -89,7 +89,7 @@
       "image": "/src/assets/products/computers/dell-optiplex-7010.jpg",
       "specs": {
         "cpu": "intel Core I5 12500 6 Cores",
-        "cpu-speed": "4.6 GHz",
+        "cpuSpeed": "4.6 GHz",
         "gpu": "Intel UHD Graphics 770",
         "ram": "8 GB",
         "storage": "512 GB SSD",
@@ -105,7 +105,7 @@
       "image": "/src/assets/products/computers/hp-desktop-m01-f3000np-ryzen-5-5600g.jpg",
       "specs": {
         "cpu": "AMD Ryzen 5 5600G",
-        "cpu-speed": "4.4 GHz",
+        "cpuSpeed": "4.4 GHz",
         "gpu": "AMD Radeon Graphics",
         "ram": "8 GB",
         "storage": "512 GB SSD",
@@ -121,7 +121,7 @@
       "image": "/src/assets/products/computers/blackview-mini-mp200-intel-core-i9-11900h.jpg",
       "specs": {
         "cpu": "intel Core I9 11900H 8 Cores",
-        "cpu-speed": "4.9 GHz",
+        "cpuSpeed": "4.9 GHz",
         "gpu": "Intel UHD Graphics",
         "ram": "16 GB",
         "storage": "1 TB SSD",
@@ -137,7 +137,7 @@
       "image": "/src/assets/products/computers/asus-rog-g22ch-intel-core-i7-14700f.jpg",
       "specs": {
         "cpu": "intel Core I7 14700F",
-        "cpu-speed": "3.5 GHz",
+        "cpuSpeed": "3.5 GHz",
         "gpu": "NVIDIA GeForce RTX 4060",
         "ram": "32 GB",
         "storage": "1 TB SSD",
@@ -153,7 +153,7 @@
       "image": "/src/assets/products/computers/asus-essential-s501me-intel-i5-13400.jpg",
       "specs": {
         "cpu": "Intel® Core i5-13400",
-        "cpu-speed": "2.5 GHz - 4.6 GHz",
+        "cpuSpeed": "2.5 GHz - 4.6 GHz",
         "gpu": "Intel UHD Graphics 730",
         "ram": "8 GB",
         "storage": "250 GB SSD",
@@ -171,7 +171,7 @@
       "image": "/src/assets/products/laptops/hp-pavilion-x360.jpg",
       "specs": {
         "cpu": "Intel Core i5-1335U",
-        "cpu-speed": "3.4 GHz",
+        "cpuSpeed": "3.4 GHz",
         "gpu": "Intel Iris Xe Graphics",
         "ram": "16 GB",
         "storage": "512 GB SSD",
@@ -187,7 +187,7 @@
       "image": "/src/assets/products/laptops/acer-aspire-3-15-a315-44p-ryzen-7-5700u.jpg",
       "specs": {
         "cpu": "AMD Ryzen 7 5700U",
-        "cpu-speed": "1.8 GHz - 4.3 GHz",
+        "cpuSpeed": "1.8 GHz - 4.3 GHz",
         "gpu": "AMD Radeon Graphics",
         "ram": "8 GB",
         "storage": "512 GB SSD",
@@ -203,7 +203,7 @@
       "image": "/src/assets/products/laptops/lenovo-ideapad-3-14itl6-512-intel-i5-1155g7.jpg",
       "specs": {
         "cpu": "Intel Core i5-1155G7 Quad-Core",
-        "cpu-speed": "2.5 GHz - 4.5 GHz",
+        "cpuSpeed": "2.5 GHz - 4.5 GHz",
         "gpu": "Intel iris Xe Graphicss",
         "ram": "8 GB",
         "storage": "512 GB SSD",
@@ -219,7 +219,7 @@
       "image": "/src/assets/products/laptops/acer-travelmate-p6-tmp614-53-intel-i7-1355u.jpg",
       "specs": {
         "cpu": "Intel Core i7-1355U",
-        "cpu-speed": "3.7 GHz - 5.0 GHz",
+        "cpuSpeed": "3.7 GHz - 5.0 GHz",
         "gpu": "Intel iris Xe Graphicss",
         "ram": "32 GB",
         "storage": "1 TB SSD",
@@ -235,7 +235,7 @@
       "image": "/src/assets/products/laptops/msi-16-vector-16-hx-a13vhg.jpg",
       "specs": {
         "cpu": "Intel Core i9-13980HX",
-        "cpu-speed": "5.6 GHz",
+        "cpuSpeed": "5.6 GHz",
         "gpu": "NVIDIA GeForce RTX 4080",
         "ram": "32 GB",
         "storage": "1 TB SSD",
@@ -251,7 +251,7 @@
       "image": "/src/assets/products/laptops/apple-macbook-air-13-2024-m3.jpg",
       "specs": {
         "cpu": "Apple M3 8-core",
-        "cpu-speed": "4.06 GHz",
+        "cpuSpeed": "4.06 GHz",
         "gpu": "10 core GPU",
         "ram": "16 GB",
         "storage": "512 GB SSD",
@@ -267,7 +267,7 @@
       "image": "/src/assets/products/laptops/msi-modern-15-b13m-intel-i5-1335u.jpg",
       "specs": {
         "cpu": "Intel Core i5-1335U",
-        "cpu-speed": "3.4 GHz - 4.6 GHz",
+        "cpuSpeed": "3.4 GHz - 4.6 GHz",
         "gpu": "Intel Iris Xe Graphics",
         "ram": "16 GB",
         "storage": "512 GB SSD",
@@ -283,7 +283,7 @@
       "image": "/src/assets/products/laptops/hp-elitebook-655-g10-ryzen-r5-7530u.jpg",
       "specs": {
         "cpu": "AMD Ryzen 5 7530U Hexa-Core",
-        "cpu-speed": "2.0 GHz - 4.2 GHz",
+        "cpuSpeed": "2.0 GHz - 4.2 GHz",
         "gpu": "AMD Radeon Graphics",
         "ram": "8 GB",
         "storage": "512 GB SSD",
@@ -299,7 +299,7 @@
       "image": "/src/assets/products/laptops/asus-vivobook-go-e1504ga-intel-i3-n305.jpg",
       "specs": {
         "cpu": "Intel Core i3-N305",
-        "cpu-speed": "1.8 GHz - 4.9 GHz",
+        "cpuSpeed": "1.8 GHz - 4.9 GHz",
         "gpu": "Intel UHD Graphics",
         "ram": "8 GB",
         "storage": "512 GB SSD",
@@ -315,7 +315,7 @@
       "image": "/src/assets/products/laptops/lenovo-ideapad-flex-5-14alc7-999-ryzen-3-5300u.jpg",
       "specs": {
         "cpu": "AMD Ryzen 3 5300U Quad-Core",
-        "cpu-speed": "2.6 GHz - 4.8 GHz",
+        "cpuSpeed": "2.6 GHz - 4.8 GHz",
         "gpu": "AMD Radeon Graphics",
         "ram": "8 GB",
         "storage": "128 GB SSD",
@@ -332,8 +332,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/iphone15-pro-max.jpg",
       "specs": {
-        "screen-size": "6.7''",
-        "screen-resolution": "2796 x 1290",
+        "screenSize": "6.7''",
+        "screenResolution": "2796 x 1290",
         "camera": "48 MP",
         "os": "Apple iOS 17",
         "cpu": "Apple A17 Pro",
@@ -349,8 +349,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/samsung-galaxy-a55-5g.jpg",
       "specs": {
-        "screen-size": "6.6''",
-        "screen-resolution": "2340 x 1080",
+        "screenSize": "6.6''",
+        "screenResolution": "2340 x 1080",
         "camera": "50 MP",
         "os": "Android 14",
         "cpu": "Samsung Exynos 8 cores",
@@ -366,8 +366,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/xiaomi-redmi-note-13-pro-plus.jpg",
       "specs": {
-        "screen-size": "6.67''",
-        "screen-resolution": "2712 x 1220",
+        "screenSize": "6.67''",
+        "screenResolution": "2712 x 1220",
         "camera": "200 MP",
         "os": "MIUI 14 - Android 13",
         "cpu": "MediaTek Dimensity 7200 Ultra 8 cores",
@@ -383,8 +383,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/samsung-galaxy-s24-ultra.jpg",
       "specs": {
-        "screen-size": "6.8''",
-        "screen-resolution": "3120 x 1440",
+        "screenSize": "6.8''",
+        "screenResolution": "3120 x 1440",
         "camera": "200 MP",
         "os": "Android 14",
         "cpu": "Qualcomm Snapdragon 8 Gen",
@@ -400,8 +400,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/oneplus-12r-5g-6-78.jpg",
       "specs": {
-        "screen-size": "6.78''",
-        "screen-resolution": "2780 x 1264",
+        "screenSize": "6.78''",
+        "screenResolution": "2780 x 1264",
         "camera": "50 MP",
         "os": "Android 14",
         "cpu": "Qualcomm Snapdragon 8 Gen 2 8 cores",
@@ -417,8 +417,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/xiaomi-redmi-13c.jpg",
       "specs": {
-        "screen-size": "6.74''",
-        "screen-resolution": "1600 x 720",
+        "screenSize": "6.74''",
+        "screenResolution": "1600 x 720",
         "camera": "50 MP",
         "os": "Android 13",
         "cpu": "MediaTek Helio G85",
@@ -434,8 +434,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/blackview-bv9300-pro.jpg",
       "specs": {
-        "screen-size": "6.7''",
-        "screen-resolution": "2388 x 1080",
+        "screenSize": "6.7''",
+        "screenResolution": "2388 x 1080",
         "camera": "64 MP",
         "os": "Android 12",
         "cpu": "MediaTek Helio G99 8 cores",
@@ -451,8 +451,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/motorola-moto-g73.jpg",
       "specs": {
-        "screen-size": "6.5''",
-        "screen-resolution": "2400 x 1080",
+        "screenSize": "6.5''",
+        "screenResolution": "2400 x 1080",
         "camera": "50 MP",
         "os": "Android 13",
         "cpu": "MediaTek Dimensity 930 8 cores",
@@ -468,8 +468,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/apple-iphone-14.jpg",
       "specs": {
-        "screen-size": "6.1''",
-        "screen-resolution": "2532 x 1170",
+        "screenSize": "6.1''",
+        "screenResolution": "2532 x 1170",
         "camera": "12 MP",
         "os": "Apple iOS 16",
         "cpu": "Apple A15 Bionic",
@@ -485,8 +485,8 @@
       "category": "smartphones",
       "image": "/src/assets/products/smartphones/samsung-galaxy-a34.jpg",
       "specs": {
-        "screen-size": "6.6''",
-        "screen-resolution": "2340 x 1080",
+        "screenSize": "6.6''",
+        "screenResolution": "2340 x 1080",
         "camera": "48 MP",
         "os": "Android 13",
         "cpu": "Mediatek Dimensity 1080 8 cores",
@@ -502,6 +502,7 @@
       "price": 82.9,
       "description": "The HyperX Pulsefire Raid™ is an ergonomic mouse that gives you greater control right in your hand.",
       "category": "accessories",
+      "subCategory": "mouse",
       "image": "/src/assets/products/accessories/hyperx-pulsefire.jpg",
       "specs": {
         "sensor": "Optical - Pixart 3389",
@@ -515,12 +516,13 @@
       "price": 92.9,
       "description": "The MSI Pro MP223 22'' (21.45'') monitor is designed to simplify your work. Less Blue Light technology effectively reduces blue light that can cause serious long-term damage to your eyes.",
       "category": "accessories",
+      "subCategory": "monitor",
       "image": "/src/assets/products/accessories/msi-22-2145-pro.jpg",
       "specs": {
-        "screen-size": "21.4''",
-        "screen-resolution": "1920 x 1080",
-        "refresh-rate": "100Hz",
-        "display-type": "LED",
+        "screenSize": "21.4''",
+        "screenResolution": "1920 x 1080",
+        "refreshRate": "100Hz",
+        "displayType": "LED",
         "conectivity": "1x HDMI, 1x VGA"
       }
     },
@@ -530,10 +532,11 @@
       "price": 108.9,
       "description": "The ASUS TUF Gaming K3 is an RGB mechanical keyboard that features durable switches for responsive, reliable performance. Its customizable RGB lighting offers unlimited customization options, while the removable magnetic wrist rest gives you extra support and comfort for gaming marathons.",
       "category": "accessories",
+      "subCategory": "keyboard",
       "image": "/src/assets/products/accessories/asus-tuf-k3.jpg",
       "specs": {
         "conectivity": "USB Type A",
-        "keyboard-type": "Mechanical"
+        "keyboardType": "Mechanical"
       }
     },
     {
@@ -542,12 +545,13 @@
       "price": 152.9,
       "description": "The Lenovo L27i-40 monitor is designed to excel at work and play. Its large 27-inch screen allows you to do much more with relative ease.",
       "category": "accessories",
+      "subCategory": "monitor",
       "image": "/src/assets/products/accessories/lenovo-27-l27i-40-ips-fhd.jpg",
       "specs": {
-        "screen-size": "27''",
-        "screen-resolution": "1920 x 1080",
-        "refresh-rate": "100Hz",
-        "display-type": "IPS",
+        "screenSize": "27''",
+        "screenResolution": "1920 x 1080",
+        "refreshRate": "100Hz",
+        "displayType": "IPS",
         "conectivity": "2x HDMI, 1x VGA"
       }
     },
@@ -557,6 +561,7 @@
       "price": 54.9,
       "description": "Sony MDR-RF811RK wireless headphones with a range of up to 100 meters.",
       "category": "accessories",
+      "subCategory": "headphones",
       "image": "/src/assets/products/accessories/sony-auscultadores-mdr-rf811rk.jpg",
       "specs": {
         "conectivity": "Wireless",
@@ -570,10 +575,11 @@
       "price": 19.9,
       "description": "HP 125 Wired Keyboard, is a wired keyboard with USB interface.",
       "category": "accessories",
+      "subCategory": "keyboard",
       "image": "/src/assets/products/accessories/teclado-hp-125-wired-keyboard.jpg",
       "specs": {
         "conectivity": "USB",
-        "keyboard-type": "Membrane"
+        "keyboardType": "Membrane"
       }
     },
     {
@@ -582,6 +588,7 @@
       "price": 8.9,
       "description": "Mouse with special optical sensor for laptops, with 3 buttons + scroll for numerous functions.",
       "category": "accessories",
+      "subCategory": "mouse",
       "image": "/src/assets/products/accessories/hama-mw-110-wireless-black.jpg",
       "specs": {
         "sensor": "Optical",
@@ -596,11 +603,12 @@
       "price": 121.9,
       "description": "Increase your productivity and work comfortably at your desk or in a room with the sleek, redesigned HP Premium Wireless Keyboard with anodized aluminum edge.",
       "category": "accessories",
+      "subCategory": "keyboard",
       "image": "/src/assets/products/accessories/teclado-hp-wireless-premium.jpg",
       "specs": {
         "conectivity": "RF Wireless",
         "range": "Up to 10 meters",
-        "keyboard-type": "Membrane"
+        "keyboardType": "Membrane"
       }
     },
     {
@@ -609,12 +617,13 @@
       "price": 459.9,
       "description": "The LG UHD 4K HDR monitor can virtually transform standard content into HDR-quality video right on the screen. Helps improve tone mapping and luminance of SDR content for an HDR-like experience.",
       "category": "accessories",
+      "subCategory": "monitor",
       "image": "/src/assets/products/accessories/lg-27-27up85np-w-ips-ultra-hd-4k.jpg",
       "specs": {
-        "screen-size": "27''",
-        "screen-resolution": "3840 x 2160 (4k UHD)",
-        "refresh-rate": "60Hz",
-        "display-type": "IPS",
+        "screenSize": "27''",
+        "screenResolution": "3840 x 2160 (4k UHD)",
+        "refreshRate": "60Hz",
+        "displayType": "IPS",
         "conectivity": "2x HDMI, 1x DisplayPort"
       }
     },
@@ -624,6 +633,7 @@
       "price": 117.9,
       "description": "MasterPulse MH752 deliver quality sound with unprecedented comfort, ideal for your gaming experience.",
       "category": "accessories",
+      "subCategory": "headphones",
       "image": "/src/assets/products/accessories/headset-cooler-master-masterpulse-mh752.jpg",
       "specs": {
         "conectivity": "USB Type A",
@@ -638,10 +648,11 @@
       "price": 243.9,
       "description": "Asus Prime series motherboards are expertly designed to unleash the full potential of 13th Gen Intel Core processors. With a robust power design, comprehensive cooling solutions and intelligent tuning options.",
       "category": "components",
+      "subCategory": "motherboard",
       "image": "/src/assets/products/components/asus-prime-z790m.jpg",
       "specs": {
         "chipset": "Intel Z790",
-        "cpu-support": [
+        "cpuSupport": [
           "Intel Celeron",
           "Intel Core i3",
           "Intel Core i5",
@@ -649,7 +660,7 @@
           "Intel Core i9",
           "Intel Pentium Gold"
         ],
-        "conectivity": [
+        "motherboardConnectivity": [
           "1x DisplayPort",
           "1x HDMI",
           "1x Intel 1Gb Ethernet port",
@@ -659,7 +670,7 @@
           "3x Audio jacks",
           "4x USB 3.2 Gen 1"
         ],
-        "os-supported": [
+        "osSupported": [
           "Windows 10",
           "Windows 11"
         ]
@@ -671,14 +682,15 @@
       "price": 624.9,
       "description": "New 14th Gen Intel Core processors help make it all possible. Get the performance you need, where you need it, whether you're a gamer, content creator or everyday user.",
       "category": "components",
+      "subCategory": "cpu",
       "image": "/src/assets/products/components/cpu-core-i9-14900.jpg",
       "specs": {
         "cache": "36 MB Intel Smart Cache",
-        "internal-gpu": "Intel UHD Graphics 770",
+        "internalGpu": "Intel UHD Graphics 770",
         "threads": "32",
         "cores": "24",
-        "cpu-frequency": "2.4 GHz",
-        "cpu-frequency-turbo": "6.0 GHz"
+        "cpuFrequency": "2.4 GHz",
+        "cpuFrequencyTurbo": "6.0 GHz"
       }
     },
     {
@@ -687,11 +699,12 @@
       "price": 118.9,
       "description": "Kingston launches new generation DDR5 memory module.",
       "category": "components",
+      "subCategory": "ram",
       "image": "/src/assets/products/components/kingston-32gb-ddr5-5600mts.jpg",
       "specs": {
         "ram": "32 GB",
-        "memory-type": "DDR5",
-        "clock-speed": "5600 MHz"
+        "memoryType": "DDR5",
+        "clockSpeed": "5600 MHz"
       }
     },
     {
@@ -700,13 +713,14 @@
       "price": 359.9,
       "description": "Asus Dual is the perfect choice for gamers who want serious graphics performance in a compact build.",
       "category": "components",
+      "subCategory": "gpu",
       "image": "/src/assets/products/components/asus-dual-rtx4060-o8g-evo.jpg",
       "specs": {
         "vram": "8 GB",
-        "memory-type": "GDDR6",
+        "memoryType": "GDDR6",
         "conectivity": "1x HDMI, 3x DisplayPort",
         "interface": "PCI Express 4.0",
-        "clock-speed": "2535 MHz",
+        "clockSpeed": "2535 MHz",
         "opengl": "OpenGL 4.6",
         "directx": "DirectX 12 Ultimate"
       }
@@ -717,9 +731,10 @@
       "price": 287.9,
       "description": "The ROG Ryuo III series is 400mm thick and compatible with a wide range of Intel and AMD motherboard platforms, giving you broad processor and build flexibility.",
       "category": "components",
+      "subCategory": "cooler",
       "image": "/src/assets/products/components/water-cooler-cpu-asus-rog-ryuo-iii-240-argb.jpg",
       "specs": {
-        "cooler-type": "Water Cooler",
+        "coolerType": "Water Cooler",
         "fans": "2 Fans x 120mm"
       }
     },
@@ -729,14 +744,15 @@
       "price": 409.9,
       "description": "With the AMD Ryzen™ 8000G Series processor, start gaming in high definition right away. AMD Ryzen™ 7 8700G with AMD Ryzen AI is the best all-in-one desktop processor with AMD Radeon™ 780M graphics capabilities.",
       "category": "components",
+      "subCategory": "cpu",
       "image": "/src/assets/products/components/amd-ryzen-7-8700g-8-core-42ghz.jpg",
       "specs": {
         "cache": "16 MB Amd L3",
-        "internal-gpu": "AMD Radeon 780M",
+        "internalGpu": "AMD Radeon 780M",
         "threads": "16",
         "cores": "8",
-        "cpu-frequency": "4.2 GHz",
-        "cpu-frequency-turbo": "5.1 GHz"
+        "cpuFrequency": "4.2 GHz",
+        "cpuFrequencyTurbo": "5.1 GHz"
       }
     },
     {
@@ -745,11 +761,12 @@
       "price": 401.9,
       "description": "With a 2.5-inch form factor and a 6 Gb/s SATA interface, the PM893 meets the demands of server storage systems, with increased reliability for critical data thanks to end-to-end data protection.",
       "category": "components",
+      "subCategory": "storage",
       "image": "/src/assets/products/components/samsung-pm893-192tb-sata.jpg",
       "specs": {
         "storage": "1.92 TB",
-        "read-speed": "550 MB/s",
-        "write-speed": "520 MB/s"
+        "readSpeed": "550 MB/s",
+        "writeSpeed": "520 MB/s"
       }
     },
     {
@@ -758,11 +775,12 @@
       "price": 429.9,
       "description": "Build your next rig with an AMD Ryzen™ 7000 Series processor and ROG Strix X670E-F Gaming WiFi to experience advanced performance.",
       "category": "components",
+      "subCategory": "motherboard",
       "image": "/src/assets/products/components/asus-rog-strix-x670e-f-gaming-wifi.jpg",
       "specs": {
         "chipset": "Intel Z790",
-        "cpu-support": "AMD Ryzen 7000 series",
-        "conectivity": [
+        "cpuSupport": "AMD Ryzen 7000 series",
+        "motherboardConnectivity": [
           "1 x BIOS FlashBack button",
           "1 x DisplayPort",
           "1 x HDMI",
@@ -774,7 +792,7 @@
           "5 x Gold-plated audio jacks",
           "9 x USB 3.2 Gen 2 ports (7 x Type-A, 2 xUSB Type-C)"
         ],
-        "os-supported": [
+        "osSupported": [
           "Windows 10",
           "Windows 11"
         ]
@@ -786,11 +804,12 @@
       "price": 248.9,
       "description": "Corsair Vengeance DDR5, optimized for Intel motherboards, delivers the higher frequencies and greater capabilities of DDR5 technology in a compact, high-quality module that fits into your system.",
       "category": "components",
+      "subCategory": "ram",
       "image": "/src/assets/products/components/corsair-64gb-2-x32gb-ddr5-6000mhz.jpg",
       "specs": {
         "ram": "64 GB",
-        "memory-type": "DDR5",
-        "clock-speed": "6000 MHz"
+        "memoryType": "DDR5",
+        "clockSpeed": "6000 MHz"
       }
     },
     {
@@ -799,13 +818,14 @@
       "price": 741.9,
       "description": "NVIDIA® GeForce RTX 40 Series GPUs are the fastest for gamers and creators. They are powered by the ultra-efficient NVIDIA Ada Lovelace architecture, which provides good performance in games.",
       "category": "components",
+      "subCategory": "gpu",
       "image": "/src/assets/products/components/asus-geforce-rtx-4070-tuf-gaming-12gb.jpg",
       "specs": {
         "vram": "12 GB",
-        "memory-type": "GDDR6X",
+        "memoryType": "GDDR6X",
         "conectivity": "1x HDMI, 3x DisplayPort",
         "interface": "PCI Express 4.0",
-        "clock-speed": "2550 MHz",
+        "clockSpeed": "2550 MHz",
         "opengl": "OpenGL 4.6",
         "directx": "DirectX 12 Ultimate"
       }

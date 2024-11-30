@@ -13,7 +13,7 @@ const UpdateProduct = () => {
 	const navigate = useNavigate();
 	const { id } = useParams();
 	const { dispatch } = useProducts();
-	const { allProducts, setAllProducts } = useStates();
+	const { allProducts, setAllProducts, subCategory, setSubCategory, specs, setSpecs } = useStates();
 
 	const [name, setName] = useState('');
 	const [image, setImage] = useState('');
@@ -29,10 +29,44 @@ const UpdateProduct = () => {
 		const imageUrl = URL.createObjectURL(file);
 
 		setImage(imageUrl);
+	};
 
-		/* return () => {
-            URL.revokeObjectURL(imageUrl);
-        }; */
+	const preserveSpecsArrays = currentSubCategory => {
+		setSpecs(prevSpecs => {
+			// Reset specs if they are irrelevant to the current subcategory
+			if (currentSubCategory === 'motherboard') {
+				return {
+					chipset: prevSpecs.chipset || '',
+					cpuSupport: prevSpecs.cpuSupport || [],
+					motherboardConnectivity: prevSpecs.motherboardConnectivity || [],
+					osSupported: prevSpecs.osSupported || [],
+				};
+			}
+
+			// Handle other subcategories or reset completely if not motherboard
+			return {}; // Reset specs completely for other subcategories
+		});
+	};
+
+	// Function to handle the category change
+	const handleCategoryChange = newCategory => {
+		setCategory(newCategory);
+
+		// Reset subCategory based on the new category
+		const defaultSubCategory = {
+			accessories: 'mouse',
+			components: 'motherboard',
+		}[newCategory];
+		setSubCategory(defaultSubCategory || '');
+
+		preserveSpecsArrays(defaultSubCategory || '');
+	};
+
+	const handleSubCategoryChange = newSubCategory => {
+		setSubCategory(newSubCategory);
+
+		// Preserve specs arrays only if relevant to the new subcategory
+		preserveSpecsArrays(newSubCategory);
 	};
 
 	useEffect(() => {
@@ -46,6 +80,8 @@ const UpdateProduct = () => {
 		setPrice(product.price);
 		setDescription(product.description);
 		setCategory(product.category);
+		setSubCategory(product.subCategory);
+		setSpecs(product.specs);
 	}, [product, navigate]);
 
 	const handleUpdate = async e => {
@@ -63,6 +99,8 @@ const UpdateProduct = () => {
 			price: parseFloat(price),
 			description,
 			category,
+			subCategory,
+			specs,
 		};
 		try {
 			// Remove the product from its original category array
@@ -106,11 +144,15 @@ const UpdateProduct = () => {
 				price={price}
 				description={description}
 				category={category}
+				subCategory={subCategory}
+				specs={specs}
+				onSpecsChange={setSpecs}
 				onNameChange={setName}
 				handleImageChange={handleImageChange}
 				onPriceChange={setPrice}
 				onDescriptionChange={setDescription}
-				onCategoryChange={setCategory}
+				onCategoryChange={handleCategoryChange}
+				onSubCategoryChange={handleSubCategoryChange}
 				onSubmit={handleUpdate}
 			/>
 		</>

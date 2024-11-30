@@ -13,16 +13,14 @@ const DeleteProduct = () => {
 	const navigate = useNavigate();
 	const { id } = useParams();
 	const { dispatch } = useProducts();
-	const { allProducts, setAllProducts } = useStates();
+	const { allProducts, setAllProducts, subCategory } = useStates();
 
 	const product = allProducts.find(product => product.id === id);
 
-	useEffect(() => {
-		if (!product) {
-			alert('Product not found!');
-			navigate('/product-editor');
-		}
-	}, [product, navigate]);
+	if (!product) {
+		alert('Product not found!');
+		navigate('/product-editor');
+	}
 
 	const handleDelete = async () => {
 		if (!product) {
@@ -54,7 +52,19 @@ const DeleteProduct = () => {
 
 	return (
 		<>
-			{product && <ProductForm action='delete' name={product.name} image={product.image} price={product.price} description={product.description} category={product.category} onSubmit={handleDelete} />}
+			{product && (
+				<ProductForm
+					action='delete'
+					name={product.name}
+					image={product.image}
+					price={product.price}
+					description={product.description}
+					category={product.category}
+					subCategory={product.subCategory}
+					specs={product.specs}
+					onSubmit={handleDelete}
+				/>
+			)}
 		</>
 	);
 };

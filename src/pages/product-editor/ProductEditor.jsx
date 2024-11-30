@@ -1,3 +1,6 @@
+// import context
+import { useStates } from '../../context/useStates';
+
 // import hooks
 import { Link } from 'react-router-dom';
 import { useState, useEffect } from 'react';
@@ -19,6 +22,8 @@ const ProductEditor = () => {
 
 	const [currentPage, setCurrentPage] = useState(1);
 	const [productsPerPage] = useState(10);
+
+	const { resetSpecs } = useStates();
 
 	useEffect(() => {
 		const fetchProducts = async () => {
@@ -65,7 +70,14 @@ const ProductEditor = () => {
 						<div className='productEditor__products-title'>
 							<h3>List of Products:</h3>
 
-							<Link to='/product-editor/create-product' className='btn-type4' onClick={() => window.scrollTo(0, 0)}>
+							<Link
+								to='/product-editor/create-product'
+								className='btn-type4'
+								onClick={() => {
+									window.scrollTo(0, 0);
+									resetSpecs();
+								}}
+							>
 								<IoIosAddCircleOutline />
 								<span>Add Product</span>
 							</Link>
@@ -107,12 +119,10 @@ const ProductEditor = () => {
 											<Link to={`/product-editor/update-product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
 												<RiEdit2Line />
 											</Link>
-											
 
 											<Link to={`/product-editor/delete-product/${product.id}`} onClick={() => window.scrollTo(0, 0)}>
 												<MdDeleteOutline />
 											</Link>
-											
 										</td>
 									</tr>
 								))}

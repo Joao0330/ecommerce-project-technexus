@@ -1,46 +1,6 @@
-const ProductSpecs = ({ product }) => {
-	// Changes the key names to more readable names
-	const keyModifications = [
-		{ key: 'cpu-support', modifiedKey: 'CPU Support' },
-		{ key: 'conectivity', modifiedKey: 'Connectivity' },
-		{ key: 'os-supported', modifiedKey: 'OS Supported' },
-		{ key: 'cache', modifiedKey: 'Cache' },
-		{ key: 'internal-gpu', modifiedKey: 'Internal GPU' },
-		{ key: 'threads', modifiedKey: 'Threads' },
-		{ key: 'cores', modifiedKey: 'Cores' },
-		{ key: 'cpu-frequency', modifiedKey: 'CPU Frequency' },
-		{ key: 'cpu-speed', modifiedKey: 'CPU Speed' },
-		{ key: 'chipset', modifiedKey: 'Chipset' },
-		{ key: 'gpu-memory', modifiedKey: 'GPU Memory' },
-		{ key: 'gpu-memory-type', modifiedKey: 'GPU Memory Type' },
-		{ key: 'sensor', modifiedKey: 'Sensor' },
-		{ key: 'dpi', modifiedKey: 'DPI' },
-		{ key: 'range', modifiedKey: 'Range' },
-		{ key: 'screen-size', modifiedKey: 'Screen Size' },
-		{ key: 'screen-resolution', modifiedKey: 'Screen Resolution' },
-		{ key: 'camera', modifiedKey: 'Camera' },
-		{ key: 'os', modifiedKey: 'OS' },
-		{ key: 'cpu', modifiedKey: 'CPU' },
-		{ key: 'gpu', modifiedKey: 'GPU' },
-		{ key: 'ram', modifiedKey: 'RAM' },
-		{ key: 'vram', modifiedKey: 'VRAM' },
-		{ key: 'opengl', modifiedKey: 'OpenGL' },
-		{ key: 'directx', modifiedKey: 'DirectX' },
-		{ key: 'cooler-type', modifiedKey: 'Cooler Type' },
-		{ key: 'fans', modifiedKey: 'Fans' },
-		{ key: 'read-speed', modifiedKey: 'Read Speed' },
-		{ key: 'write-speed', modifiedKey: 'Write Speed' },
-		{ key: 'interface', modifiedKey: 'Interface' },
-		{ key: 'storage', modifiedKey: 'Storage' },
-		{ key: 'cpu-frequency-turbo', modifiedKey: 'CPU Frequency Turbo' },
-		{ key: 'memory-type', modifiedKey: 'Memory Type' },
-		{ key: 'clock-speed', modifiedKey: 'Clock Speed' },
-		{ key: 'refresh-rate', modifiedKey: 'Refresh Rate' },
-		{ key: 'display-type', modifiedKey: 'Display Type' },
-		{ key: 'keyboard-type', modifiedKey: 'Keyboard Type' },
-		{ key: 'frequency', modifiedKey: 'Frequency' },
-	];
+import { keyModifications } from './key-modifications';
 
+const ProductSpecs = ({ product }) => {
 	return (
 		product.specs && (
 			<section className='productSpecs'>

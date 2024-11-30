@@ -9,6 +9,9 @@ import { useNavigate } from 'react-router-dom';
 // import components
 import ProductForm from './ProductForm';
 
+// import utils
+import { createSpecs } from './product-specs/createSpecs';
+
 const CreateProduct = () => {
 	const [name, setName] = useState('');
 	const [image, setImage] = useState('');
@@ -19,7 +22,7 @@ const CreateProduct = () => {
 	const navigate = useNavigate();
 
 	const { dispatch } = useProducts();
-	const { allProducts, setAllProducts } = useStates();
+	const { allProducts, setAllProducts, subCategory, setSubCategory, specs, setSpecs } = useStates();
 
 	// Function to handle the image change
 	const handleImageChange = event => {
@@ -27,10 +30,18 @@ const CreateProduct = () => {
 		const imageUrl = URL.createObjectURL(file);
 
 		setImage(imageUrl);
+	};
 
-		/* return () => {
-            URL.revokeObjectURL(imageUrl);
-        }; */
+	// Function to handle the category change
+	const handleCategoryChange = newCategory => {
+		setCategory(newCategory);
+
+		// Reset subCategory based on the new category
+		const defaultSubCategory = {
+			accessories: 'mouse',
+			components: 'motherboard',
+		}[newCategory];
+		setSubCategory(defaultSubCategory || '');
 	};
 
 	// Function to handle the product creation
@@ -54,6 +65,8 @@ const CreateProduct = () => {
 			price: parseFloat(price),
 			description,
 			category,
+			subCategory,
+			specs: createSpecs(category, subCategory, specs),
 		};
 		try {
 			const response = await fetch(`http://localhost:5000/${category}`, {
@@ -86,11 +99,15 @@ const CreateProduct = () => {
 				price={price}
 				description={description}
 				category={category}
+				subCategory={subCategory}
+				specs={specs}
+				onSpecsChange={setSpecs}
 				onNameChange={setName}
 				handleImageChange={handleImageChange}
 				onPriceChange={setPrice}
 				onDescriptionChange={setDescription}
-				onCategoryChange={setCategory}
+				onCategoryChange={handleCategoryChange}
+				onSubCategoryChange={setSubCategory}
 				onSubmit={handleSubmit}
 			/>
 		</>

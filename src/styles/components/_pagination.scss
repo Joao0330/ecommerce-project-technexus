@@ -2,14 +2,21 @@
 	margin-top: 4rem;
 	display: flex;
 	justify-content: center;
+	border-top: 1px solid var(--gray);
+	padding: 1.5rem;
+	width: 100%;
 	gap: 1rem;
 
 	button {
-		border-radius: 10px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		border-radius: 50%;
+		width: 40px;
+		border: 1px solid transparent;
 
 		&.active {
 			background: var(--green-dark);
-			border: 1px solid var(--green-dark);
 		}
 	}
 }
